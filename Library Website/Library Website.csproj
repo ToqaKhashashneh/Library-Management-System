@@ -67,10 +67,58 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Ammar\Ammar.aspx" />
+    <Content Include="Ayman\Ayman.aspx" />
+    <Content Include="Bilal\Bilal.aspx" />
+    <Content Include="Farah\Farah.aspx" />
+    <Content Include="Rudaina\Rudaina.aspx" />
+    <Content Include="Toqa\AllBooks.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ammar\Ammar.aspx.cs">
+      <DependentUpon>Ammar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ammar\Ammar.aspx.designer.cs">
+      <DependentUpon>Ammar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ayman\Ayman.aspx.cs">
+      <DependentUpon>Ayman.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ayman\Ayman.aspx.designer.cs">
+      <DependentUpon>Ayman.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bilal\Bilal.aspx.cs">
+      <DependentUpon>Bilal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bilal\Bilal.aspx.designer.cs">
+      <DependentUpon>Bilal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Farah\Farah.aspx.cs">
+      <DependentUpon>Farah.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Farah\Farah.aspx.designer.cs">
+      <DependentUpon>Farah.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rudaina\Rudaina.aspx.cs">
+      <DependentUpon>Rudaina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rudaina\Rudaina.aspx.designer.cs">
+      <DependentUpon>Rudaina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Toqa\AllBooks.aspx.cs">
+      <DependentUpon>AllBooks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Toqa\AllBooks.aspx.designer.cs">
+      <DependentUpon>AllBooks.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -81,13 +129,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Ammar\" />
-    <Folder Include="Ayman\" />
-    <Folder Include="Bilal\" />
-    <Folder Include="Farah\" />
-    <Folder Include="Toqa\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
