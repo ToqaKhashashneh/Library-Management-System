@@ -70,7 +70,9 @@
     <Content Include="Ammar\Ammar.aspx" />
     <Content Include="Ayman\Ayman.aspx" />
     <Content Include="Bilal\Bilal.aspx" />
-    <Content Include="Farah\Farah.aspx" />
+    <Content Include="Farah\Login.aspx" />
+    <Content Include="Farah\Registation.aspx" />
+    <Content Include="Farah\WebForm1.aspx" />
     <Content Include="Rudaina\Rudaina.aspx" />
     <Content Include="Toqa\AllBooks.aspx" />
     <Content Include="Web.config" />
@@ -97,12 +99,26 @@
     <Compile Include="Bilal\Bilal.aspx.designer.cs">
       <DependentUpon>Bilal.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Farah\Farah.aspx.cs">
-      <DependentUpon>Farah.aspx</DependentUpon>
+    <Compile Include="Farah\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Farah\Farah.aspx.designer.cs">
-      <DependentUpon>Farah.aspx</DependentUpon>
+    <Compile Include="Farah\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Farah\Registation.aspx.cs">
+      <DependentUpon>Registation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Farah\Registation.aspx.designer.cs">
+      <DependentUpon>Registation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Farah\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Farah\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rudaina\Rudaina.aspx.cs">
