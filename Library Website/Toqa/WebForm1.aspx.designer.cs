@@ -11,7 +11,7 @@ namespace Library_Website.Toqa
 {
 
 
-    public partial class AllBooks
+    public partial class WebForm1
     {
 
         /// <summary>

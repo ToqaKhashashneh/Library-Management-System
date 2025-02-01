@@ -72,7 +72,16 @@
     <Content Include="Bilal\Bilal.aspx" />
     <Content Include="Farah\Farah.aspx" />
     <Content Include="Rudaina\Rudaina.aspx" />
-    <Content Include="Toqa\AllBooks.aspx" />
+    <Content Include="Toqa\All books.aspx" />
+    <Content Include="Toqa\book1.png" />
+    <Content Include="Toqa\book2.png" />
+    <Content Include="Toqa\book3.png" />
+    <Content Include="Toqa\Book4.jpg" />
+    <Content Include="Toqa\Book5.jpg" />
+    <Content Include="Toqa\book6.jpg" />
+    <Content Include="Toqa\BooksData.txt" />
+    <Content Include="Toqa\BorrowBook.aspx" />
+    <Content Include="Toqa\WebForm1.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -112,12 +121,26 @@
     <Compile Include="Rudaina\Rudaina.aspx.designer.cs">
       <DependentUpon>Rudaina.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Toqa\AllBooks.aspx.cs">
-      <DependentUpon>AllBooks.aspx</DependentUpon>
+    <Compile Include="Toqa\All books.aspx.cs">
+      <DependentUpon>All books.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Toqa\AllBooks.aspx.designer.cs">
-      <DependentUpon>AllBooks.aspx</DependentUpon>
+    <Compile Include="Toqa\All books.aspx.designer.cs">
+      <DependentUpon>All books.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Toqa\BorrowBook.aspx.cs">
+      <DependentUpon>BorrowBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Toqa\BorrowBook.aspx.designer.cs">
+      <DependentUpon>BorrowBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Toqa\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Toqa\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
