@@ -44,6 +44,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -70,6 +73,11 @@
     <Content Include="Ammar\Ammar.aspx" />
     <Content Include="Ayman\Ayman.aspx" />
     <Content Include="Bilal\Bilal.aspx" />
+    <Content Include="Bilal\Contact%28Admin%29.aspx" />
+    <Content Include="Bilal\History.aspx" />
+    <Content Include="Bilal\History.txt" />
+    <Content Include="Bilal\Response.txt" />
+    <Content Include="Bilal\TextFile1.txt" />
     <Content Include="Farah\Farah.aspx" />
     <Content Include="Rudaina\Rudaina.aspx" />
     <Content Include="Toqa\AllBooks.aspx" />
@@ -96,6 +104,20 @@
     </Compile>
     <Compile Include="Bilal\Bilal.aspx.designer.cs">
       <DependentUpon>Bilal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bilal\Contact%28Admin%29.aspx.cs">
+      <DependentUpon>Contact%28Admin%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bilal\Contact%28Admin%29.aspx.designer.cs">
+      <DependentUpon>Contact%28Admin%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bilal\History.aspx.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bilal\History.aspx.designer.cs">
+      <DependentUpon>History.aspx</DependentUpon>
     </Compile>
     <Compile Include="Farah\Farah.aspx.cs">
       <DependentUpon>Farah.aspx</DependentUpon>
