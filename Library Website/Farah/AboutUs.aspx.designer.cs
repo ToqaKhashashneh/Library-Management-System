@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Library_Website.Toqa
+namespace Library_Website.Farah
 {
 
 
-    public partial class AllBooks
+    public partial class AboutUs
     {
 
         /// <summary>

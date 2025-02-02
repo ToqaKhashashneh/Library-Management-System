@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AllBooks.aspx.cs" Inherits="Library_Website.Toqa.AllBooks" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Library_Website.Toqa.WebForm1" %>
 
 <!DOCTYPE html>
 
@@ -9,9 +9,6 @@
 <body>
     <form id="form1" runat="server">
         <div>
-
-            <p>Toqa</p>
-
         </div>
     </form>
 </body>
