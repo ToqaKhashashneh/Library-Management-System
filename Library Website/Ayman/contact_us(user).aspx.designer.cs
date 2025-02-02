@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Library_Website.Farah
+namespace Library_Website.Ayman
 {
 
 
-    public partial class Registation
+    public partial class contact_us_admin_
     {
 
         /// <summary>
@@ -24,22 +24,13 @@ namespace Library_Website.Farah
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// fName control.
+        /// name control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox fName;
-
-        /// <summary>
-        /// lName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox lName;
+        protected global::System.Web.UI.WebControls.TextBox name;
 
         /// <summary>
         /// email control.
@@ -51,30 +42,21 @@ namespace Library_Website.Farah
         protected global::System.Web.UI.WebControls.TextBox email;
 
         /// <summary>
-        /// password control.
+        /// message control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox password;
+        protected global::System.Web.UI.WebControls.TextBox message;
 
         /// <summary>
-        /// confirmPass control.
+        /// send control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox confirmPass;
-
-        /// <summary>
-        /// Register control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Register;
+        protected global::System.Web.UI.WebControls.Button send;
     }
 }
