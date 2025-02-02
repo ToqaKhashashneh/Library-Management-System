@@ -88,7 +88,6 @@
     <Content Include="Bilal\History.txt" />
     <Content Include="Bilal\Response.txt" />
     <Content Include="Bilal\TextFile1.txt" />
-    <Content Include="Farah\Farah.aspx" />
     <Content Include="Rudaina\Rudaina.aspx" />
     <Content Include="Toqa\All books.aspx" />
     <Content Include="Toqa\book1.png" />
@@ -155,6 +154,7 @@
     </Compile>
     <Compile Include="Farah\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Bilal\Contact%28Admin%29.aspx.cs">
       <DependentUpon>Contact%28Admin%29.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -168,10 +168,6 @@
     </Compile>
     <Compile Include="Bilal\History.aspx.designer.cs">
       <DependentUpon>History.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Farah\Farah.aspx.cs">
-      <DependentUpon>Farah.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Farah\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
