@@ -203,8 +203,9 @@
     <Compile Include="Rudaina\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Toqa\AllBooks.aspx.cs">
-      <DependentUpon>AllBooks.aspx</DependentUpon>
+	  <Compile Include="Toqa\AllBooks.aspx.cs">
+		  <DependentUpon>AllBooks.aspx</DependentUpon>
+	  </Compile>
     <Compile Include="Toqa\All books.aspx.cs">
       <DependentUpon>All books.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
