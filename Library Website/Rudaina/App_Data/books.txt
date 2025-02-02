@@ -1,0 +1,3 @@
+1,php,Michel,2025-02-05,Fiction,Arabic,3,3,Available,~/img/d2aaf022-ba20-4c16-84b3-73def8cada7c.jpg
+2,C#,Michel,2025-02-05,Fiction,Arabic,3,3,Rented,~/img/e910db21-3957-497d-9b9f-ede38b50cef8.jfif
+3,php,rudaina,2025-02-12,Fiction,Arabic,3,3,Available,~/Rudaina/img/b53e72da-32b3-4bab-b9ee-af454ae439fd.jpg
