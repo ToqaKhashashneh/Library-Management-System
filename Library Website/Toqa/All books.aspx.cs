@@ -1,0 +1,119 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics.Eventing.Reader;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Web;
+using System.Web.Security;
+using System.Web.Services.Description;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace Library_Website.Toqa
+{
+    public partial class All_books : System.Web.UI.Page
+    {
+
+    
+
+
+       
+
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!IsPostBack) // Ensure books load only once
+            {
+                LoadBooks();
+            }
+        }
+
+        private void LoadBooks()
+        {
+            
+            string file = Server.MapPath("BooksData.txt");
+
+            // Clear previous content
+            booksContainer.InnerHtml = "";
+
+            if (File.Exists(file))
+            {
+                string[] books = File.ReadAllLines(file);
+                StringBuilder bookCards = new StringBuilder();
+
+                foreach (string book in books)
+                {
+                    // Skip empty lines
+                    if (string.IsNullOrWhiteSpace(book))
+                        continue;
+
+                    string[] bookData = book.Split(',');
+
+                    // Ensure bookData has at least 10 elements before accessing indexes
+                    if (bookData.Length < 10)
+                        continue;
+
+                    // Extract book details safely
+                    string bookId = bookData[0].Trim();
+                    string title = bookData[1].Trim();
+                    string author = bookData[2].Trim();
+                    string publishedDate = bookData[3].Trim();
+                    string category = bookData[4].Trim();
+                    string language = bookData[5].Trim();
+                    string availability = bookData[8].Trim(); // "Available" or "Not Available"
+
+                    // Extract image path safely
+                    string imageUrl = bookData[9].Trim();
+                    if (string.IsNullOrEmpty(imageUrl))
+                    {
+                        imageUrl = "default.jpg"; // Use a default image if no image is provided
+                    }
+
+                    // Ensure proper formatting for image paths
+                    string resolvedImageUrl = ResolveUrl("~/Toqa/" + Path.GetFileName(imageUrl));
+
+                    // Append book card **without opening new row**
+                    bookCards.Append($@"
+            <div class='col-md-4 mb-4'>
+                <div class='card p-2'>
+                    <img src='{resolvedImageUrl}' class='card-img-top' alt='Book Image' height='200' />
+                    <div class='card-body'>
+                        <h5 class='card-title'>{title}</h5>
+                        <p class='card-text'><strong>Author:</strong> {author}</p>
+                        <p class='card-text'><strong>Published:</strong> {publishedDate}</p>
+                        <p class='card-text'><strong>Category:</strong> {category}</p>
+                        <p class='card-text'><strong>Language:</strong> {language}</p>
+                        <p class='{(availability == "Available" ? "text-success" : "text-danger")}'><strong>{availability}</strong></p>
+
+                        <!-- Borrow Button -->
+                        <a href='BorrowBook.aspx?bookid={bookId}' class='btn btn-primary' style='background-color: #22333B; border: none;'>Read More</a>
+                    </div>
+                </div>
+            </div>
+        ");
+                }
+
+                // Inject book cards into the container at once
+                booksContainer.InnerHtml = bookCards.ToString();
+            }
+            else
+            {
+                booksContainer.InnerHtml = "<p>No books found.</p>";
+            }
+
+        }
+
+
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void toqa_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("BorrowBook.aspx");
+        }
+    }
+
+}
