@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 Farah,Farah@gmail.com,123,123
 Toqa,toqamusa@gmail.com,123,123
+=======
+Farah,hatsuk,Farah@gmail.com,123,123
+Farah,hatsuk,Farah@gmail.com,123,123
+>>>>>>> 64157fcf2507048ddccd72aae14dc6048c5fe261

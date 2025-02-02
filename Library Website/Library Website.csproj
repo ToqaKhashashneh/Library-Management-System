@@ -70,6 +70,7 @@
     <Content Include="Ammar\Ammar.aspx" />
     <Content Include="Ayman\Ayman.aspx" />
     <Content Include="Bilal\Bilal.aspx" />
+    <Content Include="Farah\AboutUs.aspx" />
     <Content Include="Farah\Login.aspx" />
     <Content Include="Farah\LoginData.txt" />
     <Content Include="Farah\Registation.aspx" />
@@ -110,6 +111,13 @@
     </Compile>
     <Compile Include="Bilal\Bilal.aspx.designer.cs">
       <DependentUpon>Bilal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Farah\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Farah\AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
     </Compile>
     <Compile Include="Farah\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
