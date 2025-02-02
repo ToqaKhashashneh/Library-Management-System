@@ -17,16 +17,17 @@ namespace Library_Website.Farah
 
         protected void SignUp_Click(object sender, EventArgs e)
         {
-            string Nmae = name.Text;
+            string FirstNmae = fName.Text;
+            string LastNmae = lName.Text;
             string Email = email.Text;
             string Password = password.Text;
             string ConfirmPassword = confirmPass.Text;
 
-            string UserData = $"{Nmae},{Email},{Password},{ConfirmPassword}";
+            string UserData = $"{FirstNmae},{LastNmae},{Email},{Password},{ConfirmPassword}";
 
             string file = Server.MapPath("UserInfo.txt");
 
-            if (Nmae == "")
+            if (FirstNmae == "")
             {
                 Response.Write("<script>alert('User Name Is Required!');</script>");
 
