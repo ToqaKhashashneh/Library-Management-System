@@ -75,6 +75,7 @@
     <Content Include="Farah\Registation.aspx" />
     <Content Include="Farah\WebForm1.aspx" />
     <Content Include="Rudaina\Rudaina.aspx" />
+    <Content Include="Rudaina\WebForm1.aspx" />
     <Content Include="Toqa\AllBooks.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -135,6 +136,13 @@
     </Compile>
     <Compile Include="Rudaina\Rudaina.aspx.designer.cs">
       <DependentUpon>Rudaina.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rudaina\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rudaina\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Toqa\AllBooks.aspx.cs">
       <DependentUpon>AllBooks.aspx</DependentUpon>
