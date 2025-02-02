@@ -154,6 +154,7 @@
     </Compile>
     <Compile Include="Farah\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Bilal\Contact%28Admin%29.aspx.cs">
       <DependentUpon>Contact%28Admin%29.aspx</DependentUpon>
