@@ -38,6 +38,8 @@
     justify-content: space-between;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-left: 37vw;
+
 }
     .filter-container select {
         font-size: 14px;
