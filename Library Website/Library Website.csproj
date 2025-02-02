@@ -72,7 +72,17 @@
   <ItemGroup>
     <Content Include="Ammar\Ammar.aspx" />
     <Content Include="Ayman\Ayman.aspx" />
+    <Content Include="Ayman\contact.txt" />
+    <Content Include="Ayman\contact_us%28user%29.aspx" />
+    <Content Include="Ayman\profile.aspx" />
+    <Content Include="Ayman\Show_meeting.aspx" />
     <Content Include="Bilal\Bilal.aspx" />
+    <Content Include="Farah\AboutUs.aspx" />
+    <Content Include="Farah\Login.aspx" />
+    <Content Include="Farah\LoginData.txt" />
+    <Content Include="Farah\Registation.aspx" />
+    <Content Include="Farah\UserInfo.txt" />
+    <Content Include="Farah\WebForm1.aspx" />
     <Content Include="Bilal\Contact%28Admin%29.aspx" />
     <Content Include="Bilal\History.aspx" />
     <Content Include="Bilal\History.txt" />
@@ -80,7 +90,17 @@
     <Content Include="Bilal\TextFile1.txt" />
     <Content Include="Farah\Farah.aspx" />
     <Content Include="Rudaina\Rudaina.aspx" />
-    <Content Include="Toqa\AllBooks.aspx" />
+    <Content Include="Toqa\All books.aspx" />
+    <Content Include="Toqa\book1.png" />
+    <Content Include="Toqa\book2.png" />
+    <Content Include="Toqa\book3.png" />
+    <Content Include="Toqa\Book4.jpg" />
+    <Content Include="Toqa\Book5.jpg" />
+    <Content Include="Toqa\book6.jpg" />
+    <Content Include="Toqa\BooksData.txt" />
+    <Content Include="Toqa\BorrowBook.aspx" />
+    <Content Include="Toqa\BorrowingData.txt" />
+    <Content Include="Toqa\WebForm1.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -98,6 +118,27 @@
     <Compile Include="Ayman\Ayman.aspx.designer.cs">
       <DependentUpon>Ayman.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Ayman\contact_us%28user%29.aspx.cs">
+      <DependentUpon>contact_us%28user%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ayman\contact_us%28user%29.aspx.designer.cs">
+      <DependentUpon>contact_us%28user%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ayman\profile.aspx.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ayman\profile.aspx.designer.cs">
+      <DependentUpon>profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ayman\Show_meeting.aspx.cs">
+      <DependentUpon>Show_meeting.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ayman\Show_meeting.aspx.designer.cs">
+      <DependentUpon>Show_meeting.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Bilal\Bilal.aspx.cs">
       <DependentUpon>Bilal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -105,6 +146,15 @@
     <Compile Include="Bilal\Bilal.aspx.designer.cs">
       <DependentUpon>Bilal.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Farah\AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Farah\AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Farah\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     <Compile Include="Bilal\Contact%28Admin%29.aspx.cs">
       <DependentUpon>Contact%28Admin%29.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -123,8 +173,22 @@
       <DependentUpon>Farah.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Farah\Farah.aspx.designer.cs">
-      <DependentUpon>Farah.aspx</DependentUpon>
+    <Compile Include="Farah\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Farah\Registation.aspx.cs">
+      <DependentUpon>Registation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Farah\Registation.aspx.designer.cs">
+      <DependentUpon>Registation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Farah\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Farah\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Rudaina\Rudaina.aspx.cs">
@@ -134,12 +198,26 @@
     <Compile Include="Rudaina\Rudaina.aspx.designer.cs">
       <DependentUpon>Rudaina.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Toqa\AllBooks.aspx.cs">
-      <DependentUpon>AllBooks.aspx</DependentUpon>
+    <Compile Include="Toqa\All books.aspx.cs">
+      <DependentUpon>All books.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Toqa\AllBooks.aspx.designer.cs">
-      <DependentUpon>AllBooks.aspx</DependentUpon>
+    <Compile Include="Toqa\All books.aspx.designer.cs">
+      <DependentUpon>All books.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Toqa\BorrowBook.aspx.cs">
+      <DependentUpon>BorrowBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Toqa\BorrowBook.aspx.designer.cs">
+      <DependentUpon>BorrowBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Toqa\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Toqa\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

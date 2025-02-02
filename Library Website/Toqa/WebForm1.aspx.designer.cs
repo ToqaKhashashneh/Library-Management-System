@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Library_Website.Farah
+namespace Library_Website.Toqa
 {
 
 
-    public partial class Farah
+    public partial class WebForm1
     {
 
         /// <summary>
