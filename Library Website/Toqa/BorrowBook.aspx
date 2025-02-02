@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-<%--        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">--%>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
     <title></title>
 
@@ -93,7 +93,7 @@ input[type="submit"]:hover, button:hover {
 
 
 
-
+<%--
               <div class="container mt-5">
       <div class="row justify-content-center">
           <div class="col-md-6">
@@ -105,7 +105,7 @@ input[type="submit"]:hover, button:hover {
               </div>
           </div>
       </div>
-  </div>
+  </div>--%>
 
 
    <div class="borrow-container"> 
@@ -172,6 +172,16 @@ input[type="submit"]:hover, button:hover {
             <asp:Button ID="btnBorrow" runat="server" Text="Borrow Book" OnClick="btnBorrow_Click" />
 
             <asp:Label ID="lblMessage" runat="server" CssClass="message"></asp:Label>
+
+
+
+
+  
+     
+           
+       
+       
+       
        </div>
 
                        </div>
