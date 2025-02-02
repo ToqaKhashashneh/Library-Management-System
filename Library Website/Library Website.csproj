@@ -70,7 +70,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Ammar\Ammar.aspx" />
+    <Content Include="Ammar\AddRoom.aspx" />
+    <Content Include="Ammar\AdminRooms.aspx" />
+    <Content Include="Ammar\EditRoom.aspx" />
+    <Content Include="Ammar\Requests.aspx" />
+    <Content Include="Ammar\Reservations.txt" />
+    <Content Include="Ammar\Rooms.aspx" />
+    <Content Include="Ammar\RoomsData.txt" />
     <Content Include="Ayman\Ayman.aspx" />
     <Content Include="Ayman\contact.txt" />
     <Content Include="Ayman\contact_us%28user%29.aspx" />
@@ -92,6 +98,8 @@
     <Content Include="Rudaina\Dashboard.aspx" />
     <Content Include="Rudaina\Home1.aspx" />
     <Content Include="Rudaina\Requests.aspx" />
+    <Content Include="Rudaina\Rudaina.aspx" />
+    <Content Include="Rudaina\WebForm1.aspx" />
     <Content Include="Toqa\All books.aspx" />
     <Content Include="Toqa\book1.png" />
     <Content Include="Toqa\book2.png" />
@@ -106,12 +114,40 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ammar\Ammar.aspx.cs">
-      <DependentUpon>Ammar.aspx</DependentUpon>
+    <Compile Include="Ammar\AddRoom.aspx.cs">
+      <DependentUpon>AddRoom.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Ammar\Ammar.aspx.designer.cs">
-      <DependentUpon>Ammar.aspx</DependentUpon>
+    <Compile Include="Ammar\AddRoom.aspx.designer.cs">
+      <DependentUpon>AddRoom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ammar\AdminRooms.aspx.cs">
+      <DependentUpon>AdminRooms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ammar\AdminRooms.aspx.designer.cs">
+      <DependentUpon>AdminRooms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ammar\EditRoom.aspx.cs">
+      <DependentUpon>EditRoom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ammar\EditRoom.aspx.designer.cs">
+      <DependentUpon>EditRoom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ammar\Requests.aspx.cs">
+      <DependentUpon>Requests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ammar\Requests.aspx.designer.cs">
+      <DependentUpon>Requests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ammar\Rooms.aspx.cs">
+      <DependentUpon>Rooms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ammar\Rooms.aspx.designer.cs">
+      <DependentUpon>Rooms.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ayman\Ayman.aspx.cs">
       <DependentUpon>Ayman.aspx</DependentUpon>
@@ -215,9 +251,6 @@
     <Compile Include="Rudaina\Requests.aspx.cs">
       <DependentUpon>Requests.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Rudaina\Requests.aspx.designer.cs">
-      <DependentUpon>Requests.aspx</DependentUpon>
     </Compile>
     <Compile Include="Toqa\All books.aspx.cs">
       <DependentUpon>All books.aspx</DependentUpon>

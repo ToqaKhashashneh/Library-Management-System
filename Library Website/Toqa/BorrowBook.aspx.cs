@@ -68,7 +68,7 @@ namespace Library_Website.Toqa
                        // Retrieve Book ID from Query String
                 string bookId = Request.QueryString["bookid"] ?? "1"; ; // Correctly fetch from query string
 
-                lblMessage.Text = "Book ID received: " + bookId; // Debugging message
+                //lblMessage.Text = "Book ID received: " + bookId; // Debugging message
 
                 if (!string.IsNullOrEmpty(bookId))
                 {
@@ -105,7 +105,6 @@ namespace Library_Website.Toqa
                             lblLanguage.Text = parts[5];
                             imgBook.ImageUrl = parts[9];
 
-                            lblMessage.Text = "Book details loaded successfully.";
                             return; // Exit loop once book is found
                         }
                     }

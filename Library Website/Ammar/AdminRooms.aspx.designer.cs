@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Library_Website.Toqa
+namespace Library_Website.Ammar
 {
 
 
-    public partial class All_books
+    public partial class AdminRooms
     {
 
         /// <summary>
@@ -24,48 +24,48 @@ namespace Library_Website.Toqa
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// txtSearch control.
+        /// btnRequests control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSearch;
+        protected global::System.Web.UI.WebControls.Button btnRequests;
 
         /// <summary>
-        /// btnSearch control.
+        /// btnAddRoom control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnSearch;
+        protected global::System.Web.UI.WebControls.Button btnAddRoom;
 
         /// <summary>
-        /// searchresult control.
+        /// RoomContainer control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label searchresult;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl RoomContainer;
 
         /// <summary>
-        /// filterOptions control.
+        /// HiddenFieldRoomId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList filterOptions;
+        protected global::System.Web.UI.WebControls.HiddenField HiddenFieldRoomId;
 
         /// <summary>
-        /// booksContainer control.
+        /// btnConfirmDelete control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl booksContainer;
+        protected global::System.Web.UI.WebControls.Button btnConfirmDelete;
     }
 }
