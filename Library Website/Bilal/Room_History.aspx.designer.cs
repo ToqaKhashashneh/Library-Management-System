@@ -11,7 +11,7 @@ namespace Library_Website.Bilal
 {
 
 
-    public partial class History
+    public partial class Room_History
     {
 
         /// <summary>
