@@ -80,12 +80,10 @@
     <Content Include="Ayman\Ayman.aspx" />
     <Content Include="Ayman\contact.txt" />
     <Content Include="Ayman\contact_us%28user%29.aspx" />
-<<<<<<< HEAD
-=======
+
     <Content Include="Ayman\profile.aspx" />
     <Content Include="Ayman\Show_meeting.aspx" />
     <Content Include="Bilal\AllUsers.txt" />
->>>>>>> 297786757e432297db177d1d04cf989b472a441d
     <Content Include="Bilal\Bilal.aspx" />
     <Content Include="Bilal\Edit_Profile.aspx" />
     <Content Include="Bilal\LoadAllData.txt" />
