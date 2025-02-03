@@ -289,30 +289,32 @@
       <div class="container mt-4">
         <h2 class="mb-4 text-center">Requests Rent Books</h2>
 
-   <asp:GridView ID="GridViewRequests" runat="server" CssClass="table table-bordered"
-    AutoGenerateColumns="False" DataKeyNames="ID" OnRowCommand="GridViewRequests_RowCommand">
+ <asp:GridView ID="GridViewRequests" runat="server" CssClass="table table-bordered"
+   AutoGenerateColumns="False" DataKeyNames="ID" OnRowCommand="GridViewRequests_RowCommand">
+    <Columns>
+        <asp:BoundField DataField="ID" HeaderText="ID" />
+        <asp:BoundField DataField="Title" HeaderText="Title" />
+        <asp:BoundField DataField="BorrowerName" HeaderText="Borrower Name" />
+        <asp:BoundField DataField="PublishedDate" HeaderText="Published Date" />
+        <asp:BoundField DataField="Category" HeaderText="Category" />
+        <asp:BoundField DataField="Language" HeaderText="Language" />
+        <asp:BoundField DataField="RentalDate" HeaderText="Rental Date" />
+        <asp:BoundField DataField="ReturnDate" HeaderText="Return Date" />
+        <asp:BoundField DataField="Email" HeaderText="Email" />
+        <asp:TemplateField HeaderText="Actions">
+            <ItemTemplate>
+                <div style="display:flex; flex-direction:column; gap:10px;">
+                    <asp:Button runat="server" CssClass="btn btn-success btn-sm" Text="Accept"
+                                CommandName="Accept" CommandArgument='<%# Eval("ID") %>'
+                                OnClientClick="return handleButtonClick(this);" />
+                    <asp:Button runat="server" CssClass="btn btn-danger btn-sm" Text="Reject"
+                                CommandName="Reject" CommandArgument='<%# Eval("ID") %>' />
+                </div>
+            </ItemTemplate>
+        </asp:TemplateField>
+    </Columns>
+</asp:GridView>
 
-
-            <Columns>
-                <asp:BoundField DataField="ID" HeaderText="ID" />
-                <asp:BoundField DataField="Title" HeaderText="Title" />
-                <asp:BoundField DataField="BorrowerName" HeaderText="Borrower Name" />
-                <asp:BoundField DataField="PublishedDate" HeaderText="Published Date" />
-                <asp:BoundField DataField="Category" HeaderText="Category" />
-                <asp:BoundField DataField="Language" HeaderText="Language" />
-                <asp:BoundField DataField="RentalDate" HeaderText="Rental Date" />
-                <asp:BoundField DataField="ReturnDate" HeaderText="Return Date" />
-                <asp:BoundField DataField="Email" HeaderText="Email" />
-                <asp:TemplateField HeaderText="Actions">
-                    <ItemTemplate>
-                        <div style="display:flex; flex-direction:column; gap:10px;">
-                            <asp:Button runat="server" CssClass="btn btn-success btn-sm" Text="Accept" CommandName="Accept" CommandArgument='<%# Eval("ID") %>' />
-                            <asp:Button runat="server" CssClass="btn btn-danger btn-sm" Text="Reject" CommandName="Reject" CommandArgument='<%# Eval("ID") %>' />
-                        </div>
-                    </ItemTemplate>
-                </asp:TemplateField>
-            </Columns>
-        </asp:GridView>
     </div>
 
                    
@@ -349,7 +351,18 @@
        </div>
    </footer>
    <!-- End of Footer -->
+        
 
     </form>
+    <script>
+        function handleButtonClick(button) {
+         
+            button.disabled = true;
+            button.innerText = "Accepted";
+            
+            return true; 
+        }
+
+    </script>
 </body>
 </html>

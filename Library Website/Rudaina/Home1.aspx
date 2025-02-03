@@ -6,7 +6,7 @@
 <head runat="server">
   
     <meta charset="utf-8">
-<title>Smart Academy</title>
+<title>Lengo Loop</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
 <meta content="" name="description">
@@ -25,6 +25,15 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
 <link href="css/style.css" rel="stylesheet">
+    <style>
+        .btn-link {
+    color:#7d0ed7ba!important;
+    text-decoration: none !important;
+}
+        a{
+    text-decoration:none!important;
+}
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -35,7 +44,6 @@
        
     
 
-    <body>
 
         <!-- Spinner Start -->
         <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
@@ -61,7 +69,7 @@
             </div>
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Smart Academy</h1></a>
+                    <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Lengo Loop</h1></a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
@@ -70,26 +78,16 @@
                             <a href="index.html" class="nav-item nav-link active">Home</a>
                             <a href="shop.html" class="nav-item nav-link">About</a>
                             <a href="shop-detail.html" class="nav-item nav-link">Books</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Rooms</a>
-                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                                    <a href="cart.html" class="dropdown-item">Cart</a>
-                                    <a href="chackout.html" class="dropdown-item">Chackout</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                    <a href="404.html" class="dropdown-item">404 Page</a>
-                                </div>
-                            </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                           
+                                <a href="/Ammar/Rooms.aspx" class="nav-link " >Rooms</a>
+                                
+                            
+                            <a href="contact.html" class="nav-item nav-link">Contact us</a>
                         </div>
                         <div class="d-flex m-3 me-0">
-                            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
-                            <a href="#" class="position-relative me-4 my-auto">
-                                <i class="fa fa-shopping-bag fa-2x"></i>
-                                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
-                            </a>
-                            <a href="#" class="my-auto">
-                                <i class="fas fa-user fa-2x"></i>
-                            </a>
+                       <a href="/Farah/Login.aspx" style="color:#7d0ed7ba" class="nav-item nav-link">Sign in</a>
+             <a href="/Farah/Registation.aspx"style="color:#7d0ed7ba" class="nav-item nav-link">Sign Up</a>
+                
                         </div>
                     </div>
                 </nav>
@@ -1611,7 +1609,7 @@
                         <div class="footer-item">
                             <h4 class="text-light mb-3">Contact</h4>
                             <p>Address: 1429 Netus Rd, NY 48247</p>
-                            <p>Email: Smart Academy@gmail.com</p>
+                            <p>Email: Lengo Loop@gmail.com</p>
                             <p>Phone: +0123 4567 8910</p>
                             <p>Payment Accepted</p>
                             <img src="img/payment.png" class="img-fluid" alt="">
@@ -1633,7 +1631,7 @@
                         <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                         <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
                         <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                        Designed By <a style="color:#7d0ed7ba" >HTML Codex</a> Distributed By <a style="color:#7d0ed7ba" >ThemeWagon</a>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-2,Simple and Minimalisr,Adam Smeth,2004-02-09,Fiction,English,16,4,Available,~\Toqa\book2.png
+2,Simple and Minimalisr,Adam Smeth,2004-02-09,Fiction,English,16,4,Reserved,~\Toqa\book2.png
 3,Muted,Joe Macfier,2014,Drama,English,16,4,Available,~\Toqa\book3.png
 4,Viva la accion Live Action Spanish,Contee Seely and Elizabeth Kuizenga,2007-07-01,Science,Arabic,16,4,Available,~\Toqa\book4.jpg
 5,(TPR) IS MORE THAN COMMANDS,Contee Seely and Elizabeth Kuizenga Romijn,1998-05-07,Language Learning,English,16,4,Available,~\Toqa\book5.jpg
