@@ -15,10 +15,11 @@ namespace Library_Website.Rudaina
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            lblMessage.Visible = false;
             if (!IsPostBack)
             {
                 LoadBooks();
-                LoadBooks("All");  // تمرير القيمة "All" بشكل صريح
+                LoadBooks("All"); 
 
             }
         }
@@ -254,34 +255,25 @@ namespace Library_Website.Rudaina
 
         public Book GetBookByID(int bookID)
         {
-            // تحديد مسار الملف النصي الذي يحتوي على بيانات الكتب
             string filePath = Server.MapPath("~/App_Data/books.txt");
 
-            // التأكد من أن الملف موجود
             if (!File.Exists(filePath))
             {
-                return null; // إرجاع null إذا كان الملف غير موجود
+                return null; 
             }
 
-            // قراءة كل الأسطر من الملف النصي
             var lines = File.ReadAllLines(filePath);
 
-            // البحث عن الكتاب باستخدام ID
             foreach (var line in lines)
             {
-                // تقسيم السطر إلى أعمدة باستخدام الفاصلة
                 var columns = line.Split(',');
 
-                // التأكد من أن السطر يحتوي على 8 أعمدة (أو عدد الحقول الصحيح)
                 if (columns.Length == 8)
                 {
-                    // الحصول على الـ BookID من السطر الحالي
                     int currentBookID = int.Parse(columns[0]);
 
-                    // إذا كان الـ BookID يطابق الـ bookID المطلوب
                     if (currentBookID == bookID)
                     {
-                        // إعادة كائن Book باستخدام القيم المستخرجة
                         return new Book
                         {
                             BookID = currentBookID.ToString(),
@@ -297,7 +289,6 @@ namespace Library_Website.Rudaina
                 }
             }
 
-            // إذا لم يتم العثور على الكتاب، إرجاع null
             return null;
         }
 
@@ -331,7 +322,7 @@ namespace Library_Website.Rudaina
                 File.WriteAllLines(fullFilePath, lines);
 
                 lblMessage.Visible = true;
-                lblMessage.Text = "تم تعديل الكتاب بنجاح!";
+                lblMessage.Text = "Edit done successfuly!";
                 lblMessage.ForeColor = System.Drawing.Color.Green;
 
                 LoadBooks();
@@ -339,7 +330,7 @@ namespace Library_Website.Rudaina
             catch (Exception ex)
             {
                 lblMessage.Visible = true;
-                lblMessage.Text = "حدث خطأ أثناء تعديل الكتاب: " + ex.Message;
+                lblMessage.Text ="Error during edit book " + ex.Message;
                 lblMessage.ForeColor = System.Drawing.Color.Red;
             }
         }
@@ -376,7 +367,6 @@ namespace Library_Website.Rudaina
                 }
             }
 
-            // تحديث الـ GridView بالنتائج
             gridBooks.DataSource = books;
             gridBooks.DataBind();
 
@@ -394,51 +384,42 @@ namespace Library_Website.Rudaina
 
         protected void btnExport_Click(object sender, EventArgs e)
         {
-            // الحصول على الحالة الحالية من الفلتر (Available, Unavailable, All)
             string selectedStatus = DropDownList4.SelectedValue;
 
-            // تصفية الكتب بناءً على الحالة
             List<Book> books = new List<Book>();
 
             if (selectedStatus == "All")
             {
-                books = GetAllBooks();  // تصدير كل الكتب
+                books = GetAllBooks();  
             }
             else
             {
-                // تصفية الكتب بناءً على الحالة (Available أو Rented أو Unavailable)
                 books = GetAllBooks().Where(b => b.Status == selectedStatus).ToList();
             }
 
             if (books.Count == 0)
             {
-                // إذا لم توجد أي كتب للتصدير بناءً على الفلتر المحدد
                 string script = "showToast('No books available to export!', 'danger');";
                 ClientScript.RegisterStartupScript(this.GetType(), "ToastScript", script, true);
                 return;
             }
 
-            // اسم الملف للتصدير
             string fileName = "BooksData.csv";
 
-            // بناء محتوى الملف بصيغة CSV
             StringBuilder csvContent = new StringBuilder();
             csvContent.AppendLine("Book ID,Title,Author,Category,Language,Copies Available,Rental Duration,Status");
 
-            // إضافة البيانات الخاصة بكل كتاب
             foreach (var book in books)
             {
                 csvContent.AppendLine($"{book.BookID},{book.Title},{book.Author},{book.Category},{book.Language},{book.CopiesAvailable},{book.RentalDuration},{book.Status}");
             }
 
-            // إرسال الملف للاستعراض والتحميل
             Response.Clear();
             Response.ContentType = "text/csv";
             Response.AddHeader("Content-Disposition", $"attachment;filename={fileName}");
             Response.Write(csvContent.ToString());
             Response.End();
 
-            // إظهار رسالة نجاح
             string successScript = "showToast('File exported successfully!', 'success');";
             ClientScript.RegisterStartupScript(this.GetType(), "ToastSuccess", successScript, true);
         }

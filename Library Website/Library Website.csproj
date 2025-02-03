@@ -80,9 +80,12 @@
     <Content Include="Ayman\Ayman.aspx" />
     <Content Include="Ayman\contact.txt" />
     <Content Include="Ayman\contact_us%28user%29.aspx" />
+<<<<<<< HEAD
+=======
     <Content Include="Ayman\profile.aspx" />
     <Content Include="Ayman\Show_meeting.aspx" />
     <Content Include="Bilal\AllUsers.txt" />
+>>>>>>> 297786757e432297db177d1d04cf989b472a441d
     <Content Include="Bilal\Bilal.aspx" />
     <Content Include="Bilal\Edit_Profile.aspx" />
     <Content Include="Bilal\LoadAllData.txt" />
@@ -103,11 +106,10 @@
     <Content Include="Bilal\Response.txt" />
     <Content Include="Bilal\TextFile1.txt" />
     <Content Include="Rudaina\BookManagment.aspx" />
+    <Content Include="Rudaina\css\footer.css" />
     <Content Include="Rudaina\Dashboard.aspx" />
     <Content Include="Rudaina\Home1.aspx" />
     <Content Include="Rudaina\Requests.aspx" />
-    <Content Include="Rudaina\Rudaina.aspx" />
-    <Content Include="Rudaina\WebForm1.aspx" />
     <Content Include="Toqa\All books.aspx" />
     <Content Include="Toqa\book1.png" />
     <Content Include="Toqa\book2.png" />
@@ -170,20 +172,6 @@
     </Compile>
     <Compile Include="Ayman\contact_us%28user%29.aspx.designer.cs">
       <DependentUpon>contact_us%28user%29.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Ayman\profile.aspx.cs">
-      <DependentUpon>profile.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Ayman\profile.aspx.designer.cs">
-      <DependentUpon>profile.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Ayman\Show_meeting.aspx.cs">
-      <DependentUpon>Show_meeting.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Ayman\Show_meeting.aspx.designer.cs">
-      <DependentUpon>Show_meeting.aspx</DependentUpon>
     </Compile>
     <Compile Include="Bilal\Bilal.aspx.cs">
       <DependentUpon>Bilal.aspx</DependentUpon>

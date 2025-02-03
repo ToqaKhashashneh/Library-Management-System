@@ -32,14 +32,15 @@ namespace Library_Website.Ammar
                 foreach (string line in lines)
                 {
                     string[] data = line.Split('|');
-                    if (data.Length >= 4)
+                    if (data.Length >= 5) // Now expecting 5 fields
                     {
                         reservations.Add(new Reservation
                         {
                             RoomID = data[0],
                             Date = data[1],
                             StartTime = data[2],
-                            Status = data[3]
+                            Status = data[4],
+                            Email = data[3] // Added email field
                         });
                     }
                 }
@@ -79,7 +80,7 @@ namespace Library_Website.Ammar
             foreach (string line in lines)
             {
                 string[] data = line.Split('|');
-                if (data.Length >= 4 && data[0] == roomId)
+                if (data.Length >= 5 && data[0] == roomId) // Ensure email field is not lost
                 {
                     data[3] = newStatus;
                 }
@@ -101,7 +102,7 @@ namespace Library_Website.Ammar
             foreach (string line in lines)
             {
                 string[] data = line.Split('|');
-                if (data.Length >= 4 && data[0] == roomId && data[3] == "Cancel Pending")
+                if (data.Length >= 5 && data[0] == roomId && data[3] == "Cancel Pending")
                 {
                     continue; // Remove the reservation
                 }
@@ -119,5 +120,6 @@ namespace Library_Website.Ammar
         public string Date { get; set; }
         public string StartTime { get; set; }
         public string Status { get; set; }
+        public string Email { get; set; } // Added email field
     }
 }
