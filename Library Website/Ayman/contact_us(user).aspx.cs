@@ -18,26 +18,26 @@ namespace Library_Website.Ayman
         protected void send_Click(object sender, EventArgs e)
         {
             string file = Server.MapPath("contact.txt");
-            if(!File.Exists(file))
+            if (!File.Exists(file))
             {
 
-                
-                    using (StreamWriter sw = new StreamWriter(file, true))
 
-                        sw.WriteLine($"{email.Text},{name.Text},{message.Text}");
-                }
+                using (StreamWriter sw = new StreamWriter(file, true))
+
+                    sw.WriteLine($"{email.Text},{name.Text},{message.Text}");
+            }
             else
             {
                 using (StreamWriter sw = new StreamWriter(file, true))
 
                     sw.WriteLine($"{email.Text},{name.Text},{message.Text}");
                 {
-                  
+
 
 
 
                 }
-                }
+            }
         }
     }
 }
