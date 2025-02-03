@@ -21,9 +21,16 @@
  <link href="\Rudaina\css\bootstrap.min.css" rel="stylesheet">
 
 <link href="\Rudaina\css\style.css" rel="stylesheet">
-
+   
 
     <style>
+                .btn-link {
+    color:#7d0ed7ba!important;
+    text-decoration: none !important;
+}
+        a{
+    text-decoration:none!important;
+}
         .overlay {
             background-image: url("https://i.pinimg.com/originals/05/4c/9a/054c9a6cafb4313464eb5ee66b4b8a43.jpg");
             background-size: cover;
@@ -312,8 +319,8 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="position-relative mx-auto">
-                        <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
-                        <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button>
+                        <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email" style="height:55px;">
+                        <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0; ">Subscribe Now</button>
                     </div>
                 </div>
                 <div class="col-lg-3">
