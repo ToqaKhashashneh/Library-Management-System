@@ -80,7 +80,6 @@
     <Content Include="Ayman\Ayman.aspx" />
     <Content Include="Ayman\contact.txt" />
     <Content Include="Ayman\contact_us%28user%29.aspx" />
-
     <Content Include="Ayman\profile.aspx" />
     <Content Include="Ayman\Show_meeting.aspx" />
     <Content Include="Bilal\AllUsers.txt" />

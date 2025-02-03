@@ -82,7 +82,7 @@ namespace Library_Website.Ammar
                 string[] data = line.Split('|');
                 if (data.Length >= 5 && data[0] == roomId) // Ensure email field is not lost
                 {
-                    data[3] = newStatus;
+                    data[4] = newStatus;
                 }
                 updatedLines.Add(string.Join("|", data));
             }

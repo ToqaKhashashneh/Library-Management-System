@@ -249,7 +249,7 @@
         </nav>
        <!-- Navbar End -->
 
-        <div class="container py-5">
+        <div class="">
 
             <!-- Profile Header with User Information -->
             <div class="profile-header">
