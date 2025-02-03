@@ -33,7 +33,7 @@
             <!-- Sidebar - Brand -->
 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="Dashboard.aspx">
     
-    <div class="sidebar-brand-text mx-3">Smart Academy <sup></sup></div>
+    <div class="sidebar-brand-text mx-3">Lengoloop <sup></sup></div>
 </a>
 
             <!-- Divider -->

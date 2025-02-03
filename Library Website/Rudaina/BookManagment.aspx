@@ -36,7 +36,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="Dashboard.aspx">
                 
-                <div class="sidebar-brand-text mx-3">Smart Academy <sup></sup></div>
+                <div class="sidebar-brand-text mx-3">Lengoloop<sup></sup></div>
             </a>
 
             <!-- Divider -->
@@ -328,10 +328,7 @@
             </div>
             <div class="modal-body">
 
-                <div class="mb-3">
-                    <asp:Label ID="Label1" runat="server" CssClass="form-label" Text="Book ID"></asp:Label>
-                    <asp:TextBox ID="TextBox1" runat="server" CssClass="form-control" placeholder="Enter Book ID"></asp:TextBox>
-                </div>
+             
 
                 <div class="mb-3">
                     <asp:Label ID="Label2" runat="server" CssClass="form-label" Text="Book Title"></asp:Label>
@@ -452,8 +449,8 @@
         </asp:TemplateField>
         <asp:TemplateField HeaderText="Actions">
             <ItemTemplate>
-                <asp:Button ID="btnEdit" runat="server" CommandName="Edit" Text="Edit" CssClass="btn btn-primary"
-                    CommandArgument='<%# Eval("BookID") %>' />
+                <asp:Button ID="btnEdit" runat="server" CommandName="Edit" Text="Edit" CssClass="btn btn-primary mb-3" 
+                    CommandArgument='<%# Eval("BookID") %>'  />
                 <asp:Button ID="btnDelete" runat="server" CommandName="Delete" Text="Delete" CssClass="btn btn-danger"
                     CommandArgument='<%# Eval("BookID") %>' />
             </ItemTemplate>

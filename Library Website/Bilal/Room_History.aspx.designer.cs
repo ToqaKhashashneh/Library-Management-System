@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Library_Website.Rudaina
+namespace Library_Website.Bilal
 {
 
 
-    public partial class Home1
+    public partial class Room_History
     {
 
         /// <summary>
@@ -22,5 +22,14 @@ namespace Library_Website.Rudaina
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+
+        /// <summary>
+        /// historyContainer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl historyContainer;
     }
 }

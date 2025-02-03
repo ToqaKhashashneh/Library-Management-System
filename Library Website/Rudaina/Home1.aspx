@@ -232,7 +232,7 @@
 
 
 
-        <!-- Category Book Start-->
+               <!-- Category Book Start-->
         <div class="container-fluid fruite py-5">
             <div class="container py-5">
                 <div class="tab-class text-center">
@@ -259,300 +259,871 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-4">
-                                        <span class="text-dark" style="width: 130px;">Literature</span>
+                                        <span class="text-dark" style="width: 130px;">Fiction</span>
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill" href="#tab-5">
-                                        <span class="text-dark" style="width: 130px;">Technology</span>
+                                        <span class="text-dark" style="width: 130px;">Philosophy</span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="tab-content">
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row g-4">
-                                <div class="col-lg-12">
-                                    <div class="row g-4">
-                                        <div class="col-md-6 col-lg-4 col-xl-3">
-                                            <div class="rounded position-relative book-item">
-                                                <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
-                                                    <img src="img/3.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: cover;">
-                                                </div>
-                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>The Great Adventure</h4>
-                                                    <p><strong>Author:</strong> John Doe</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                                                    <div class="d-flex justify-content-start gap-3">
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-search me-2 text-primary"></i> Details</a>
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-success"><i class="fa fa-shopping-cart me-2 text-success"></i> Rent</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-md-6 col-lg-4 col-xl-3">
-                                            <div class="rounded position-relative book-item">
-                                                <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
-                                                    <img src="img/4.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: cover;">
-                                                </div>
-                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>The Great Adventure</h4>
-                                                    <p><strong>Author:</strong> John Doe</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                                                    <div class="d-flex justify-content-start gap-3">
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-search me-2 text-primary"></i> Details</a>
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-success"><i class="fa fa-shopping-cart me-2 text-success"></i> Rent</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-4 col-xl-3">
-                                            <div class="rounded position-relative book-item">
-                                                <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
-                                                    <img src="img/5.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: cover;">
-                                                </div>
-                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>The Great Adventure</h4>
-                                                    <p><strong>Author:</strong> John Doe</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                                                    <div class="d-flex justify-content-start gap-3">
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-search me-2 text-primary"></i> Details</a>
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-success"><i class="fa fa-shopping-cart me-2 text-success"></i> Rent</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-4 col-xl-3">
-                                            <div class="rounded position-relative book-item">
-                                                <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
-                                                    <img src="img/6.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: cover;">
-                                                </div>
-                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>The Great Adventure</h4>
-                                                    <p><strong>Author:</strong> John Doe</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                                                    <div class="d-flex justify-content-start gap-3">
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-search me-2 text-primary"></i> Details</a>
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-success"><i class="fa fa-shopping-cart me-2 text-success"></i> Rent</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
+                    
+ <div class="tab-content">
+    <div id="tab-1" class="tab-pane fade show p-0 active">
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+                    <div class="p-4 border border-secondary rounded-bottom">
+                        <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                            <img src="img/111.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
                         </div>
-                        <div id="tab-2" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-12">
-                                    <div class="row g-4">
-                                        <div class="col-md-6 col-lg-4 col-xl-3">
-                                            <div class="rounded position-relative book-item">
-                                                <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
-                                                    <img src="img/3.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: cover;">
-                                                </div>
-                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>The Great Adventure</h4>
-                                                    <p><strong>Author:</strong> John Doe</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                                                    <div class="d-flex justify-content-start gap-3">
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-search me-2 text-primary"></i> Details</a>
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-success"><i class="fa fa-shopping-cart me-2 text-success"></i> Rent</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-4 col-xl-3">
-                                            <div class="rounded position-relative book-item">
-                                                <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
-                                                    <img src="img/3.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: cover;">
-                                                </div>
-                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>The Great Adventure</h4>
-                                                    <p><strong>Author:</strong> John Doe</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                                                    <div class="d-flex justify-content-start gap-3">
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-search me-2 text-primary"></i> Details</a>
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-success"><i class="fa fa-shopping-cart me-2 text-success"></i> Rent</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6 col-lg-4 col-xl-3">
-                                            <div class="rounded position-relative book-item">
-                                                <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
-                                                    <img src="img/3.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: cover;">
-                                                </div>
-                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>The Great Adventure</h4>
-                                                    <p><strong>Author:</strong> John Doe</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                                                    <div class="d-flex justify-content-start gap-3">
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-search me-2 text-primary"></i> Details</a>
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-success"><i class="fa fa-shopping-cart me-2 text-success"></i> Rent</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div><div class="col-md-6 col-lg-4 col-xl-3">
-                                            <div class="rounded position-relative book-item">
-                                                <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
-                                                    <img src="img/3.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: cover;">
-                                                </div>
-                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>The Great Adventure</h4>
-                                                    <p><strong>Author:</strong> John Doe</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                                                    <div class="d-flex justify-content-start gap-3">
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-search me-2 text-primary"></i> Details</a>
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-success"><i class="fa fa-shopping-cart me-2 text-success"></i> Rent</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-3" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-12">
-                                    <div class="row g-4">
-                                        <div class="col-md-6 col-lg-4 col-xl-3">
-                                            <div class="rounded position-relative book-item">
-                                                <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
-                                                    <img src="img/5.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: cover;">
-                                                </div>
-                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>The Great Adventure</h4>
-                                                    <p><strong>Author:</strong> John Doe</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                                                    <div class="d-flex justify-content-start gap-3">
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-search me-2 text-primary"></i> Details</a>
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-success"><i class="fa fa-shopping-cart me-2 text-success"></i> Rent</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div><div class="col-md-6 col-lg-4 col-xl-3">
-                                            <div class="rounded position-relative book-item">
-                                                <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
-                                                    <img src="img/5.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: cover;">
-                                                </div>
-                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>The Great Adventure</h4>
-                                                    <p><strong>Author:</strong> John Doe</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                                                    <div class="d-flex justify-content-start gap-3">
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-search me-2 text-primary"></i> Details</a>
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-success"><i class="fa fa-shopping-cart me-2 text-success"></i> Rent</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-4" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-12">
-                                    <div class="row g-4">
-                                        <div class="col-md-6 col-lg-4 col-xl-3">
-                                            <div class="rounded position-relative book-item">
-                                                <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
-                                                    <img src="img/5.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: cover;">
-                                                </div>
-                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>The Great Adventure</h4>
-                                                    <p><strong>Author:</strong> John Doe</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                                                    <div class="d-flex justify-content-start gap-3">
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-search me-2 text-primary"></i> Details</a>
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-success"><i class="fa fa-shopping-cart me-2 text-success"></i> Rent</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div><div class="col-md-6 col-lg-4 col-xl-3">
-                                            <div class="rounded position-relative book-item">
-                                                <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
-                                                    <img src="img/3.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: cover;">
-                                                </div>
-                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>The Great Adventure</h4>
-                                                    <p><strong>Author:</strong> John Doe</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                                                    <div class="d-flex justify-content-start gap-3">
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-search me-2 text-primary"></i> Details</a>
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-success"><i class="fa fa-shopping-cart me-2 text-success"></i> Rent</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="tab-5" class="tab-pane fade show p-0">
-                            <div class="row g-4">
-                                <div class="col-lg-12">
-                                    <div class="row g-4">
-                                        <div class="col-md-6 col-lg-4 col-xl-3">
-                                            <div class="rounded position-relative book-item">
-                                                <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
-                                                    <img src="img/3.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: cover;">
-                                                </div>
-                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>The Great Adventure</h4>
-                                                    <p><strong>Author:</strong> John Doe</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                                                    <div class="d-flex justify-content-start gap-3">
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-search me-2 text-primary"></i> Details</a>
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-success"><i class="fa fa-shopping-cart me-2 text-success"></i> Rent</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div><div class="col-md-6 col-lg-4 col-xl-3">
-                                            <div class="rounded position-relative book-item">
-                                                <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
-                                                    <img src="img/3.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: cover;">
-                                                </div>
-                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>The Great Adventure</h4>
-                                                    <p><strong>Author:</strong> John Doe</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                                                    <div class="d-flex justify-content-start gap-3">
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-search me-2 text-primary"></i> Details</a>
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-success"><i class="fa fa-shopping-cart me-2 text-success"></i> Rent</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div><div class="col-md-6 col-lg-4 col-xl-3">
-                                            <div class="rounded position-relative book-item">
-                                                <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
-                                                    <img src="img/3.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: cover;">
-                                                </div>
-                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                    <h4>The Great Adventure</h4>
-                                                    <p><strong>Author:</strong> John Doe</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                                                    <div class="d-flex justify-content-start gap-3">
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-search me-2 text-primary"></i> Details</a>
-                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-success"><i class="fa fa-shopping-cart me-2 text-success"></i> Rent</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <h4>The important of being interested</h4>
+                        <p><strong>Author:</strong> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <div class="d-flex justify-content-start gap-3">
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                <i class="fa fa-search me-2 text-primary"></i>Details
+                            </a>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                            </a>
                         </div>
                     </div>
-                </div>      
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+                    <div class="p-4 border border-secondary rounded-bottom">
+                        <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                            <img src="img/112.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
+                        </div>
+                        <h4>Michio kaku
+</h4>
+                        <p><strong>Author:</strong> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <div class="d-flex justify-content-start gap-3">
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                <i class="fa fa-search me-2 text-primary"></i>Details
+                            </a>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+    <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+        <div class="p-4 border border-secondary rounded-bottom">
+            <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                <img src="img/113.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
+            </div>
+            <h4>Stephen Hawking
+</h4>
+            <p><strong>Author:</strong> John Doe</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <div class="d-flex justify-content-start gap-3">
+                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                    <i class="fa fa-search me-2 text-primary"></i>Details
+                </a>
+                <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                    <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                </a>
             </div>
         </div>
+    </div>
+</div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+                    <div class="p-4 border border-secondary rounded-bottom">
+                        <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                            <img src="img/114.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
+                        </div>
+                        <h4>Popular SCience</h4>
+                        <p><strong>Author:</strong> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <div class="d-flex justify-content-start gap-3">
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                <i class="fa fa-search me-2 text-primary"></i>Details
+                            </a>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                            </a>
+                        </div>
+        </div>
+    </div>
+</div>
+        </div>
+        </div>
+    <div id="tab-2" class="tab-pane fade show p-0 ">
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+                    <div class="p-4 border border-secondary rounded-bottom">
+                        <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                            <img src="img/s1.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
+                        </div>
+                        <h4>Chemistry</h4>
+                        <p><strong>Author:</strong> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <div class="d-flex justify-content-start gap-3">
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                <i class="fa fa-search me-2 text-primary"></i>Details
+                            </a>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+                    <div class="p-4 border border-secondary rounded-bottom">
+                        <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                            <img src="img/s2.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
+                        </div>
+                        <h4>Infinite powers</h4>
+                        <p><strong>Author:</strong> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <div class="d-flex justify-content-start gap-3">
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                <i class="fa fa-search me-2 text-primary"></i>Details
+                            </a>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+    <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+        <div class="p-4 border border-secondary rounded-bottom">
+            <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                <img src="img/s3.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
+            </div>
+            <h4>The biology desire</h4>
+            <p><strong>Author:</strong> John Doe</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <div class="d-flex justify-content-start gap-3">
+                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                    <i class="fa fa-search me-2 text-primary"></i>Details
+                </a>
+                <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                    <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+                    <div class="p-4 border border-secondary rounded-bottom">
+                        <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                            <img src="img/s4.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
+                        </div>
+                        <h4>network effect</h4>
+                        <p><strong>Author:</strong> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <div class="d-flex justify-content-start gap-3">
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                <i class="fa fa-search me-2 text-primary"></i>Details
+                            </a>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                            </a>
+                        </div>
+        </div>
+    </div>
+</div>
+        </div>
+        </div>
+    <div id="tab-3" class="tab-pane fade show p-0 ">
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+                    <div class="p-4 border border-secondary rounded-bottom">
+                        <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                            <img src="img/h1.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
+                        </div>
+                        <h4>A breife history of time </h4>
+                        <p><strong>Author:</strong> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <div class="d-flex justify-content-start gap-3">
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                <i class="fa fa-search me-2 text-primary"></i>Details
+                            </a>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+                    <div class="p-4 border border-secondary rounded-bottom">
+                        <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                            <img src="img/h2.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
+                        </div>
+                        <h4>A breife history of time </h4>
+                        <p><strong>Author:</strong> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <div class="d-flex justify-content-start gap-3">
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                <i class="fa fa-search me-2 text-primary"></i>Details
+                            </a>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+    <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+        <div class="p-4 border border-secondary rounded-bottom">
+            <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                <img src="img/h3.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
+            </div>
+            <h4>The secret history </h4>
+            <p><strong>Author:</strong> John Doe</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <div class="d-flex justify-content-start gap-3">
+                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                    <i class="fa fa-search me-2 text-primary"></i>Details
+                </a>
+                <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                    <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+                    <div class="p-4 border border-secondary rounded-bottom">
+                        <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                            <img src="img/h4.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
+                        </div>
+                        <h4>Islamic Imperialism</h4>
+                        <p><strong>Author:</strong> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <div class="d-flex justify-content-start gap-3">
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                <i class="fa fa-search me-2 text-primary"></i>Details
+                            </a>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                            </a>
+                        </div>
+        </div>
+    </div>
+</div>
+        </div>
+        </div>
+    <div id="tab-4" class="tab-pane fade show p-0 ">
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+                    <div class="p-4 border border-secondary rounded-bottom">
+                        <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                            <img src="img/f1.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
+                        </div>
+                        <h4>The hobbit</h4>
+                        <p><strong>Author:</strong> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <div class="d-flex justify-content-start gap-3">
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                <i class="fa fa-search me-2 text-primary"></i>Details
+                            </a>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+                    <div class="p-4 border border-secondary rounded-bottom">
+                        <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                            <img src="img/f2.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
+                        </div>
+                        <h4>The Secret History</h4>
+                        <p><strong>Author:</strong> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <div class="d-flex justify-content-start gap-3">
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                <i class="fa fa-search me-2 text-primary"></i>Details
+                            </a>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+    <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+        <div class="p-4 border border-secondary rounded-bottom">
+            <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                <img src="img/f3.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
+            </div>
+            <h4>The Outsider</h4>
+            <p><strong>Author:</strong> John Doe</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <div class="d-flex justify-content-start gap-3">
+                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                    <i class="fa fa-search me-2 text-primary"></i>Details
+                </a>
+                <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                    <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+                    <div class="p-4 border border-secondary rounded-bottom">
+                        <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                            <img src="img/f4.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
+                        </div>
+                        <h4>The poppy war</h4>
+                        <p><strong>Author:</strong> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <div class="d-flex justify-content-start gap-3">
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                <i class="fa fa-search me-2 text-primary"></i>Details
+                            </a>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                            </a>
+                        </div>
+        </div>
+    </div>
+</div>
+        </div>
+        </div>
+    <div id="tab-5" class="tab-pane fade show p-0 ">
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+                    <div class="p-4 border border-secondary rounded-bottom">
+                        <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                            <img src="img/p1.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
+                        </div>
+                        <h4>Pooh and the philasopher</h4>
+                        <p><strong>Author:</strong> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <div class="d-flex justify-content-start gap-3">
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                <i class="fa fa-search me-2 text-primary"></i>Details
+                            </a>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+                    <div class="p-4 border border-secondary rounded-bottom">
+                        <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                            <img src="img/p2.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
+                        </div>
+                        <h4>Philosophy</h4>
+                        <p><strong>Author:</strong> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <div class="d-flex justify-content-start gap-3">
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                <i class="fa fa-search me-2 text-primary"></i>Details
+                            </a>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+    <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+        <div class="p-4 border border-secondary rounded-bottom">
+            <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                <img src="img/p3.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
+            </div>
+            <h4>American philosophy</h4>
+            <p><strong>Author:</strong> John Doe</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <div class="d-flex justify-content-start gap-3">
+                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                    <i class="fa fa-search me-2 text-primary"></i>Details
+                </a>
+                <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                    <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="col-md-6 col-lg-4 col-xl-3">
+                <div class="rounded position-relative book-item" style="border-top: 1px solid #6c757d !important;">
+                    <div class="p-4 border border-secondary rounded-bottom">
+                        <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
+                            <img src="img/p4.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
+                        </div>
+                        <h4>The Story of philosophy</h4>
+                        <p><strong>Author:</strong> John Doe</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+                        <div class="d-flex justify-content-start gap-3">
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
+                                <i class="fa fa-search me-2 text-primary"></i>Details
+                            </a>
+                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
+                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
+                            </a>
+                        </div>
+        </div>
+    </div>
+</div>
+        </div>
+        </div>
+
+ </div>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+                   
     <!-- Category Book End-->
+
+
+
+        <!-- Features Start -->
+<div class="container-fluid service py-5">
+    <div class="container py-5">
+        <div class="row g-4 justify-content-center">
+            <!-- Book Rental Service -->
+            <div class="col-md-6 col-lg-4">
+                <a href="book-rental-details.html" class="service-card text-decoration-none">
+                    <div class="service-item bg-light rounded border border-secondary shadow-sm">
+                        <img src="img/3.jpg" class="img-fluid rounded-top w-100" alt="Book Rental" style="object-fit: cover; height: 200px;">
+                        <div class="px-4 py-4 rounded-bottom">
+                            <div class="service-content bg-primary text-center p-4 rounded">
+                                <h5  class="text-white">Book Rental</h5>
+                                <h6 class="mb-0   text-light" >Special Discounts</h6>
+                                <p class="text-light mt-2">Rent books at discounted rates.</p>
+                                <!-- Links inside the card -->
+                                <div class="mt-3">
+                                    <a href="book-rental-details.html" class="btn btn-light">More Details</a>
+                                    <a href="#" class="btn btn-outline-light mt-2">Rent Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Hall Rental Service -->
+            <div class="col-md-6 col-lg-4">
+                <a href="hall-rental-details.html" class="service-card text-decoration-none">
+                    <div class="service-item bg-light rounded border border-secondary shadow-sm">
+                        <img src="img/7.jpg" class="img-fluid rounded-top w-100" alt="Hall Rental" style="object-fit: cover; height: 200px;">
+                        <div class="px-4 py-4 rounded-bottom">
+                            <div class="service-content bg-primary text-center p-4 rounded">
+                                <h5 class="text-white">Hall Rental</h5>
+                                <h6 class="mb-0 text-white">For Meetings & Training</h6>
+                                <p class="text-white mt-2">Rent our halls for meetings and workshops.</p>
+                                <!-- Links inside the card -->
+                                <div class="mt-3">
+                                    <a href="hall-rental-details.html" class="btn btn-light">More Details</a>
+                                    <a href="#" class="btn btn-outline-light mt-2">Book Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Courses Section -->
+            <div class="col-md-6 col-lg-4">
+                <a href="courses-details.html" class="service-card text-decoration-none">
+                    <div class="service-item bg-light rounded border border-secondary shadow-sm">
+                        <img src="img/8.jpg" class="img-fluid rounded-top w-100" alt="Courses" style="object-fit: cover; height: 200px;">
+                        <div class="px-4 py-4 rounded-bottom">
+                            <div class="service-content bg-primary text-center p-4 rounded">
+                                <h5 class="text-white">Courses</h5>
+                                <h6 class="mb-0 text-white">Get Expert Training</h6>
+                                <p class="text-white mt-2">Learn new skills with our professional courses.</p>
+                                <!-- Links inside the card -->
+                                <div class="mt-3">
+                                    <a href="courses-details.html" class="btn btn-light">Explore Courses</a>
+                                    <a href="#" class="btn btn-outline-light mt-2">Enroll Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Features End -->
+
+
+        <!-- Vesitable Shop Start-->
+        <div class="container-fluid vesitable py-5">
+            <div class="container py-5">
+                <h1 class="mb-0" style="color: #7d0ed7ba ;">Available Courses</h1>
+                <div class="owl-carousel vegetable-carousel justify-content-center">
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="vesitable-img">
+                            <img src="img/16.jpg" class="img-fluid w-100 rounded-top" alt="" style="height: 200px;">
+                        </div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>Web Development 101</h4>
+                            <p>Learn the fundamentals of web development including HTML, CSS, and JavaScript. This course is perfect for beginners looking to build their first website.</p>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                <p class="text-dark fs-5 fw-bold mb-0">$199</p>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-book me-2 text-primary"></i> Enroll Now</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item" >
+                        <div class="vesitable-img">
+                            <img src="img/14.jpg" class="img-fluid w-100 rounded-top" alt="" style="height: 200px;">
+                        </div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>Advanced Python Programming</h4>
+                            <p>Master the Python programming language with advanced topics including data structures, algorithms, and object-oriented programming.</p>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                <p class="text-dark fs-5 fw-bold mb-0">$249</p>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-book me-2 text-primary"></i> Enroll Now</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="vesitable-img">
+                            <img src="img/15.jpg" class="img-fluid w-100 rounded-top bg-light" alt="" style="height: 200px;">
+                        </div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>Introduction to Data Science</h4>
+                            <p>Get started with Data Science! Learn the fundamentals of data analysis, machine learning, and data visualization techniques using Python and R.</p>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                <p class="text-dark fs-5 fw-bold mb-0">$199</p>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-book me-2 text-primary"></i> Enroll Now</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="vesitable-img">
+                            <img src="img/12.jpg" class="img-fluid w-100 rounded-top" alt=""style="height: 200px;">
+                        </div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>Advanced Web Development</h4>
+                            <p>Master the art of web development with this advanced course! Learn advanced concepts like dynamic content, APIs, and backend technologies. </p>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                <p class="text-dark fs-5 fw-bold mb-0">$249</p>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-book me-2 text-primary"></i> Enroll Now</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="border border-primary rounded position-relative vesitable-item">
+                        <div class="vesitable-img">
+                            <img src="img/11.jpg" class="img-fluid w-100 rounded-top" alt="" style="height: 200px;">
+                        </div>
+                        <div class="p-4 rounded-bottom">
+                            <h4>Drawing Basics</h4>
+                            <p>Learn the foundational techniques of drawing. This course will help you understand shading, perspective, and composition to bring your sketches to life.</p>
+                            <div class="d-flex justify-content-between flex-lg-wrap">
+                                <p class="text-dark fs-5 fw-bold mb-0">$39.99</p>
+                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Enroll Now</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                   
+                  
+                </div>
+            </div>
+        </div>
+        <!-- Vesitable Shop End -->
+
+
+        <!-- Banner Section Start-->
+<div class="container-fluid banner bg-secondary my-5">
+    <div class="container py-5">
+        <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+                <div class="py-4">
+                    <h1 class="display-3 text-white">Learn New Skills</h1>
+                    <p class="fw-normal display-3 text-white mb-4">Enroll in Our Online Courses</p>
+                    <p class="mb-4 text-white">Our courses are designed to enhance your skills in various fields including programming, design, language, and more. Get started today!</p>
+                    <a href="#" class="banner-btn btn border-2 border-white rounded-pill text-white py-3 px-5">Browse Courses</a>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="position-relative">
+                    <img src="img/16.png" class="img-fluid w-100 rounded" alt="Courses Banner">
+                    <div class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute" style="width: 140px; height: 140px; top: 0; left: 0; display:none !important;">
+                        <h1 style="font-size: 100px;">5</h1>
+                        <div class="d-flex flex-column">
+                            <span class="h2 mb-0">Programming</span>
+                            <span class="h4 text-muted mb-0">Courses</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Banner Section End-->
+
+
+        <div class="container-fluid py-5">
+            <div class="container py-5">
+                <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                    <h1 class="display-4" style="color:#7d0ed7ba !important;">Most Borrowed Books</h1>
+                    <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/Biologie.jpg" class="img-fluid  w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h5">Biologie</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Rent Book</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/19.jpg" class="img-fluid w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h5">Chemistry</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Rent Book</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/25.jpg" class="img-fluid w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h5">Alice Adventure in wonderful</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Rent Book</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/24.jpg" class="img-fluid  w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h5">Over The Sirens</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Rent Book</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/30.jpg" class="img-fluid  w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h5">Again but better</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Rent Book</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xl-4">
+                        <div class="p-4 rounded bg-light">
+                            <div class="row align-items-center">
+                                <div class="col-6">
+                                    <img src="img/23.jpg" class="img-fluid w-100" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <a href="#" class="h5">Harry Potter</a>
+                                    <div class="d-flex my-3">
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star text-primary"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Rent Book</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                   
+                   
+                </div>
+            </div>
+        </div>
+     
+
+
+        <!-- Fact Start -->
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="bg-light p-5 rounded">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="counter bg-white rounded p-5">
+                                <i class="fa fa-users text-secondary"></i>
+                                <h4>satisfied customers</h4>
+                                <h1>1963</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="counter bg-white rounded p-5">
+                                <i class="fa fa-users text-secondary"></i>
+                                <h4>quality of service</h4>
+                                <h1>99%</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="counter bg-white rounded p-5">
+                                <i class="fa fa-users text-secondary"></i>
+                                <h4>quality certificates</h4>
+                                <h1>33</h1>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fact Start -->
+
+
+<!-- Testimonial Start -->
+<div class="container-fluid testimonial py-5">
+    <div class="container py-5">
+        <div class="testimonial-header text-center">
+            <h4 class="text-primary">What Our Students Say</h4>
+            <h1 class="display-5 mb-5 text-dark">Student Testimonials</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel">
+            <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                <div class="position-relative">
+                    <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                    <div class="mb-4 pb-4 border-bottom border-secondary">
+                        <p class="mb-0">"The Python programming course at this institute was amazing! The lessons were clear and practical, and the instructor was very knowledgeable. I can now confidently apply my skills in real-world projects."</p>
+                    </div>
+                    <div class="d-flex align-items-center flex-nowrap">
+                        <div class="bg-secondary rounded">
+                            <img src="img/31.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="Student 1">
+                        </div>
+                        <div class="ms-4 d-block">
+                            <h4 class="text-dark">John Doe</h4>
+                            <p class="m-0 pb-3">Software Developer</p>
+                            <div class="d-flex pe-5">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item img-border-radius bg-light rounded p-4">
+                <div class="position-relative">
+                    <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                    <div class="mb-4 pb-4 border-bottom border-secondary">
+                        <p class="mb-0">"I took the Web Development Bootcamp and I can now build my own websites! The instructors are supportive and the hands-on experience was invaluable. Highly recommend!"</p>
+                    </div>
+                    <div class="d-flex align-items-center flex-nowrap">
+                        <div class="bg-secondary rounded">
+                            <img src="img/32.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="Student 2">
+                        </div>
+                        <div class="ms-4 d-block">
+                            <h4 class="text-dark">Jane Smith</h4>
+                            <p class="m-0 pb-3">Web Developer</p>
+                            <div class="d-flex pe-5">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+        
+     
+           
 
 
         <!-- Features Start -->
