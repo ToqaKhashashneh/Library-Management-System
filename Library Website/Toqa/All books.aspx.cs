@@ -32,7 +32,7 @@ namespace Library_Website.Toqa
         private void LoadBooks(string searchQuery, string filterOption)
         {
 
-            string file = Server.MapPath("BooksData.txt");
+            string file = Server.MapPath("~/Rudaina/App_Data/books.txt");
 
             // Clear previous content
             booksContainer.InnerHtml = "";
@@ -76,6 +76,7 @@ namespace Library_Website.Toqa
                     string category = bookData[4].Trim();
                     string language = bookData[5].Trim();
                     string availability = bookData[8].Trim(); // "Available" or "Not Available"
+                    string availabilityLower = availability.ToLower();
 
                     // Extract image path safely
                     string imageUrl = bookData[9].Trim();
@@ -85,8 +86,27 @@ namespace Library_Website.Toqa
                     }
 
                     // Ensure proper formatting for image paths
-                    string resolvedImageUrl = ResolveUrl("~/Toqa/" + Path.GetFileName(imageUrl));
+                    string resolvedImageUrl = ResolveUrl("~/Rudaina/img/" + Path.GetFileName(imageUrl));
 
+                    // Filtering logic for new availability statuses
+                    if (filterOption == "available" && availabilityLower != "available")
+                        continue;
+                    if (filterOption == "pending" && availabilityLower != "pending")
+                        continue;
+                    if (filterOption == "reserved" && availabilityLower != "reserved")
+                        continue;
+
+                    // Set availability class (C# 7.3 compatible)
+                    string availabilityClass = "text-secondary"; // Default color
+                    if (availabilityLower == "available")
+                        availabilityClass = "text-success"; // Green
+                    else if (availabilityLower == "pending")
+                        availabilityClass = "text-warning"; // Orange
+                    else if (availabilityLower == "reserved")
+                        availabilityClass = "text-danger"; // Red
+
+                    // Disable "Read More" button for reserved or pending books
+                    string buttonDisabled = (availabilityLower == "reserved" || availabilityLower == "pending") ? "disabled" : "";
                     // Append book card **without opening new row**
                     bookCards.Append($@"
             <div class='col-md-4 mb-4'>
@@ -98,10 +118,8 @@ namespace Library_Website.Toqa
                         <p class='card-text'><strong>Published:</strong> {publishedDate}</p>
                         <p class='card-text'><strong>Category:</strong> {category}</p>
                         <p class='card-text'><strong>Language:</strong> {language}</p>
-                        <p class='{(availability == "Available" ? "text-success" : "text-danger")}'><strong>{availability}</strong></p>
-
-                        <!-- Borrow Button -->
-                        <a href='BorrowBook.aspx?bookid={bookId}' class='btn btn-primary' style='background-color: #22333B; border: none;'>Read More</a>
+                        <p class='{availabilityClass}'><strong>{availability}</strong></p>                        <!-- Borrow Button -->
+                        <a href='BorrowBook.aspx?bookid={bookId}' class='btn btn-primary' style='background-color: #7d0ed7ba; border: none;'>Borrow Book</a>
                     </div>
                 </div>
             </div>
