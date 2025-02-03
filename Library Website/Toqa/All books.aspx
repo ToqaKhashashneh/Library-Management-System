@@ -24,7 +24,41 @@
             .card-img-top { 
     height: 29vw;}
 
+            .filter-container {
+    margin: 40px 0px 30px 0px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0px;
+    font-size: 16px;
+    color: #888;
+    display: flex;
+    align-items: center;
+    width: 250px;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-left: 37vw;
 
+}
+    .filter-container select {
+        font-size: 14px;
+        padding: 6px 10px;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        background-color: #fff;
+        color: #555;
+        cursor: pointer;
+        transition: border 0.3s ease;
+        width: 100%;
+        height: 100%;
+    }
+
+        .filter-container select:focus {
+            border-color: #007bff; 
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+        }
 
     </style>
 
@@ -52,9 +86,16 @@
 
 
             <!--Search-->
+            <!--filter-->
+            <div class="filter-container">
+    <asp:DropDownList ID="filterOptions" runat="server" OnSelectedIndexChanged="btnSearch_Click" AutoPostBack="true">
+        <asp:ListItem Value="all">All Books</asp:ListItem>
+        <asp:ListItem Value="available">Available Only</asp:ListItem>
+        <asp:ListItem Value="notAvailable">Not Available</asp:ListItem>
+    </asp:DropDownList>
+</div>
 
-
-
+            <!--filter-->
 
             <div class="container my-5">
                 <h1 class="text-center mb-4">Books Collection</h1>

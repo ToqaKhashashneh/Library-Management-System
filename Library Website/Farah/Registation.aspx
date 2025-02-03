@@ -30,7 +30,7 @@
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                background: url("https://basecamplive.com/wp-content/uploads/2023/02/books.jpeg"), #000;
+                background: url("https://www2.kwnc.edu.mo/library/images/index/indexBg.png"), #000;
                 background-position: center;
                 background-size: cover;
             }

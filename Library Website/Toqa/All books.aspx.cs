@@ -15,23 +15,23 @@ namespace Library_Website.Toqa
     public partial class All_books : System.Web.UI.Page
     {
 
-    
 
 
-       
+
+
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack) // Ensure books load only once
             {
-                LoadBooks();
+                LoadBooks("","all");
             }
         }
 
-        private void LoadBooks()
+        private void LoadBooks(string searchQuery, string filterOption)
         {
-            
+
             string file = Server.MapPath("BooksData.txt");
 
             // Clear previous content
@@ -49,7 +49,21 @@ namespace Library_Website.Toqa
                         continue;
 
                     string[] bookData = book.Split(',');
+                    bool isAvailable = bookData[8].Equals("Available", StringComparison.OrdinalIgnoreCase);
+                    if (!string.IsNullOrEmpty(searchQuery) && bookData[1].IndexOf(searchQuery, StringComparison.OrdinalIgnoreCase).Equals(-1))
+                    {
+                        continue;
+                    }
 
+                    if (filterOption == "available" && !isAvailable)
+                    {
+                        continue;
+                    }
+
+                    if (filterOption == "notAvailable" && isAvailable)
+                    {
+                        continue;
+                    }
                     // Ensure bookData has at least 10 elements before accessing indexes
                     if (bookData.Length < 10)
                         continue;
@@ -107,6 +121,12 @@ namespace Library_Website.Toqa
 
         protected void btnSearch_Click(object sender, EventArgs e)
         {
+            string Search = txtSearch.Text.Trim();
+            string filterOption = filterOptions.SelectedValue;
+            LoadBooks(Search, filterOption);
+
+
+
 
         }
 
@@ -114,6 +134,8 @@ namespace Library_Website.Toqa
         {
             Response.Redirect("BorrowBook.aspx");
         }
-    }
 
+
+
+    }
 }
