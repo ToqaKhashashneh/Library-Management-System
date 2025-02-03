@@ -84,7 +84,6 @@
     <Content Include="Ayman\profile.aspx" />
     <Content Include="Ayman\Show_meeting.aspx" />
     <Content Include="Bilal\AllUsers.txt" />
-
     <Content Include="Bilal\Bilal.aspx" />
     <Content Include="Bilal\Edit_Profile.aspx" />
     <Content Include="Bilal\LoadAllData.txt" />
