@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="History.aspx.cs" Inherits="Library_Website.Bilal.History" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Room_History.aspx.cs" Inherits="Library_Website.Bilal.Room_History" %>
 
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -9,7 +9,7 @@
             width: 100%;
             border-collapse: collapse;
             margin-top: 20px;
-            table-layout:fixed;
+            table-layout: fixed;
         }
 
         th, td {
@@ -21,10 +21,7 @@
 
         th {
             background-color: #7d0ed7ba;
-
             color: white;
-            
-            
         }
 
         tr:nth-child(even) {
@@ -45,4 +42,5 @@
     </form>
 </body>
 </html>
+
 
