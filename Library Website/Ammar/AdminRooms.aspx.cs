@@ -132,5 +132,43 @@ namespace Library_Website.Ammar
                 DeleteRoom(roomId);
             }
         }
+
+        protected void Export_Click(object sender, EventArgs e)
+        {
+            string filePath = Server.MapPath("RoomsData.txt"); // Path to your file
+            if (!File.Exists(filePath))
+            {
+                Response.Write("File not found.");
+                return;
+            }
+
+            // Read file content
+            string[] lines = File.ReadAllLines(filePath);
+
+            // Start building the HTML table
+            string html = "<table border='1' style='width:100%; border-collapse:collapse;'>";
+            html += "<tr><th>ID</th><th>Room Name</th><th>Capacity</th><th>Description</th><th>Image</th><th>Availability</th></tr>";
+
+            foreach (string line in lines)
+            {
+                string[] details = line.Split('|');
+                if (details.Length < 5) continue;
+
+                html += "<tr>";
+                foreach (var detail in details)
+                {
+                    html += $"<td>{detail}</td>";
+                }
+                html += "</tr>";
+            }
+            html += "</table>";
+
+            // Export as an HTML file
+            Response.Clear();
+            Response.ContentType = "application/vnd.ms-excel"; // Excel export
+            Response.AddHeader("content-disposition", "attachment;filename=RoomExport.xls");
+            Response.Write(html);
+            Response.End();
+        }
     }
 }
