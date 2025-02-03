@@ -39,25 +39,22 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+        .btn-link {
+    color:#7d0ed7ba!important;
+    text-decoration: none !important;
+}
+        a{
+    text-decoration:none!important;
+}
+    </style>
 </head>
 
 <body>
     <form id="form1" runat="server">
         <!-- Navbar start -->
         <div class="container-fluid fixed-top">
-            <div class="container topbar  d-none d-lg-block" style="visibility: hidden!important;">
-                <div class="d-flex justify-content-between">
-                    <div class="top-info ps-2">
-                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i><a href="#" class="text-white">123 Street, New York</a></small>
-                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Email@Example.com</a></small>
-                    </div>
-                    <div class="top-link pe-2">
-                        <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
-                        <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
-                        <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
-                    </div>
-                </div>
-            </div>
+            
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
                     <a href="index.html" class="navbar-brand">
@@ -91,7 +88,7 @@
                     </a>
             </div>
         </div>
-        <hr />
+   
         </nav>
         <!-- Navbar End -->
         <div class="container p-5 rounded border mt-5 w-25">
@@ -125,14 +122,14 @@
              <div class="row g-4">
                  <div class="col-lg-3">
                      <a href="#">
-                         <h1 class="text-primary mb-0">Smart Academy</h1>
+                         <h1 class="text-primary mb-0" style="color:#7d0ed7ba!important;">Smart Academy</h1>
                          <p class="text-secondary mb-0">Educational Institue</p>
                      </a>
                  </div>
                  <div class="col-lg-6">
                      <div class="position-relative mx-auto">
                          <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
-                         <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button>
+                         <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0; background-color:#7d0ed7ba !important;"">Subscribe Now</button>
                      </div>
                  </div>
                  <div class="col-lg-3">
@@ -153,7 +150,7 @@
                          typesetting, remaining essentially unchanged. It was 
              popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.
                      </p>
-                     <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Read More</a>
+                     <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary" style="color:#7d0ed7ba !important;">Read More</a>
                  </div>
              </div>
              <div class="col-lg-3 col-md-6">
@@ -191,7 +188,7 @@
          </div>
      </div>
  </div>
- <!-- Footer End -->
+         <!-- Footer End -->
 
     </form>
 </body>
