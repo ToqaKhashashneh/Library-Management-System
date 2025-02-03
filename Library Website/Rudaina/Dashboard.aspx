@@ -53,7 +53,7 @@
             </li>
                      <!-- Nav Item - Dashboard -->
          <li class="nav-item active">
-            <a class="nav-link" href="RoomManagment.aspx">
+            <a class="nav-link" href="/Ammar/AdminRooms.aspx">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>RoomManagment</span></a>
         </li>
@@ -66,7 +66,7 @@
             </li>
              <!-- Nav Item - Dashboard -->
  <li class="nav-item active">
-    <a class="nav-link" href="BookManagment.aspx">
+    <a class="nav-link" href="/Bilal/Contact(Admin).aspx">
         <i class="fas fa-fw fa-tachometer-alt"></i>
         <span>Feedback</span></a>
 </li>

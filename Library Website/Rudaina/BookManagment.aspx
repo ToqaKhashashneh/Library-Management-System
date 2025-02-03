@@ -57,17 +57,22 @@
              </li>
              <!-- Nav Item - Dashboard -->
              <li class="nav-item">
-                 <a class="nav-link" href="#">
+                 <a class="nav-link" href="/Ammar/AdminRooms.aspx">
                      <i class="fas fa-fw fa-tachometer-alt"></i>
                      <span>Room Management</span></a>
              </li>
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
+                        <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
                 <a class="nav-link" href="Requests.aspx">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Requests</span></a>
+                    <span>Requests </span></a>
             </li>
-
+             <!-- Nav Item - Dashboard -->
+ <li class="nav-item active">
+    <a class="nav-link" href="/Bilal/Contact(Admin).aspx">
+        <i class="fas fa-fw fa-tachometer-alt"></i>
+        <span>Feedback</span></a>
+</li>
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
