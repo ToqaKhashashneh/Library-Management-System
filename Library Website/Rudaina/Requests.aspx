@@ -38,7 +38,7 @@
             <!-- Sidebar - Brand -->
 <a class="sidebar-brand d-flex align-items-center justify-content-center" href="Dashboard.aspx">
     
-    <div class="sidebar-brand-text mx-3">Smart Academy <sup></sup></div>
+    <div class="sidebar-brand-text mx-3">Lengoloop<sup></sup></div>
 </a>
 
             <!-- Divider -->
@@ -289,8 +289,10 @@
       <div class="container mt-4">
         <h2 class="mb-4 text-center">Requests Rent Books</h2>
 
-        <asp:GridView ID="GridViewRequests" runat="server" CssClass="table table-bordered"
-            AutoGenerateColumns="False" DataKeyNames="ID">
+   <asp:GridView ID="GridViewRequests" runat="server" CssClass="table table-bordered"
+    AutoGenerateColumns="False" DataKeyNames="ID" OnRowCommand="GridViewRequests_RowCommand">
+
+
             <Columns>
                 <asp:BoundField DataField="ID" HeaderText="ID" />
                 <asp:BoundField DataField="Title" HeaderText="Title" />

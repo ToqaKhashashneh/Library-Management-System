@@ -95,6 +95,7 @@
     <Content Include="Bilal\Response.txt" />
     <Content Include="Bilal\TextFile1.txt" />
     <Content Include="Rudaina\BookManagment.aspx" />
+    <Content Include="Rudaina\css\footer.css" />
     <Content Include="Rudaina\Dashboard.aspx" />
     <Content Include="Rudaina\Home1.aspx" />
     <Content Include="Rudaina\Requests.aspx" />
