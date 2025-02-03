@@ -10,6 +10,8 @@ namespace Library_Website.Rudaina
 {
     public partial class Requests : System.Web.UI.Page
     {
+        protected global::System.Web.UI.WebControls.GridView GridViewRequests;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
