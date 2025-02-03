@@ -71,8 +71,6 @@
     <Content Include="Ayman\Ayman.aspx" />
     <Content Include="Ayman\contact.txt" />
     <Content Include="Ayman\contact_us%28user%29.aspx" />
-    <Content Include="Ayman\profile.aspx" />
-    <Content Include="Ayman\Show_meeting.aspx" />
     <Content Include="Bilal\Bilal.aspx" />
     <Content Include="Farah\AboutUs.aspx" />
     <Content Include="Farah\Login.aspx" />
@@ -115,20 +113,6 @@
     </Compile>
     <Compile Include="Ayman\contact_us%28user%29.aspx.designer.cs">
       <DependentUpon>contact_us%28user%29.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Ayman\profile.aspx.cs">
-      <DependentUpon>profile.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Ayman\profile.aspx.designer.cs">
-      <DependentUpon>profile.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Ayman\Show_meeting.aspx.cs">
-      <DependentUpon>Show_meeting.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Ayman\Show_meeting.aspx.designer.cs">
-      <DependentUpon>Show_meeting.aspx</DependentUpon>
     </Compile>
     <Compile Include="Bilal\Bilal.aspx.cs">
       <DependentUpon>Bilal.aspx</DependentUpon>
