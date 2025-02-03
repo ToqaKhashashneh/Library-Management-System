@@ -4,6 +4,9 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+    <!-- In your ASPX page header -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <title></title>
 
     <style>
