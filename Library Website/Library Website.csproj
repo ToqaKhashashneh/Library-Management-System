@@ -107,8 +107,6 @@
     <Content Include="Rudaina\Dashboard.aspx" />
     <Content Include="Rudaina\Home1.aspx" />
     <Content Include="Rudaina\Requests.aspx" />
-    <Content Include="Rudaina\Rudaina.aspx" />
-    <Content Include="Rudaina\WebForm1.aspx" />
     <Content Include="Toqa\All books.aspx" />
     <Content Include="Toqa\book1.png" />
     <Content Include="Toqa\book2.png" />

@@ -12,11 +12,13 @@ namespace Library_Website.Ammar
     {
         private string roomsFilePath;
         private string reservationsFilePath;
+        private string loginDataFilePath;
 
         protected void Page_Load(object sender, EventArgs e)
         {
             roomsFilePath = Server.MapPath("RoomsData.txt");
             reservationsFilePath = Server.MapPath("Reservations.txt");
+            loginDataFilePath = Server.MapPath("~/Farah/LoginData.txt");
 
             if (!IsPostBack)
             {
@@ -30,7 +32,7 @@ namespace Library_Website.Ammar
             RepeaterItem item = (RepeaterItem)btn.NamingContainer;
             Panel pnlTimePicker = (Panel)item.FindControl("pnlTimePicker");
 
-            pnlTimePicker.CssClass += " open"; // إضافة الكلاس "open" لإظهار اللوحة
+            pnlTimePicker.CssClass += " open"; // Add the "open" class to show the panel
         }
 
         protected void calDatePicker_SelectionChanged(object sender, EventArgs e)
@@ -38,12 +40,11 @@ namespace Library_Website.Ammar
             Calendar cal = (Calendar)sender;
             RepeaterItem item = (RepeaterItem)cal.NamingContainer;
 
-            // **هام:** منع PostBack
+            // Prevent PostBack
             ScriptManager.RegisterStartupScript(this, GetType(), "PreventPostback", "javascript:void(0);", true);
 
             DateTime selectedDate = cal.SelectedDate;
-
-            // يمكنك هنا إضافة أي منطق إضافي للتعامل مع التاريخ المحدد
+            // Additional logic can be added here if needed
         }
 
         protected void rptRooms_ItemDataBound(object sender, RepeaterItemEventArgs e)
@@ -62,7 +63,7 @@ namespace Library_Website.Ammar
                 btnCancel.Visible = (status == "Reserved" || status == "Cancel Pending");
                 btnCancel.Enabled = (status != "Cancel Pending");
 
-                // ملء قائمة الوقت
+                // Fill time dropdown
                 if (ddlStartTime != null && ddlStartTime.Items.Count == 0)
                 {
                     for (int hour = 0; hour < 24; hour++)
@@ -71,7 +72,7 @@ namespace Library_Website.Ammar
                     }
                 }
 
-                // ربط حدث SelectionChanged للتقويم
+                // Bind event to the calendar
                 if (calDatePicker != null)
                 {
                     calDatePicker.SelectionChanged += calDatePicker_SelectionChanged;
@@ -88,9 +89,9 @@ namespace Library_Website.Ammar
             foreach (string line in lines)
             {
                 string[] data = line.Split('|');
-                if (data.Length >= 4 && data[0] == roomId)
+                if (data.Length >= 5 && data[0] == roomId)
                 {
-                    return data[3];
+                    return data[4]; // Assuming the status is stored in the 5th field
                 }
             }
             return "Available";
@@ -111,7 +112,18 @@ namespace Library_Website.Ammar
             Button reserveButton = (Button)item.FindControl("btnReserve");
             string roomId = reserveButton.CommandArgument;
 
-            string reservation = $"{roomId}|{selectedDate}|{selectedTime}|Pending";
+            // Read email from LoginData.txt
+            string userEmail = GetLoggedInUserEmail();
+
+            if (string.IsNullOrEmpty(userEmail))
+            {
+                // Handle case where email is not found
+                ScriptManager.RegisterStartupScript(this, GetType(), "Alert", "alert('Error: User email not found!');", true);
+                return;
+            }
+
+            // Save reservation data including email
+            string reservation = $"{roomId}|{selectedDate}|{selectedTime}|{userEmail}|Pending";
             File.AppendAllText(reservationsFilePath, reservation + Environment.NewLine);
 
             btn.Text = "Pending";
@@ -134,9 +146,9 @@ namespace Library_Website.Ammar
             foreach (string line in lines)
             {
                 string[] data = line.Split('|');
-                if (data.Length >= 4 && data[0] == roomId && data[3] == "Reserved")
+                if (data.Length >= 5 && data[0] == roomId && data[4] == "Reserved")
                 {
-                    data[3] = "Cancel Pending";
+                    data[4] = "Cancel Pending";
                 }
                 updatedLines.Add(string.Join("|", data));
             }
@@ -177,6 +189,14 @@ namespace Library_Website.Ammar
             rptRooms.DataBind();
         }
 
+        private string GetLoggedInUserEmail()
+        {
+            if (!File.Exists(loginDataFilePath))
+                return string.Empty;
+
+            string[] users = File.ReadAllLines(loginDataFilePath);
+            return users.Length > 0 ? users[0] : string.Empty;
+        }
 
         public class Room
         {
