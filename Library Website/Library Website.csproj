@@ -82,7 +82,15 @@
     <Content Include="Ayman\contact_us%28user%29.aspx" />
     <Content Include="Ayman\profile.aspx" />
     <Content Include="Ayman\Show_meeting.aspx" />
+    <Content Include="Bilal\AllUsers.txt" />
     <Content Include="Bilal\Bilal.aspx" />
+    <Content Include="Bilal\Edit_Profile.aspx" />
+    <Content Include="Bilal\LoadAllData.txt" />
+    <Content Include="Bilal\Login.txt" />
+    <Content Include="Bilal\Profile.aspx" />
+    <Content Include="Bilal\Reset_Password.aspx" />
+    <Content Include="Bilal\Room_History.aspx" />
+    <Content Include="Bilal\Room_History.txt" />
     <Content Include="Farah\AboutUs.aspx" />
     <Content Include="Farah\Login.aspx" />
     <Content Include="Farah\LoginData.txt" />
@@ -1965,6 +1973,34 @@
     </Compile>
     <Compile Include="Bilal\Bilal.aspx.designer.cs">
       <DependentUpon>Bilal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bilal\Edit_Profile.aspx.cs">
+      <DependentUpon>Edit_Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bilal\Edit_Profile.aspx.designer.cs">
+      <DependentUpon>Edit_Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bilal\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bilal\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bilal\Reset_Password.aspx.cs">
+      <DependentUpon>Reset_Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bilal\Reset_Password.aspx.designer.cs">
+      <DependentUpon>Reset_Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bilal\Room_History.aspx.cs">
+      <DependentUpon>Room_History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bilal\Room_History.aspx.designer.cs">
+      <DependentUpon>Room_History.aspx</DependentUpon>
     </Compile>
     <Compile Include="Farah\AboutUs.aspx.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
