@@ -44,6 +44,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -67,18 +70,46 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Ammar\Ammar.aspx" />
+    <Content Include="Ammar\AddRoom.aspx" />
+    <Content Include="Ammar\AdminRooms.aspx" />
+    <Content Include="Ammar\EditRoom.aspx" />
+    <Content Include="Ammar\Requests.aspx" />
+    <Content Include="Ammar\Reservations.txt" />
+    <Content Include="Ammar\Rooms.aspx" />
+    <Content Include="Ammar\RoomsData.txt" />
     <Content Include="Ayman\Ayman.aspx" />
     <Content Include="Ayman\contact.txt" />
     <Content Include="Ayman\contact_us%28user%29.aspx" />
+<<<<<<< HEAD
+=======
+    <Content Include="Ayman\profile.aspx" />
+    <Content Include="Ayman\Show_meeting.aspx" />
+    <Content Include="Bilal\AllUsers.txt" />
+>>>>>>> 297786757e432297db177d1d04cf989b472a441d
     <Content Include="Bilal\Bilal.aspx" />
+    <Content Include="Bilal\Edit_Profile.aspx" />
+    <Content Include="Bilal\LoadAllData.txt" />
+    <Content Include="Bilal\Login.txt" />
+    <Content Include="Bilal\Profile.aspx" />
+    <Content Include="Bilal\Reset_Password.aspx" />
+    <Content Include="Bilal\Room_History.aspx" />
+    <Content Include="Bilal\Room_History.txt" />
     <Content Include="Farah\AboutUs.aspx" />
     <Content Include="Farah\Login.aspx" />
     <Content Include="Farah\LoginData.txt" />
     <Content Include="Farah\Registation.aspx" />
     <Content Include="Farah\UserInfo.txt" />
     <Content Include="Farah\WebForm1.aspx" />
-    <Content Include="Rudaina\Rudaina.aspx" />
+    <Content Include="Bilal\Contact%28Admin%29.aspx" />
+    <Content Include="Bilal\History.aspx" />
+    <Content Include="Bilal\History.txt" />
+    <Content Include="Bilal\Response.txt" />
+    <Content Include="Bilal\TextFile1.txt" />
+    <Content Include="Rudaina\BookManagment.aspx" />
+    <Content Include="Rudaina\css\footer.css" />
+    <Content Include="Rudaina\Dashboard.aspx" />
+    <Content Include="Rudaina\Home1.aspx" />
+    <Content Include="Rudaina\Requests.aspx" />
     <Content Include="Toqa\All books.aspx" />
     <Content Include="Toqa\book1.png" />
     <Content Include="Toqa\book2.png" />
@@ -93,12 +124,40 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ammar\Ammar.aspx.cs">
-      <DependentUpon>Ammar.aspx</DependentUpon>
+    <Compile Include="Ammar\AddRoom.aspx.cs">
+      <DependentUpon>AddRoom.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Ammar\Ammar.aspx.designer.cs">
-      <DependentUpon>Ammar.aspx</DependentUpon>
+    <Compile Include="Ammar\AddRoom.aspx.designer.cs">
+      <DependentUpon>AddRoom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ammar\AdminRooms.aspx.cs">
+      <DependentUpon>AdminRooms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ammar\AdminRooms.aspx.designer.cs">
+      <DependentUpon>AdminRooms.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ammar\EditRoom.aspx.cs">
+      <DependentUpon>EditRoom.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ammar\EditRoom.aspx.designer.cs">
+      <DependentUpon>EditRoom.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ammar\Requests.aspx.cs">
+      <DependentUpon>Requests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ammar\Requests.aspx.designer.cs">
+      <DependentUpon>Requests.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ammar\Rooms.aspx.cs">
+      <DependentUpon>Rooms.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ammar\Rooms.aspx.designer.cs">
+      <DependentUpon>Rooms.aspx</DependentUpon>
     </Compile>
     <Compile Include="Ayman\Ayman.aspx.cs">
       <DependentUpon>Ayman.aspx</DependentUpon>
@@ -121,6 +180,34 @@
     <Compile Include="Bilal\Bilal.aspx.designer.cs">
       <DependentUpon>Bilal.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Bilal\Edit_Profile.aspx.cs">
+      <DependentUpon>Edit_Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bilal\Edit_Profile.aspx.designer.cs">
+      <DependentUpon>Edit_Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bilal\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bilal\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bilal\Reset_Password.aspx.cs">
+      <DependentUpon>Reset_Password.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bilal\Reset_Password.aspx.designer.cs">
+      <DependentUpon>Reset_Password.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bilal\Room_History.aspx.cs">
+      <DependentUpon>Room_History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bilal\Room_History.aspx.designer.cs">
+      <DependentUpon>Room_History.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Farah\AboutUs.aspx.cs">
       <DependentUpon>AboutUs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -131,6 +218,20 @@
     <Compile Include="Farah\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bilal\Contact%28Admin%29.aspx.cs">
+      <DependentUpon>Contact%28Admin%29.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bilal\Contact%28Admin%29.aspx.designer.cs">
+      <DependentUpon>Contact%28Admin%29.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Bilal\History.aspx.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Bilal\History.aspx.designer.cs">
+      <DependentUpon>History.aspx</DependentUpon>
     </Compile>
     <Compile Include="Farah\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -150,12 +251,30 @@
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Rudaina\Rudaina.aspx.cs">
-      <DependentUpon>Rudaina.aspx</DependentUpon>
+    <Compile Include="Rudaina\BookManagment.aspx.cs">
+      <DependentUpon>BookManagment.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Rudaina\Rudaina.aspx.designer.cs">
-      <DependentUpon>Rudaina.aspx</DependentUpon>
+    <Compile Include="Rudaina\BookManagment.aspx.designer.cs">
+      <DependentUpon>BookManagment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rudaina\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rudaina\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rudaina\Home1.aspx.cs">
+      <DependentUpon>Home1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rudaina\Home1.aspx.designer.cs">
+      <DependentUpon>Home1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Rudaina\Requests.aspx.cs">
+      <DependentUpon>Requests.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Toqa\All books.aspx.cs">
       <DependentUpon>All books.aspx</DependentUpon>

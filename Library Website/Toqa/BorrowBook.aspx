@@ -35,6 +35,7 @@
             width: 100%;
             height: auto;
             border-radius: 10px;
+                margin-left: 6vw;    
         }
 
         table {
@@ -59,7 +60,7 @@ input[type="datetime-local"] {
     border: 1px solid #ccc;
 }
 input[type="submit"], button {
-    background-color: #28a745;  Green 
+    background-color: #7d0ed7ba; 
     color: white;
     padding: 10px 15px;
     border: none;
@@ -68,7 +69,7 @@ input[type="submit"], button {
     margin-top: 10px;
 }
 input[type="submit"]:hover, button:hover {
-    background-color: #218838;  Darker green 
+    background-color: #7d0ed7ba;  
 }
 .message {
     margin-top: 20px;
@@ -111,13 +112,13 @@ input[type="submit"]:hover, button:hover {
    <div class="borrow-container"> 
                
                 <div class="book-card">
-                    <div class="card shadow-lg">
+                    <%--<div class="card shadow-lg">--%>
                         <asp:Image ID="imgBook" runat="server"  CssClass="card-img-top" />
 
                         <div class="card-body">
                             <h5 class="card-title"></h5>
                         </div>
-                    </div>
+                <%--    </div>--%>
                 </div>
 
 
