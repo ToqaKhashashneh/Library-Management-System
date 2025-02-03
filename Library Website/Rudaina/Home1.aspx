@@ -155,22 +155,23 @@
             </div>
         </div>
         <!-- Hero End -->
-        <section class="py-5" id="About" style="padding:40px auto !important;" >
-            <div class="container" style="color: black;">
-                <div class="row">
-                    <div class="col-md-5">
-                        <span class="text-muted" style="color: #A9A9A9 !important; font-size:22px;">Our Story</span>
-                        <h2 class="display-5 " style="color: #7d0ed7ba !important; font-size:32px; font-weight:900;">About Us</h2>
-                        <p class="lead">Welcome to your local hub for all things books and stationery. Our platform allows you to shop from your nearest bookstore and stationery store with ease, helping support local businesses while getting what you need at your convenience.</p>
-                        <a class="btn btn-primary mt-2" href="" style="background-color: #7d0ed7ba  !important; border: none; padding:10px 30px; color:#f8f9fa">Learn more</a>
-                    </div>
-                    <div class="col-md-6 offset-md-1 mt-5">
-                        <p class="lead">Our goal is to bring you the best selection of books and stationery from local stores, helping you access quality products with the click of a button. Whether you're looking for the latest bestsellers, essential study materials, or everyday stationery items, we’ve got you covered.</p>
-                        <p class="lead">With our location-based feature, simply input your location, and we’ll show you nearby stores, so you can shop conveniently and support local businesses. Say goodbye to long waits and hello to instant shopping!</p>
-                    </div>
-                </div>
+<section class="py-5" id="About" style="padding:40px auto !important;">
+    <div class="container" style="color: black;">
+        <div class="row">
+            <div class="col-md-5">
+                <span class="text-muted" style="color: #A9A9A9 !important; font-size:22px;">Our Story</span>
+                <h2 class="display-5" style="color: #7d0ed7ba !important; font-size:32px; font-weight:900;">About Lengo Loop</h2>
+                <p class="lead">Welcome to Lengo Loop, a distinguished academic institute offering a wide range of courses in various academic fields. We also provide book rentals and room reservations for all your educational needs.</p>
+                <a class="btn btn-primary mt-2" href="" style="background-color: #7d0ed7ba  !important; border: none; padding:10px 30px; color:#f8f9fa">Learn more</a>
             </div>
-        </section>
+            <div class="col-md-6 offset-md-1 mt-5">
+                <p class="lead">At Lengo Loop, our mission is to create a comprehensive academic environment where you can access high-quality courses, borrow the books you need, and book rooms for study sessions or private lessons. We are here to support your learning journey in every way possible.</p>
+                <p class="lead">Whether you are looking for specialized courses, need a quiet place for studying, or want to borrow academic books, we have it all. Take advantage of our diverse services to enhance your educational experience.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 
 
   <!-- Featurs Section Start -->
