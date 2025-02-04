@@ -28,7 +28,7 @@
     color:#7d0ed7ba!important;
     text-decoration: none !important;
 }
-        a{
+        a{ 
     text-decoration:none!important;
 }
         .card {
@@ -80,7 +80,14 @@
             box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
         }
 
+            .btn-link {
+        color: #747d88 !important;
+        text-decoration: none !important;
+    }
 
+    a {
+        text-decoration: none !important;
+    }
         
                
        
@@ -123,8 +130,8 @@
             </button>
             <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
-                    <a href="/Rudaina/Home1.aspx" class="nav-item nav-link active">Home</a>
-                    <a href="/Farah/AboutUs.aspx" class="nav-item nav-link">About</a>
+                    <%--<a href="/Rudaina/Home1.aspx" class="nav-item nav-link active">Home</a>--%>
+                    <%--<a href="/Farah/AboutUs.aspx" class="nav-item nav-link">About</a>--%>
                     <a href="/Toqa/All books.aspx" class="nav-item nav-link">Books</a>
                       <a href="/Ammar/Rooms.aspx" class="nav-item nav-link">Rooms</a>
                         <a href="/Ayman/contact_us(user).aspx" class="nav-item nav-link">Contact Us</a>

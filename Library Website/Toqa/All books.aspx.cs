@@ -105,25 +105,48 @@ namespace Library_Website.Toqa
                     else if (availabilityLower == "reserved")
                         availabilityClass = "text-danger"; // Red
 
-                    // Disable "Read More" button for reserved or pending books
-                    string buttonDisabled = (availabilityLower == "reserved" || availabilityLower == "pending") ? "disabled" : "";
+                    //            // Disable "Read More" button for reserved or pending books
+                    //            string buttonDisabled = (availabilityLower == "reserved" || availabilityLower == "pending") ? "disabled" : "";
+                    //            // Append book card **without opening new row**
+                    //            bookCards.Append($@"
+                    //    <div class='col-md-4 mb-4'>
+                    //        <div class='card p-2'>
+                    //            <img src='{resolvedImageUrl}' class='card-img-top' alt='Book Image' height='200' />
+                    //            <div class='card-body'>
+                    //                <h5 class='card-title'>{title}</h5>
+                    //                <p class='card-text'><strong>Author:</strong> {author}</p>
+                    //                <p class='card-text'><strong>Published:</strong> {publishedDate}</p>
+                    //                <p class='card-text'><strong>Category:</strong> {category}</p>
+                    //                <p class='card-text'><strong>Language:</strong> {language}</p>
+                    //                <p class='{availabilityClass}'><strong>{availability}</strong></p>                        <!-- Borrow Button -->
+                    //                <a href='BorrowBook.aspx?bookid={bookId}' class='btn btn-primary' style='background-color: #7d0ed7ba; border: none;'>Borrow Book</a>
+                    //            </div>
+                    //        </div>
+                    //    </div>
+                    //");
+
+
+                    // Hide "Borrow Book" button if the book is "reserved" or "pending"
+                    string borrowButtonHtml = (availabilityLower == "reserved" || availabilityLower == "pending") ? "" :
+                                            $"<a href='BorrowBook.aspx?bookid={bookId}' class='btn btn-primary' style='background-color: #7d0ed7ba; border: none;'>Borrow Book</a>";
+
                     // Append book card **without opening new row**
                     bookCards.Append($@"
-            <div class='col-md-4 mb-4'>
-                <div class='card p-2'>
-                    <img src='{resolvedImageUrl}' class='card-img-top' alt='Book Image' height='200' />
-                    <div class='card-body'>
-                        <h5 class='card-title'>{title}</h5>
-                        <p class='card-text'><strong>Author:</strong> {author}</p>
-                        <p class='card-text'><strong>Published:</strong> {publishedDate}</p>
-                        <p class='card-text'><strong>Category:</strong> {category}</p>
-                        <p class='card-text'><strong>Language:</strong> {language}</p>
-                        <p class='{availabilityClass}'><strong>{availability}</strong></p>                        <!-- Borrow Button -->
-                        <a href='BorrowBook.aspx?bookid={bookId}' class='btn btn-primary' style='background-color: #7d0ed7ba; border: none;'>Borrow Book</a>
-                    </div>
-                </div>
+    <div class='col-md-4 mb-4'>
+        <div class='card p-2' style='height: 750px; display: flex; flex-direction: column;'>
+            <img src='{resolvedImageUrl}' class='card-img-top' alt='Book Image' height='200' />
+            <div class='card-body'>
+                <h5 class='card-title'>{title}</h5>
+                <p class='card-text'><strong>Author:</strong> {author}</p>
+                <p class='card-text'><strong>Published:</strong> {publishedDate}</p>
+                <p class='card-text'><strong>Category:</strong> {category}</p>
+                <p class='card-text'><strong>Language:</strong> {language}</p>
+                <p class='{availabilityClass}'><strong>{availability}</strong></p>
+                {borrowButtonHtml} <!-- Conditionally show/hide the Borrow button -->
             </div>
-        ");
+        </div>
+    </div>
+");
                 }
 
                 // Inject book cards into the container at once
