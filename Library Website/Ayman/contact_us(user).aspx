@@ -21,12 +21,26 @@
  <link href="\Rudaina\css\bootstrap.min.css" rel="stylesheet">
 
 <link href="\Rudaina\css\style.css" rel="stylesheet">
+
+
+
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.min.css">
+
    
 
     <style>
+
+        body{
+
+            line-height: 2.5;
+
+
+        }
                 .btn-link {
     color:#7d0ed7ba!important;
     text-decoration: none !important;
+    color:#747d88  !important
 }
         a{
     text-decoration:none!important;
@@ -178,54 +192,63 @@
        
 
 </head>
-<body>
-    <!-- Navbar start -->
- <div >
-     <div class="container topbar bg-primary d-none d-lg-block"  style="visibility:hidden!important;     margin-top: -3vw;">
-         <div class="d-flex justify-content-between">
-             <div class="top-info ps-2">
-                 <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123 Street, New York</a></small>
-                 <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Email@Example.com</a></small>
-             </div>
-             <div class="top-link pe-2">
-                 <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
-                 <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
-                 <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
-             </div>
-         </div>
-     </div>
-     <div class="container px-0">
-         <nav class="navbar navbar-light bg-white navbar-expand-xl">
-             <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Lengo Loop</h1></a>
-             <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                 <span class="fa fa-bars text-primary"></span>
-             </button>
-             <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
-                 <div class="navbar-nav mx-auto">
-             <a href="/Rudaina/Home1.aspx" class="nav-item nav-link active">Home</a>
-             <a href="/Farah/AboutUs.aspx" class="nav-item nav-link">About</a>
-<%--             <a href="/Toqa/All books.aspx" class="nav-item nav-link">Books</a>
-               <a href="/Ammar/Rooms.aspx" class="nav-item nav-link">Rooms</a>--%>
-                 <a href="/Ayman/contact_us(user).aspx" class="nav-item nav-link">Contact Us</a>
 
-             </div>
-<a href="/Farah/Login.aspx" style="color:#7d0ed7ba" class="nav-item nav-link">Sign in</a>
+<body>
+  <div class="container-fluid fixed-top">
+    <div class="container topbar bg-primary d-none d-lg-block"  style="visibility:hidden!important;">
+        <div class="d-flex justify-content-between">
+            <div class="top-info ps-2">
+                <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123 Street, New York</a></small>
+                <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Email@Example.com</a></small>
+            </div>
+            <div class="top-link pe-2">
+                <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
+                <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
+                <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="container px-0">
+        <nav class="navbar navbar-light bg-white navbar-expand-xl">
+            <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Lengo Loop</h1></a>
+            <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars text-primary"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+<%--                    <a href="/Rudaina/Home1.aspx" class="nav-item nav-link active">Home</a>--%>
+<%--                    <a href="/Farah/AboutUs.aspx" class="nav-item nav-link">About</a>--%>
+                    <a href="/Toqa/All books.aspx" class="nav-item nav-link">Books</a>
+                      <a href="/Ammar/Rooms.aspx" class="nav-item nav-link">Rooms</a>
+                        <a href="/Ayman/contact_us(user).aspx" class="nav-item nav-link">Contact Us</a>
+      
+                    </div>
+                    
+          <%--  <a href="/Farah/Login.aspx" style="color:#7d0ed7ba" class="nav-item nav-link">Sign in</a>
              <a href="/Farah/Registation.aspx"style="color:#7d0ed7ba" class="nav-item nav-link">Sign Up</a>
-                </div>
+                </div>--%>
 <%--                <div class="d-flex m-3 me-0">
                     <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>--%>
                  <%--   <a href="#" class="position-relative me-4 my-auto">
                         <i class="fa fa-shopping-bag fa-2x"></i>
                         <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
                     </a>--%>
-                    <%--<a href="#" class="my-auto">
+                  
+                <a href="/Bilal/Profile.aspx" class="my-auto">
                         <i class="fas fa-user fa-2x"></i>
-                    </a>--%>
+                    </a>
+                  
+
+             <a href='<%= ResolveUrl("~/Rudaina/Home1.aspx") %>' class="btn btn-primary" style="background-color: #7d0ed7ba; border: none; margin-left: 40px;">Log Out</a>
+               
                 </div>
+
             </div>
+
         </nav>
     </div>
- <!-- Navbar End -->
+</div>
 
 
 
@@ -379,7 +402,19 @@
 </div>
 <!-- Footer End -->
 
+     <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.min.js"></script>
 
+    <script>
+        function showSweetAlert() {
+            Swal.fire({
+                title: 'Success!',
+                text: 'Data sent successfully!',
+                icon: 'success',
+                confirmButtonText: 'Okay'
+            });
+        }
+    </script>
 
 </body>
 </html>
