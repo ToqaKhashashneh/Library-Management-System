@@ -16,15 +16,18 @@ namespace Library_Website.Ammar
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            roomsFilePath = Server.MapPath("RoomsData.txt");
-            reservationsFilePath = Server.MapPath("Reservations.txt");
-            loginDataFilePath = Server.MapPath("~/Farah/LoginData.txt");
+            
+                roomsFilePath = Server.MapPath("RoomsData.txt");
+                reservationsFilePath = Server.MapPath("Reservations.txt");
+                loginDataFilePath = Server.MapPath("~/Farah/LoginData.txt");
 
-            if (!IsPostBack)
-            {
-                LoadRooms();
+                if (!IsPostBack)
+                {
+                    LoadRooms();
+
+                }
             }
-        }
+        
 
         protected void btnReserve_Click(object sender, EventArgs e)
         {

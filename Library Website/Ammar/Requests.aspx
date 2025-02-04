@@ -23,6 +23,16 @@
 <link href="\Rudaina\css\bootstrap.min.css" rel="stylesheet">
 
 <link href="\Rudaina\css\style.css" rel="stylesheet">
+    <style>
+        .btn-link {
+        color: #747d88 !important;
+        text-decoration: none !important;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+    </style>
     
 
 </head>
