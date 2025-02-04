@@ -77,20 +77,13 @@
     <Content Include="Ammar\Reservations.txt" />
     <Content Include="Ammar\Rooms.aspx" />
     <Content Include="Ammar\RoomsData.txt" />
-    <Content Include="Ayman\Ayman.aspx" />
     <Content Include="Ayman\contact.txt" />
     <Content Include="Ayman\contact_us%28user%29.aspx" />
-    <Content Include="Ayman\profile.aspx" />
-    <Content Include="Ayman\Show_meeting.aspx" />
     <Content Include="Bilal\AllUsers.txt" />
-    <Content Include="Bilal\Bilal.aspx" />
     <Content Include="Bilal\Edit_Profile.aspx" />
-    <Content Include="Bilal\LoadAllData.txt" />
-    <Content Include="Bilal\Login.txt" />
     <Content Include="Bilal\Profile.aspx" />
     <Content Include="Bilal\Reset_Password.aspx" />
     <Content Include="Bilal\Room_History.aspx" />
-    <Content Include="Bilal\Room_History.txt" />
     <Content Include="Farah\AboutUs.aspx" />
     <Content Include="Farah\Login.aspx" />
     <Content Include="Farah\LoginData.txt" />
@@ -99,11 +92,8 @@
     <Content Include="Farah\WebForm1.aspx" />
     <Content Include="Bilal\Contact%28Admin%29.aspx" />
     <Content Include="Bilal\History.aspx" />
-    <Content Include="Bilal\History.txt" />
     <Content Include="Bilal\Response.txt" />
-    <Content Include="Bilal\TextFile1.txt" />
     <Content Include="Rudaina\App_Data\books.txt" />
-    <Content Include="Rudaina\App_Data\Requests.txt" />
     <Content Include="Rudaina\BookManagment.aspx" />
     <Content Include="Rudaina\css\bootstrap.min.css" />
     <Content Include="Rudaina\css\sb-admin-2.css" />
@@ -1939,26 +1929,12 @@
     <Compile Include="Ammar\Rooms.aspx.designer.cs">
       <DependentUpon>Rooms.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Ayman\Ayman.aspx.cs">
-      <DependentUpon>Ayman.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Ayman\Ayman.aspx.designer.cs">
-      <DependentUpon>Ayman.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Ayman\contact_us%28user%29.aspx.cs">
       <DependentUpon>contact_us%28user%29.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Ayman\contact_us%28user%29.aspx.designer.cs">
       <DependentUpon>contact_us%28user%29.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Bilal\Bilal.aspx.cs">
-      <DependentUpon>Bilal.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Bilal\Bilal.aspx.designer.cs">
-      <DependentUpon>Bilal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Bilal\Edit_Profile.aspx.cs">
       <DependentUpon>Edit_Profile.aspx</DependentUpon>

@@ -1,20 +1,5 @@
-<<<<<<< HEAD
-Farah,Farah@gmail.com,123,123
-Toqa,toqamusa@gmail.com,123,123
-=======
-Farah,hatsuk,Farah@gmail.com,123,123
-Farah,hatsuk,Farah@gmail.com,123,123
->>>>>>> 64157fcf2507048ddccd72aae14dc6048c5fe261
-ammar,amar@gmail.com,123,
-ammar,amar@gmail.com,123,
-ammar,amar@gmail.com,123,
-ammar,amar@gmail.com,123,
-ammar,amar@gmail.com,123,
-ammar,amar@gmail.com,123,
-ammar,amar@gmail.com,123,
-ammar,amar@gmail.com,123,
-ammar,amar@gmail.com,123,
-ammar,amar@gmail.com,123,123
-Sam,Mark,Sam@gmail.com,123,123
-farah,123,Farah@gm,123,123
 Farah,Hatasuk,Farah@gmail.com,Mazher61!,Mazher61!
+Toqa,Mousa,toqamusa@gmail.com,123456789T,123456789T
+Ayman,Malkawi,Ayman@gmail.com,123456789A,123456789A
+Admin,Admin,Admin@gmail.com,123456789A,123456789A
+Farah,Sarsak,Farah@gmail.com,123456789F,123456789F

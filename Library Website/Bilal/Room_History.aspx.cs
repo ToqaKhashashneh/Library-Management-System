@@ -12,8 +12,11 @@ namespace Library_Website.Bilal
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string path = Server.MapPath("Room_History.txt");
-            string Email = "ssd@gmail.com";
+            string path = Server.MapPath("~/Ammar/Reservations.txt");
+            string DataLogin = Server.MapPath("~/Farah/LoginData.txt");
+            string Login = File.ReadAllText(DataLogin);
+            string Email = Login;
+       
 
 
 
@@ -21,7 +24,7 @@ namespace Library_Website.Bilal
 
 
             string tableData = "<table border='1'>";
-            tableData += "<tr><th>ID</th><th>Start Date</th><th>Time</th><th>Status</th><th>Email</th>";
+            tableData += "<tr><th>ID</th><th>Start Date</th><th>Time</th><th>Email</th><th>Status</th>";
 
 
             foreach (var f in AllData)
@@ -29,7 +32,7 @@ namespace Library_Website.Bilal
                 string[] Data = f.Split('|');
 
 
-                if (Email == Data[4])
+                if (Email == Data[3])
                 {
                     tableData += "<tr>";
 

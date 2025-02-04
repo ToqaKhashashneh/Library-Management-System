@@ -231,9 +231,10 @@
                 <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
             </a>--%>
                    <a href="Profile.aspx" class="my-auto">
-                       <i class="fas fa-user fa-2x" style="color: #7d0ed7ba
-!important"></i>
+                       <i class="fas fa-user fa-2x" style="color: #7d0ed7ba !important"></i>
                    </a>
+                   <a href='<%= ResolveUrl("~/Rudaina/Home1.aspx") %>' class="btn btn-primary" style="background-color: #7d0ed7ba; border: none; margin-left: 40px;">Log Out</a>
+
            </div>
        </div>
   

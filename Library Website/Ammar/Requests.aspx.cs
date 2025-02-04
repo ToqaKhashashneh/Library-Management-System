@@ -96,13 +96,14 @@ namespace Library_Website.Ammar
             if (!File.Exists(reservationsFilePath))
                 return;
 
+            //string[] lines = File.ReadAllLines(reservationsFilePath);
             string[] lines = File.ReadAllLines(reservationsFilePath);
             List<string> updatedLines = new List<string>();
 
             foreach (string line in lines)
             {
                 string[] data = line.Split('|');
-                if (data.Length >= 5 && data[0] == roomId && data[3] == "Cancel Pending")
+                if (data.Length >= 5 && data[0] == roomId && data[4] == "Cancel Pending")
                 {
                     continue; // Remove the reservation
                 }

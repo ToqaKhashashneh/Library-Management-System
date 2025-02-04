@@ -110,8 +110,8 @@ input[type="submit"]:hover, button:hover {
 
             
 <!-- Navbar start -->
-<div class="container-fluid fixed-top" style="    margin-top: -6vw;">
-    <div class="container topbar bg-primary d-none d-lg-block"  style="visibility:hidden!important;">
+            <div class="container-fluid fixed-top"style ="background: white;     margin-top: -3vw;">
+     <div class="container topbar bg-primary d-none d-lg-block"  style="display: none !important;">
         <div class="d-flex justify-content-between">
             <div class="top-info ps-2">
                 <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123 Street, New York</a></small>
@@ -126,7 +126,7 @@ input[type="submit"]:hover, button:hover {
     </div>
     <div class="container px-0">
         <nav class="navbar navbar-light bg-white navbar-expand-xl">
-            <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Smart Academy</h1></a>
+            <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Lengo Loop</h1></a>
             <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars text-primary"></span>
             </button>
@@ -150,6 +150,9 @@ input[type="submit"]:hover, button:hover {
                       <a href="/Bilal/Profile.aspx" class="my-auto">
        <i class="fas fa-user fa-2x"></i>
    </a>
+
+                                 <a href='<%= ResolveUrl("~/Rudaina/Home1.aspx") %>' class="btn btn-primary" style="background-color: #7d0ed7ba; border: none; margin-left: 40px;">Log Out</a>
+
                 </div>
             </div>
         </nav>

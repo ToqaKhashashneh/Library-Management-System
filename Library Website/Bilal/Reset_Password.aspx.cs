@@ -15,14 +15,14 @@ namespace Library_Website.Bilal
                 if (!string.IsNullOrEmpty(email))
                 {
       
-                    string filePath = Server.MapPath("AllUsers.txt");
+                    string filePath = Server.MapPath("~/Farah/UserInfo.txt");
                     if (File.Exists(filePath))
                     {
                         string[] content = File.ReadAllLines(filePath);
                         foreach (var line in content)
                         {
                             string[] user = line.Split(',');
-                            if (user[0] == email)
+                            if (user[2] == email)
                             {
     
                                 string currentPassword = user[3];
@@ -39,10 +39,10 @@ namespace Library_Website.Bilal
         protected void saveCanghes_Click(object sender, EventArgs e)
         {
 
-            string fileLoged = Server.MapPath("Login.txt"); 
-            string filePath = Server.MapPath("AllUsers.txt"); 
+            string fileLoged = Server.MapPath("~/Farah/LoginData.txt");
+            string filePath = Server.MapPath("~/Farah/UserInfo.txt");
 
-          
+
             string loggedEmail = File.ReadAllText(fileLoged).Trim();
 
          
@@ -65,7 +65,7 @@ namespace Library_Website.Bilal
                 string[] user = allUsers[i].Split(',');
 
               
-                if (user[0] == loggedEmail)
+                if (user[2] == loggedEmail)
                 {
          
                     if (user[3] == currentPassword)

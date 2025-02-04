@@ -6,7 +6,20 @@
 <head runat="server">
   
     <meta charset="utf-8">
-<title>Lengo Loop</title>
+    <meta charset="utf-8">
+<title>Lengo Loop Home Page</title>
+
+
+    <style>
+
+                .btn-link {
+    color:#7d0ed7ba!important;
+    text-decoration: none !important;
+}
+        a{
+    text-decoration:none!important;
+}
+    </style>
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
 <meta content="" name="description">
@@ -25,15 +38,6 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 
 <link href="css/style.css" rel="stylesheet">
-    <style>
-        .btn-link {
-    color:#7d0ed7ba!important;
-    text-decoration: none !important;
-}
-        a{
-    text-decoration:none!important;
-}
-    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -44,6 +48,7 @@
        
     
 
+    <body>
 
         <!-- Spinner Start -->
         <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
@@ -73,22 +78,29 @@
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars text-primary"></span>
                     </button>
-                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
-                        <div class="navbar-nav mx-auto">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="shop.html" class="nav-item nav-link">About</a>
-                            <a href="shop-detail.html" class="nav-item nav-link">Books</a>
-                           
-                                <a href="/Ammar/Rooms.aspx" class="nav-link " >Rooms</a>
-                                
-                            
-                            <a href="contact.html" class="nav-item nav-link">Contact us</a>
-                        </div>
-                        <div class="d-flex m-3 me-0">
-                       <a href="/Farah/Login.aspx" style="color:#7d0ed7ba" class="nav-item nav-link">Sign in</a>
+                 
+                               <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+        <div class="navbar-nav mx-auto">
+            <a href="/Rudaina/Home1.aspx" class="nav-item nav-link active">Home</a>
+            <a href="/Farah/AboutUs.aspx" class="nav-item nav-link">About</a>
+           <%-- <a href="/Toqa/All books.aspx" class="nav-item nav-link">Books</a>
+              <a href="/Ammar/Rooms.aspx" class="nav-item nav-link">Rooms</a>--%>
+                <a href="/Ayman/contact_us(user).aspx" class="nav-item nav-link">Contact Us</a>
+      
+             </div>
+<a href="/Farah/Login.aspx" style="color:#7d0ed7ba" class="nav-item nav-link">Sign in</a>
              <a href="/Farah/Registation.aspx"style="color:#7d0ed7ba" class="nav-item nav-link">Sign Up</a>
-                
-                        </div>
+                </div>
+               <%--         <div class="d-flex m-3 me-0">
+                            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+                            <a href="#" class="position-relative me-4 my-auto">
+                                <i class="fa fa-shopping-bag fa-2x"></i>
+                                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+                            </a>
+                            <a href="#" class="my-auto">
+                                <i class="fas fa-user fa-2x"></i>
+                            </a>
+                        </div>--%>
                     </div>
                 </nav>
             </div>
@@ -155,23 +167,22 @@
             </div>
         </div>
         <!-- Hero End -->
-<section class="py-5" id="About" style="padding:40px auto !important;">
+       <section class="py-5" id="About" style="padding: 40px auto !important;">
     <div class="container" style="color: black;">
         <div class="row">
             <div class="col-md-5">
                 <span class="text-muted" style="color: #A9A9A9 !important; font-size:22px;">Our Story</span>
-                <h2 class="display-5" style="color: #7d0ed7ba !important; font-size:32px; font-weight:900;">About Lengo Loop</h2>
-                <p class="lead">Welcome to Lengo Loop, a distinguished academic institute offering a wide range of courses in various academic fields. We also provide book rentals and room reservations for all your educational needs.</p>
-                <a class="btn btn-primary mt-2" href="" style="background-color: #7d0ed7ba  !important; border: none; padding:10px 30px; color:#f8f9fa">Learn more</a>
+                <h2 class="display-5" style="color: #7d0ed7ba !important; font-size:32px; font-weight:900;">About Us</h2>
+                <p class="lead">Welcome to <strong>Lengoloop</strong>, your ultimate educational hub. We provide a seamless experience for students and professionals by offering a range of services, including book rentals, room reservations, and high-quality educational courses.</p>
+                <a class="btn btn-primary mt-2" href="#" style="background-color: #7d0ed7ba  !important; border: none; padding:10px 30px; color:#f8f9fa">Learn more</a>
             </div>
             <div class="col-md-6 offset-md-1 mt-5">
-                <p class="lead">At Lengo Loop, our mission is to create a comprehensive academic environment where you can access high-quality courses, borrow the books you need, and book rooms for study sessions or private lessons. We are here to support your learning journey in every way possible.</p>
-                <p class="lead">Whether you are looking for specialized courses, need a quiet place for studying, or want to borrow academic books, we have it all. Take advantage of our diverse services to enhance your educational experience.</p>
+                <p class="lead">At <strong>Lengoloop</strong>, we believe in making education accessible and convenient. Need a book for your studies? Browse our vast collection and rent it with ease. Looking for a quiet space to focus? Reserve a study room in just a few clicks.</p>
+                <p class="lead">We also offer a variety of online and in-person courses designed to help you develop new skills and advance in your career. Join our academy and take the next step towards achieving your academic and professional goals.</p>
             </div>
         </div>
     </div>
 </section>
-
 
 
   <!-- Featurs Section Start -->
@@ -1555,7 +1566,7 @@
                     <div class="row g-4">
                         <div class="col-lg-3">
                             <a href="#">
-                                <h1 class="text-primary mb-0">Smart Academy</h1>
+                                <h1 class="text-primary mb-0">Lengo Loop</h1>
                                 <p class="text-secondary mb-0">Educational Institue</p>
                             </a>
                         </div>
@@ -1626,13 +1637,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Smart Academy</a>, All right reserved.</span>
+                        <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Lengo Loop</a>, All right reserved.</span>
                     </div>
                     <div class="col-md-6 my-auto text-center text-md-end text-white">
                         <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
                         <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
                         <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a style="color:#7d0ed7ba" >HTML Codex</a> Distributed By <a style="color:#7d0ed7ba" >ThemeWagon</a>
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
                     </div>
                 </div>
             </div>

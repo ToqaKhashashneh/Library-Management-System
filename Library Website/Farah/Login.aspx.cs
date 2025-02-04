@@ -34,7 +34,7 @@ namespace Library_Website.Farah
             foreach(string user in users)
             {
                 string[] userData = user.Split(',');
-                if (userData[1] == UserEmail && userData[2] == UserPassword)
+                if (userData[2] == UserEmail && userData[3] == UserPassword)
                 {
 
                     string EnterEmail = email.Text.Trim();
@@ -46,14 +46,14 @@ namespace Library_Website.Farah
                     File.WriteAllText(LoginFile, EnterEmail);
 
 
-                    Response.Redirect("");
+                    Response.Redirect("~/Toqa/All Books.aspx");
                     return;
 
                 }
 
-                if (UserEmail == "Admin@gmail.com" && UserPassword == "0000")
+                if (UserEmail == "Admin@gmail.com" && UserPassword == "123456789A")
                 {
-                    Response.Redirect("");
+                    Response.Redirect("~/Rudaina/Dashboard.aspx");
                 }
             }
 

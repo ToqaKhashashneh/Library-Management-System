@@ -16,11 +16,11 @@ namespace Library_Website.Bilal
             if (!IsPostBack)
             {
 
-                string filePath = Server.MapPath("AllUsers.txt");
+                string filePath = Server.MapPath("~/Farah/UserInfo.txt");
                 if (File.Exists(filePath))
                 {
                     string[] content = File.ReadAllLines(filePath);
-                    string fileLoged = Server.MapPath("Login.txt");
+                    string fileLoged = Server.MapPath("~/Farah/LoginData.txt");
                     string Email = File.ReadAllText(fileLoged);
 
                     for (int i = 0; i < content.Length; i++)
@@ -32,10 +32,10 @@ namespace Library_Website.Bilal
                         if (user[0].Trim() == Email.Trim())
                         {
 
-                            email.Text = user[0];
-                            name.Text = user[1];
-                            Lname.Text = user[2];
-
+                           
+                            name.Text = user[0];
+                            Lname.Text = user[1];
+                            email.Text = user[2];
 
                         }
                     }
@@ -50,11 +50,11 @@ namespace Library_Website.Bilal
 
         protected void saveCanghes_Click(object sender, EventArgs e)
         {
-            string filePath = Server.MapPath("AllUsers.txt");
+            string filePath = Server.MapPath("~/Farah/UserInfo.txt");
             if (File.Exists(filePath))
             {
                 string[] content = File.ReadAllLines(filePath);
-                string fileLoged = Server.MapPath("Login.txt");
+                string fileLoged = Server.MapPath("~/Farah/LoginData.txt");
                 string Email = File.ReadAllText(fileLoged).Trim();
 
         
@@ -64,13 +64,14 @@ namespace Library_Website.Bilal
                     string[] user = content[i].Split(',');
                     if (user[0].Trim() == Email.Trim())
                     {
-                        user[0] = email.Text;
-                        user[1] = name.Text;
-                        user[2] = Lname.Text;
-
+                        
+                        user[0] = name.Text;
+                        user[1] = Lname.Text;
+                        user[2] = email.Text;
+               
 
                         File.WriteAllText(fileLoged, email.Text);
-                        content[i] = $"{user[0]},{user[1]},{user[2]},{user[3]}";
+                        content[i] = $"{user[0]},{user[1]},{user[2]},{user[3]},{user[3]}";
 
 
                         break;

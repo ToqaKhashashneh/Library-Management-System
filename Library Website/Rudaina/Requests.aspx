@@ -301,8 +301,8 @@
     <Columns>
         <asp:BoundField DataField="ID" HeaderText="ID" />
         <asp:BoundField DataField="Title" HeaderText="Title" />
-        <asp:BoundField DataField="BorrowerName" HeaderText="Borrower Name" />
-        <asp:BoundField DataField="PublishedDate" HeaderText="Published Date" />
+        <asp:BoundField DataField="Author" HeaderText="Author" />
+            <asp:BoundField DataField="PublishedDate" HeaderText="Published Date" />
         <asp:BoundField DataField="Category" HeaderText="Category" />
         <asp:BoundField DataField="Language" HeaderText="Language" />
         <asp:BoundField DataField="RentalDate" HeaderText="Rental Date" />

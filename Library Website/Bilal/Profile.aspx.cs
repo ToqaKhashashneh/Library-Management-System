@@ -17,7 +17,7 @@ namespace Library_Website.Bilal
             if (File.Exists(filePath))
             {
                 string[] content = File.ReadAllLines(filePath);
-                string fileLoged = Server.MapPath("Login.txt");
+                string fileLoged = Server.MapPath("~/Farah/LoginData.txt");
                 string Email = File.ReadAllText(fileLoged);
 
                 for (int i = 0; i < content.Length; i++)

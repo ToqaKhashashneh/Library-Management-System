@@ -166,7 +166,7 @@
                     </div>
                     <div class="input-field">
 
-                        <asp:TextBox ID="password" runat="server"></asp:TextBox>
+                        <asp:TextBox  ID="password" TextMode="Password" runat="server"></asp:TextBox>
                         <label>Enter your password</label>
                     </div>
                     <div class="forget">

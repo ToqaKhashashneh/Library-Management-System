@@ -87,26 +87,27 @@
             </button>
             <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
                 <div class="navbar-nav mx-auto">
-                    
-                    <a href="shop-detail.html" class="nav-item nav-link">Dashboard</a>
+                 
+                    <a href="/Rudaina/Dashboard.aspx" class="nav-item nav-link">Dashboard</a>
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Book mangment</a>
+                        <a href="/Rudaina/BookManagment.aspx" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Book Management</a>
                         <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                            <a href="cart.html" class="dropdown-item">Modify Books</a>
-                            <a href="chackout.html" class="dropdown-item">Request</a>
+                            <a href="/Rudaina/Dashboard.aspx" class="dropdown-item">Modify Books</a>
+                            <a href="/Rudaina/Requests.aspx" class="dropdown-item">Request</a>
                           
                         </div>
                     </div>
                     <div class="nav-item dropdown">
     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Rooms mangment</a>
     <div class="dropdown-menu m-0 bg-secondary rounded-0">
-        <a href="cart.html" class="dropdown-item">Admin rooms</a>
-        <a href="chackout.html" class="dropdown-item">Edit room</a>
-        <a href="testimonial.html" class="dropdown-item">Add room</a>
-        <a href="404.html" class="dropdown-item">Request</a>
+        <a href="AdminRooms.aspx" class="dropdown-item">Admin rooms</a>
+        <a href="EditRoom.aspx" class="dropdown-item">Edit room</a>
+        <a href="AddRoom.aspx" class="dropdown-item">Add room</a>
+        <a href="Requests.aspx" class="dropdown-item">Request</a>
     </div>
-</div>
-                    <button class="btn btn-primary">Logout</button>
+</div>        
+                    <a href='<%= ResolveUrl("~/Rudaina/Home1.aspx") %>' class="btn btn-primary" style="background-color: #7d0ed7ba; border: none; margin-left: 40px;">Log Out</a>
+
                   
                 </div>
             </div>

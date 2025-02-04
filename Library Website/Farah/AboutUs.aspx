@@ -300,6 +300,14 @@
         .icons i {
             font-size: 200%;
         }
+
+                .btn-link {
+    color:#7d0ed7ba!important;
+    text-decoration: none !important;
+}
+        a{
+    text-decoration:none!important;
+}
     </style>
 </head>
 <body>
@@ -314,8 +322,10 @@
 
 
  <!-- Navbar start -->
- <div class="container-fluid fixed-top">
-     <div class="container topbar bg-primary d-none d-lg-block"  style="visibility:hidden!important;">
+            
+    
+    <div class="container-fluid fixed-top"style ="background: white; ">
+     <div class="container topbar bg-primary d-none d-lg-block"  style="display: none !important;">
          <div class="d-flex justify-content-between">
              <div class="top-info ps-2">
                  <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123 Street, New York</a></small>
@@ -338,8 +348,8 @@
                  <div class="navbar-nav mx-auto">
              <a href="/Rudaina/Home1.aspx" class="nav-item nav-link active">Home</a>
              <a href="/Farah/AboutUs.aspx" class="nav-item nav-link">About</a>
-             <a href="/Toqa/All books.aspx" class="nav-item nav-link">Books</a>
-               <a href="/Ammar/Rooms.aspx" class="nav-item nav-link">Rooms</a>
+            <%-- <a href="/Toqa/All books.aspx" class="nav-item nav-link">Books</a>
+               <a href="/Ammar/Rooms.aspx" class="nav-item nav-link">Rooms</a>--%>
                  <a href="/Ayman/contact_us(user).aspx" class="nav-item nav-link">Contact Us</a>
 
              </div>

@@ -219,7 +219,13 @@
         .reply_section textarea:focus {
             border-style: none;
         }
-
+                .btn-link {
+    color:#7d0ed7ba!important;
+    text-decoration: none !important;
+}
+        a{
+    text-decoration:none!important;
+}
         /*--------------------------*/
     </style>
 
@@ -286,6 +292,7 @@
     <form id="form1" runat="server" class="Form-1">
 
         <div>
+
             <div class="ripple-background">
                 <div class="circle xxlarge shade1"></div>
                 <div class="circle xlarge shade2"></div>

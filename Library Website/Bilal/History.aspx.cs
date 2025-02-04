@@ -8,9 +8,11 @@ namespace Library_Website.Bilal
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            string path = Server.MapPath("LoadAllData.txt");
-            string Email = "foqamusa@gmail.com";
+            
+            string path = Server.MapPath("~/Toqa/BorrowingData.txt");
+            string DataLogin = Server.MapPath("~/Farah/LoginData.txt");
+            string Login = File.ReadAllText(DataLogin);
+            string Email = Login;
 
      
             string[] AllData = File.ReadAllLines(path);

@@ -52,45 +52,46 @@
 
 <body>
     <form id="form1" runat="server">
-        <!-- Navbar start -->
-        <div class="container-fluid fixed-top">
-            
-            <div class="container px-0">
-                <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="index.html" class="navbar-brand">
-                        <h1 class="text-primary display-6" style="color: #7d0ed7ba
- !important">Lengo Loop</h1>
-                    </a>
-                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="fa fa-bars text-primary"></span>
-                    </button>
-                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
-                        <div class="navbar-nav mx-auto">
-                            <a href="/Rudaina/Home1.aspx" class="nav-item nav-link">Home</a>
-                            <a href="/Farah/AboutUs.aspx" class="nav-item nav-link">About</a>
-                            <a href="/Toqa/All books.aspx" class="nav-item nav-link">Books</a>
-                            <a href="/Ammar/Rooms.aspx" class="nav-item nav-link">Rooms</a>
-                            <a href="/Ayman/contact_us(user).aspx" class="nav-item nav-link">Contact Us</a>
+                     <!-- Navbar start -->
+       <div class="container-fluid fixed-top">
+           
+           <div class="container px-0">
+               <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                   <a href="index.html" class="navbar-brand">
+                       <h1 class="text-primary display-6" style="color: #7d0ed7ba
+!important">Lengo Loop</h1>
+                   </a>
+                   <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                       <span class="fa fa-bars text-primary"></span>
+                   </button>
+                   <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                       <div class="navbar-nav mx-auto">
+                           <a href="/Rudaina/Home1.aspx" class="nav-item nav-link">Home</a>
+                           <a href="/Farah/AboutUs.aspx" class="nav-item nav-link">About</a>
+                           <a href="/Toqa/All books.aspx" class="nav-item nav-link">Books</a>
+                           <a href="/Ammar/Rooms.aspx" class="nav-item nav-link">Rooms</a>
+                           <a href="/Ayman/contact_us(user).aspx" class="nav-item nav-link">Contact Us</a>
 
-                        </div>
-                        <%--<a href="/Farah/Login.aspx" style="color: #7d0ed7ba" class="nav-item nav-link">Sign in</a>
-                 <a href="/Farah/Registation.aspx" style="color: #7d0ed7ba" class="nav-item nav-link">Sign Up</a>--%>
-                    </div>
-                    <%--                <div class="d-flex m-3 me-0">
-             <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>--%>
-                    <%--   <a href="#" class="position-relative me-4 my-auto">
-                 <i class="fa fa-shopping-bag fa-2x"></i>
-                 <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
-             </a>--%>
-                    <a href="Profile.aspx" class="my-auto">
-                        <i class="fas fa-user fa-2x" style="color: #7d0ed7ba
- !important"></i>
-                    </a>
-            </div>
-        </div>
-   
-        </nav>
-        <!-- Navbar End -->
+                       </div>
+                       <%--<a href="/Farah/Login.aspx" style="color: #7d0ed7ba" class="nav-item nav-link">Sign in</a>
+                <a href="/Farah/Registation.aspx" style="color: #7d0ed7ba" class="nav-item nav-link">Sign Up</a>--%>
+                   </div>
+                   <%--                <div class="d-flex m-3 me-0">
+            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>--%>
+                   <%--   <a href="#" class="position-relative me-4 my-auto">
+                <i class="fa fa-shopping-bag fa-2x"></i>
+                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+            </a>--%>
+                   <a href="Profile.aspx" class="my-auto">
+                       <i class="fas fa-user fa-2x" style="color: #7d0ed7ba !important"></i>
+                   </a>
+                   <a href='<%= ResolveUrl("~/Rudaina/Home1.aspx") %>' class="btn btn-primary" style="background-color: #7d0ed7ba; border: none; margin-left: 40px;">Log Out</a>
+
+           </div>
+       </div>
+  
+       </nav>
+       <!-- Navbar End -->
         <div class="container p-5 rounded border mt-5 w-25">
             <div class="mb-3">
                 <label for="fullName" class="form-label">First Name</label>
@@ -122,7 +123,7 @@
              <div class="row g-4">
                  <div class="col-lg-3">
                      <a href="#">
-                         <h1 class="text-primary mb-0" style="color:#7d0ed7ba!important;">Smart Academy</h1>
+                         <h1 class="text-primary mb-0" style="color:#7d0ed7ba!important;">Lengo Loop</h1>
                          <p class="text-secondary mb-0">Educational Institue</p>
                      </a>
                  </div>
@@ -179,7 +180,7 @@
                  <div class="footer-item">
                      <h4 class="text-light mb-3">Contact</h4>
                      <p>Address: 1429 Netus Rd, NY 48247</p>
-                     <p>Email: Smart Academy@gmail.com</p>
+                     <p>Email: Lengo Loop@gmail.com</p>
                      <p>Phone: +0123 4567 8910</p>
                      <p>Payment Accepted</p>
                      <img src="img/payment.png" class="img-fluid" alt="">
