@@ -126,10 +126,9 @@ namespace Library_Website.Toqa
                     //");
 
 
-
-                    // Disable "Borrow Book" button for reserved books (hide it)
-                    string borrowButtonHtml = availabilityLower == "reserved" ? "" :
-                        $"<a href='BorrowBook.aspx?bookid={bookId}' class='btn btn-primary' style='background-color: #7d0ed7ba; border: none;'>Borrow Book</a>";
+                    // Hide "Borrow Book" button if the book is "reserved" or "pending"
+                    string borrowButtonHtml = (availabilityLower == "reserved" || availabilityLower == "pending") ? "" :
+                                            $"<a href='BorrowBook.aspx?bookid={bookId}' class='btn btn-primary' style='background-color: #7d0ed7ba; border: none;'>Borrow Book</a>";
 
                     // Append book card **without opening new row**
                     bookCards.Append($@"

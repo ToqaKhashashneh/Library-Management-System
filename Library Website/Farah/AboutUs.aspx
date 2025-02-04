@@ -298,7 +298,7 @@
         }
 
         .btn-link {
-            color: #7d0ed7ba !important;
+            color: #747d88 !important;
             text-decoration: none !important;
         }
 
