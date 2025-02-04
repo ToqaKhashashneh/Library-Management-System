@@ -13,9 +13,16 @@ namespace Library_Website.Bilal
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            if (!IsPostBack)
+            {
+                LoadProfileImage();
+            }
+
             string filePath = Server.MapPath("~/Farah/UserInfo.txt");
             if (File.Exists(filePath))
             {
+                string folderPath = Server.MapPath("Uploads.txt");
                 string[] content = File.ReadAllLines(filePath);
                 string fileLoged = Server.MapPath("~/Farah/LoginData.txt");
                 string Email = File.ReadAllText(fileLoged);
@@ -24,7 +31,7 @@ namespace Library_Website.Bilal
                 {
                     string[] user = content[i].Split(',');
 
-                   
+
 
                     if (user[2].Trim() == Email.Trim())
                     {
@@ -41,14 +48,16 @@ namespace Library_Website.Bilal
                     }
                 }
             }
-                
-                ClientScript.RegisterStartupScript(this.GetType(), "loadPassword", "loadPassword();", true);
+
+            ClientScript.RegisterStartupScript(this.GetType(), "loadPassword", "loadPassword();", true);
+
+
         }
 
 
         protected void Edit_Click(object sender, EventArgs e)
-        { 
-            Response.Redirect("edit_profile.aspx"); 
+        {
+            Response.Redirect("edit_profile.aspx");
 
         }
 
@@ -83,6 +92,50 @@ namespace Library_Website.Bilal
         {
             Response.Redirect("History.aspx");
         }
+
+        protected void btnUpload_Click(object sender, EventArgs e)
+        {
+            if (fuProfileImage.HasFile)
+            {
+
+                if (!Directory.Exists(uploadFolder))
+                {
+                    Directory.CreateDirectory(uploadFolder);
+                }
+
+
+                string fileName = Path.GetFileName(fuProfileImage.FileName);
+                string savedPath = Path.Combine(uploadFolder, fileName);
+                fuProfileImage.SaveAs(savedPath);
+
+
+                File.WriteAllText(filePath, "~/Uploads/" + fileName);
+
+
+                imgProfile.ImageUrl = "~/Uploads/" + fileName;
+            }
+        }
+
+        private void LoadProfileImage()
+        {
+            if (File.Exists(filePath))
+            {
+                string savedImagePath = File.ReadAllText(filePath).Trim();
+                if (!string.IsNullOrEmpty(savedImagePath) && File.Exists(Server.MapPath(savedImagePath)))
+                {
+                    imgProfile.ImageUrl = savedImagePath;
+                    return;
+                }
+            }
+
+
+            imgProfile.ImageUrl = defaultImage;
+        }
+
+        private string filePath = HttpContext.Current.Server.MapPath("~/Uploads/ImagePath.txt");
+        private string uploadFolder = HttpContext.Current.Server.MapPath("~/Uploads/");
+        private string defaultImage = "~/Images/default.png";
+
     }
 
 }
