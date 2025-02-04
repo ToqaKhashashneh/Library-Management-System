@@ -422,7 +422,7 @@
                         <div class="row g-4">
                             <div class="col-lg-3">
                                 <a href="#">
-                                    <h1 class="text-primary mb-0" style="color: #7d0ed7ba!important;">Smart Academy</h1>
+                                    <h1 class="text-primary mb-0" style="color: #7d0ed7ba!important;">Lengo Loop</h1>
                                     <p class="text-secondary mb-0">Educational Institue</p>
                                 </a>
                             </div>
