@@ -27,16 +27,17 @@ namespace Library_Website.Ayman
                     sw.WriteLine($"{email.Text},{name.Text},{message.Text}");
             }
             else
-            {
+            { 
                 using (StreamWriter sw = new StreamWriter(file, true))
 
                     sw.WriteLine($"{email.Text},{name.Text},{message.Text}");
                 {
 
+ }
 
 
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Data send successfully!');", true);
 
-                }
             }
         }
     }
