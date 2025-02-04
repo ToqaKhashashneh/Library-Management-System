@@ -28,7 +28,7 @@
     color:#7d0ed7ba!important;
     text-decoration: none !important;
 }
-        a{
+        a{ 
     text-decoration:none!important;
 }
         .card {
