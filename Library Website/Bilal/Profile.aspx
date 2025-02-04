@@ -177,7 +177,99 @@
             color: #ffffff !important;
         }
 
-        color: #333;
+        .btn-link {
+            color: #7d0ed7ba;
+        }
+
+        .Space {
+            margin-right: 80px;
+        }
+
+        /*-------------------------------*/
+
+        .Load_Image {
+            width: 418px;
+            position: relative;
+            left: 36%;
+            text-align: center;
+            padding: 15px;
+            border-radius: 12px;
+        }
+
+
+        .profile-img {
+            display: block;
+            margin: 0 auto 10px;
+            border: 3px solid #7d0ed7ba;
+            padding: 4px;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            background: none;
+            transition: transform 0.3s ease-in-out;
+        }
+
+
+            .profile-img:hover {
+                transform: scale(1.1);
+                box-shadow: 0px 5px 15px rgba(125, 14, 215, 0.5);
+            }
+
+
+        .file-upload {
+            display: block;
+            margin: 8px auto;
+            padding: 10px;
+            border: 2px solid #7d0ed7ba;
+            border-radius: 6px;
+            width: 85%;
+            text-align: center;
+            background-color: white;
+            font-weight: bold;
+            color: #520ba5;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+
+            .file-upload:hover {
+                background-color: #7d0ed7ba;
+                color: white;
+                border-color: #520ba5;
+                transform: scale(1.05);
+            }
+
+        .upload-btn {
+            background: linear-gradient(135deg, #7d0ed7, #520ba5);
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 90%;
+            margin: 10px auto;
+            box-shadow: 0px 4px 10px rgba(125, 14, 215, 0.4);
+        }
+
+            .upload-btn::before {
+                content: "⬆";
+                font-size: 18px;
+            }
+
+            .upload-btn:hover {
+                background: linear-gradient(135deg, #520ba5, #7d0ed7);
+                transform: scale(1.05);
+                box-shadow: 0px 5px 15px rgba(125, 14, 215, 0.6);
+            }
+
+        /*-------------------------------*/
     </style>
 
     <script type="text/javascript">
@@ -192,7 +284,7 @@
 
             setTimeout(function () {
                 passwordField.type = "password";
-            }, 1000);
+            }, 0000);
         }
     </script>
 
@@ -200,45 +292,38 @@
 
 <body>
     <form id="form1" runat="server">
-              <!-- Navbar start -->
-       <div class="container-fluid fixed-top">
-           
-           <div class="container px-0">
-               <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                   <a href="index.html" class="navbar-brand">
-                       <h1 class="text-primary display-6" style="color: #7d0ed7ba
+        <!-- Navbar start -->
+        <div class="container-fluid fixed-top">
+
+            <div class="container px-0">
+                <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="text-primary display-6" style="color: #7d0ed7ba
 !important">Lengo Loop</h1>
-                   </a>
-                   <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                       <span class="fa fa-bars text-primary"></span>
-                   </button>
-                   <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
-                       <div class="navbar-nav mx-auto">
-                           <a href="/Rudaina/Home1.aspx" class="nav-item nav-link">Home</a>
-                           <a href="/Farah/AboutUs.aspx" class="nav-item nav-link">About</a>
-                           <a href="/Toqa/All books.aspx" class="nav-item nav-link">Books</a>
-                           <a href="/Ammar/Rooms.aspx" class="nav-item nav-link">Rooms</a>
-                           <a href="/Ayman/contact_us(user).aspx" class="nav-item nav-link">Contact Us</a>
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="/Rudaina/Home1.aspx" class="nav-item nav-link">Home</a>
+                            <a href="/Farah/AboutUs.aspx" class="nav-item nav-link">About</a>
+                            <a href="/Toqa/All books.aspx" class="nav-item nav-link">Books</a>
+                            <a href="/Ammar/Rooms.aspx" class="nav-item nav-link">Rooms</a>
+                            <a href="/Ayman/contact_us(user).aspx" class="nav-item nav-link">Contact Us</a>
 
-                       </div>
-                       <%--<a href="/Farah/Login.aspx" style="color: #7d0ed7ba" class="nav-item nav-link">Sign in</a>
-                <a href="/Farah/Registation.aspx" style="color: #7d0ed7ba" class="nav-item nav-link">Sign Up</a>--%>
-                   </div>
-                   <%--                <div class="d-flex m-3 me-0">
-            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>--%>
-                   <%--   <a href="#" class="position-relative me-4 my-auto">
-                <i class="fa fa-shopping-bag fa-2x"></i>
-                <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
-            </a>--%>
-                   <a href="Profile.aspx" class="my-auto">
-                       <i class="fas fa-user fa-2x" style="color: #7d0ed7ba !important"></i>
-                   </a>
-                   <a href='<%= ResolveUrl("~/Rudaina/Home1.aspx") %>' class="btn btn-primary" style="background-color: #7d0ed7ba; border: none; margin-left: 40px;">Log Out</a>
+                        </div>
 
-           </div>
-       </div>
-  
-       </nav>
+                    </div>
+
+                    <a href="Profile.aspx" class="my-auto">
+                        <i class="fas fa-user fa-2x" style="color: #7d0ed7ba !important"></i>
+                    </a>
+                    <a href='<%= ResolveUrl("~/Rudaina/Home1.aspx") %>' class="btn btn-primary" style="background-color: #7d0ed7ba; border: none; margin-left: 40px;">Log Out</a>
+            </div>
+        </div>
+
+        </nav>
        <!-- Navbar End -->
 
         <div class="">
@@ -257,7 +342,7 @@
             <!-- Tabs for navigating to different sections -->
             <div class="tabs-container">
                 <ul class="nav nav-pills justify-content-center">
-                    <li class="nav-item">
+                    <li class="nav-item Space">
                         <a class="nav-link active" id="roomHistoryTab" data-bs-toggle="pill" href="#roomHistory">Room History</a>
                     </li>
                     <li class="nav-item">
@@ -290,6 +375,21 @@
 
             </div>
 
+            <%--------------------------%>
+
+            <div class="Load_Image">
+                <asp:Image ID="imgProfile" runat="server" CssClass="profile-img" />
+                <br />
+                <asp:FileUpload ID="fuProfileImage" runat="server" CssClass="file-upload" />
+                <br />
+                <asp:Button ID="btnUpload" runat="server" Text="Upload Image" OnClick="btnUpload_Click" CssClass="upload-btn" />
+            </div>
+
+
+
+
+            <%--------------------------%>
+
 
             <div class="form-container">
                 <div class="profile-details">
@@ -315,80 +415,79 @@
                 </div>
             </div>
 
-                   <!-- Footer Start -->
-<div class="container-fluid  text-white-50 footer pt-5 mt-5" style="background-color: #000000;">
-    <div class="container py-5">
-        <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5);">
-            <div class="row g-4">
-                <div class="col-lg-3">
-                    <a href="#">
-                        <h1 class="text-primary mb-0" style="color:#7d0ed7ba!important;">Smart Academy</h1>
-                        <p class="text-secondary mb-0">Educational Institue</p>
-                    </a>
-                </div>
-                <div class="col-lg-6">
-                    <div class="position-relative mx-auto">
-                        <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
-                       
+            <!-- Footer Start -->
+            <div class="container-fluid  text-white-50 footer pt-5 mt-5" style="background-color: #000000;">
+                <div class="container py-5">
+                    <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5);">
+                        <div class="row g-4">
+                            <div class="col-lg-3">
+                                <a href="#">
+                                    <h1 class="text-primary mb-0" style="color: #7d0ed7ba!important;">Lengo Loop</h1>
+                                    <p class="text-secondary mb-0">Educational Institue</p>
+                                </a>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="position-relative mx-auto">
+                                    <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="d-flex justify-content-end pt-3">
+                                    <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                                    <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="d-flex justify-content-end pt-3">
-                        <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-                <div class="footer-item">
-                    <h4 class="text-light mb-3">Why People Like us!</h4>
-                    <p class="mb-4">
-                        typesetting, remaining essentially unchanged. It was 
+                    <div class="row g-5">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-item">
+                                <h4 class="text-light mb-3">Why People Like us!</h4>
+                                <p class="mb-4">
+                                    typesetting, remaining essentially unchanged. It was 
             popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.
-                    </p>
-                    <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary" style="color:#7d0ed7ba !important;">Read More</a>
+                                </p>
+                                <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary" style="color: #7d0ed7ba !important;">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="d-flex flex-column text-start footer-item">
+                                <h4 class="text-light mb-3">Shop Info</h4>
+                                <a class="btn-link" href="">About Us</a>
+                                <a class="btn-link" href="">Contact Us</a>
+                                <a class="btn-link" href="">Privacy Policy</a>
+                                <a class="btn-link" href="">Terms & Condition</a>
+                                <a class="btn-link" href="">Return Policy</a>
+                                <a class="btn-link" href="">FAQs & Help</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="d-flex flex-column text-start footer-item">
+                                <h4 class="text-light mb-3">Account</h4>
+                                <a class="btn-link" href="">My Account</a>
+                                <a class="btn-link" href="">Shop details</a>
+                                <a class="btn-link" href="">Shopping Cart</a>
+                                <a class="btn-link" href="">Wishlist</a>
+                                <a class="btn-link" href="">Order History</a>
+                                <a class="btn-link" href="">International Orders</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="footer-item">
+                                <h4 class="text-light mb-3">Contact</h4>
+                                <p>Address: 1429 Netus Rd, NY 48247</p>
+                                <p>Email: Smart Academy@gmail.com</p>
+                                <p>Phone: +0123 4567 8910</p>
+                                <p>Payment Accepted</p>
+                                <img src="img/payment.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="d-flex flex-column text-start footer-item">
-                    <h4 class="text-light mb-3">Shop Info</h4>
-                    <a class="btn-link" href="">About Us</a>
-                    <a class="btn-link" href="">Contact Us</a>
-                    <a class="btn-link" href="">Privacy Policy</a>
-                    <a class="btn-link" href="">Terms & Condition</a>
-                    <a class="btn-link" href="">Return Policy</a>
-                    <a class="btn-link" href="">FAQs & Help</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="d-flex flex-column text-start footer-item">
-                    <h4 class="text-light mb-3">Account</h4>
-                    <a class="btn-link" href="">My Account</a>
-                    <a class="btn-link" href="">Shop details</a>
-                    <a class="btn-link" href="">Shopping Cart</a>
-                    <a class="btn-link" href="">Wishlist</a>
-                    <a class="btn-link" href="">Order History</a>
-                    <a class="btn-link" href="">International Orders</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="footer-item">
-                    <h4 class="text-light mb-3">Contact</h4>
-                    <p>Address: 1429 Netus Rd, NY 48247</p>
-                    <p>Email: Smart Academy@gmail.com</p>
-                    <p>Phone: +0123 4567 8910</p>
-                    <p>Payment Accepted</p>
-                    <img src="img/payment.png" class="img-fluid" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-        <!-- Footer End -->
+            <!-- Footer End -->
 
         </div>
     </form>

@@ -79,11 +79,11 @@
     <Content Include="Ammar\RoomsData.txt" />
     <Content Include="Ayman\contact.txt" />
     <Content Include="Ayman\contact_us%28user%29.aspx" />
-    <Content Include="Bilal\AllUsers.txt" />
     <Content Include="Bilal\Edit_Profile.aspx" />
     <Content Include="Bilal\Profile.aspx" />
     <Content Include="Bilal\Reset_Password.aspx" />
     <Content Include="Bilal\Room_History.aspx" />
+    <Content Include="Bilal\Uploads.txt" />
     <Content Include="Farah\AboutUs.aspx" />
     <Content Include="Farah\Login.aspx" />
     <Content Include="Farah\LoginData.txt" />
