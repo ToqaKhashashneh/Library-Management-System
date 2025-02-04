@@ -50,7 +50,6 @@ namespace Library_Website.Farah
                     return;
 
                 }
-
                 if (UserEmail == "Admin@gmail.com" && UserPassword == "123456789A")
                 {
                     Response.Redirect("~/Rudaina/Dashboard.aspx");

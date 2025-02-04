@@ -1,5 +1,2 @@
-1,Viva la accion: Live Action Spanish,Contee Seely Elizabeth Kuizenga,2010-02-05,Philosophy,English,2025-02-04,2025-02-14,Malak@gmail.com
-6,The Hobbit,J.R.R TOLKIEN,0037-09-21,Philosophy,English,2025-02-12,2025-02-27,Malak@gmail.com
-1,Viva la accion: Live Action Spanish,Contee Seely Elizabeth Kuizenga,2010-02-05,Philosophy,English,2025-02-05,2025-02-13,toqamusa@gmail.com
-2,The LORD Of The KINGS,Sarah Geston,2012-02-05,Fiction,English,2025-02-21,2025-01-28,toqamusa@gmail.com
-2,The LORD Of The KINGS,Sarah Geston,2012-02-05,Fiction,English,2025-02-04,2025-02-20,toqamusa@gmail.com
+1,Viva la accion: Live Action Spanish,Contee Seely Elizabeth Kuizenga,2010-02-05,Philosophy,English,2025-02-03,2025-02-28,Adam@gmail.com
+2,The LORD Of The KINGS,Sarah Geston,2012-02-05,Fiction,English,2025-02-11,2025-02-27,Adam@gmail.com
