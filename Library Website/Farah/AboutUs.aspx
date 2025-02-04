@@ -349,7 +349,7 @@
                                 <a href="/Farah/AboutUs.aspx" class="nav-item nav-link">About</a>
                                 <%-- <a href="/Toqa/All books.aspx" class="nav-item nav-link">Books</a>
                <a href="/Ammar/Rooms.aspx" class="nav-item nav-link">Rooms</a>--%>
-                                <a href="/Ayman/contact_us(user).aspx" class="nav-item nav-link">Contact Us</a>
+                               <%-- <a href="/Ayman/contact_us(user).aspx" class="nav-item nav-link">Contact Us</a>--%>
 
                             </div>
                             <a href="/Farah/Login.aspx" style="color: #7d0ed7ba" class="nav-item nav-link">Sign in</a>
