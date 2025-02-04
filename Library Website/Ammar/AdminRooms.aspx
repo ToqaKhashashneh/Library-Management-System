@@ -24,6 +24,14 @@
 <link href="\Rudaina\css\style.css" rel="stylesheet">
     
     <style>
+        .btn-link {
+        color: #747d88 !important;
+        text-decoration: none !important;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
         body {
             background-color: #f8f9fa;
         }
@@ -123,15 +131,15 @@
             <!-- Header Section -->
             <div class="header-container">
                 <h2 class="text-primary">Manage Rooms</h2>
-                <div class="btn-group-custom">
-                    <asp:Button ID="btnRequests" runat="server" CssClass="btn btn-outline-secondary me-2" Text="Requests" PostBackUrl="Requests.aspx" />
-                    <asp:Button ID="btnAddRoom" runat="server" CssClass="btn btn-success" Text="Add Room" PostBackUrl="AddRoom.aspx" />
-                         <asp:Button ID="Export" runat="server" CssClass="btn btn-success" Text="Export" onclick="Export_Click" />
+                <div class="btn-group-custom" style="margin-top: 4%;">
+                    <asp:Button ID="btnRequests" runat="server" CssClass="btn btn-primary" Text="Requests" PostBackUrl="Requests.aspx" />
+                    <asp:Button ID="btnAddRoom" runat="server" CssClass="btn btn-primary" Text="Add Room" PostBackUrl="AddRoom.aspx" />
+                         <asp:Button ID="Export" runat="server" CssClass="btn btn-primary" Text="Export" onclick="Export_Click" />
                 </div>
             </div>
 
             <!-- Room Cards Grid -->
-            <div class="room-container" runat="server" id="RoomContainer"></div>
+            <div class="room-container" runat="server" id="RoomContainer" style="margin-top: 4%;" ></div>
 
             <!-- Hidden Field to Store Room ID for Deletion -->
             <asp:HiddenField ID="HiddenFieldRoomId" runat="server" />

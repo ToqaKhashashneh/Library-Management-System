@@ -23,41 +23,119 @@
 
 <link href="\Rudaina\css\style.css" rel="stylesheet">
 
-    <style>
-        body {
-            background-color: #f8f9fa;
-           
-        }
+   <style>
+    /* General Styling */
+    .btn-link {
+        color: #747d88 !important;
+        text-decoration: none !important;
+    }
 
-        .card {
-            border: none;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-            text-align: center;
-        }
+    a {
+        text-decoration: none !important;
+    }
+    body {
+        background-color: #f4f7fc;
+        font-family: 'Open Sans', sans-serif;
+    }
 
-        .card:hover {
-            transform: translateY(-5px);
-        }
+    /* Card Styling */
+    .card {
+        border: none;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+    }
 
-        .card-img-top {
-            height: 160px;
-            object-fit: cover;
-        }
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
 
-        .card-title {
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
+    /* Room Image */
+    .card-img-top {
+        height: 180px;
+        object-fit: cover;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+    }
 
-        .time-picker-panel {
-            display: none;
-        }
+    /* Card Body */
+    .card-body {
+        padding: 20px;
+        text-align: center;
+    }
 
-        .time-picker-panel.open {
-            display: block; 
+    .card-title {
+        font-weight: 700;
+        font-size: 1.3rem;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .card-text {
+        font-size: 0.95rem;
+        color: #666;
+        margin-bottom: 8px;
+    }
+
+    /* Buttons */
+    .btn {
+        border-radius: 25px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        padding: 10px 20px;
+    }
+
+    .btn-primary {
+        background: #7d0ed7ba;
+        border: none;
+    }
+
+    .btn-primary:hover {
+        background: #590aa8;
+        transform: scale(1.05);
+    }
+
+    .btn-danger {
+        background: #dc3545;
+        border: none;
+    }
+
+    .btn-danger:hover {
+        background: #c82333;
+        transform: scale(1.05);
+    }
+
+    /* Time Picker */
+    .time-picker-panel {
+        display: none;
+        padding: 15px;
+        border-radius: 10px;
+        background: #f8f9fa;
+        margin-top: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .time-picker-panel.open {
+        display: block;
+        animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
         }
-    </style>
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+
 </head>
 <body>
 
@@ -87,8 +165,7 @@
                     
                           <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
          <div class="navbar-nav mx-auto">
-             <a href="/Rudaina/Home1.aspx" class="nav-item nav-link active">Home</a>
-             <a href="/Farah/AboutUs.aspx" class="nav-item nav-link">About</a>
+       
              <a href="/Toqa/All books.aspx" class="nav-item nav-link">Books</a>
                <a href="/Ammar/Rooms.aspx" class="nav-item nav-link">Rooms</a>
                  <a href="/Ayman/contact_us(user).aspx" class="nav-item nav-link">Contact Us</a>
@@ -96,14 +173,7 @@
              </div>
                     
                     </div>
-                   <%-- <a href="contact.html" class="nav-item nav-link">Contact</a>
-                </div>
-                <div class="d-flex m-3 me-0">
-                    <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
-                    <a href="#" class="position-relative me-4 my-auto">
-                        <i class="fa fa-shopping-bag fa-2x"></i>
-                        <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
-                    </a>--%>
+                  
                  
 
                            <a href="/Bilal/Profile.aspx" class="my-auto">
@@ -133,11 +203,18 @@
                             <div class="card h-100">
                                 <img src='<%# Eval("Image") %>' class="card-img-top" alt="Room Image" onerror="this.src='/Uploads/default-placeholder.png';" />
                                 <div class="card-body">
-                                    <h5 class="card-title"><%# Eval("Name") %></h5>
-                                    <p class="card-text">Capacity: <%# Eval("Capacity") %></p>
-                                    <p class="card-text"><%# Eval("Description") %></p>
+                                    <h5 class="card-title" style="font-weight: 700; font-size: 1.4rem; color: #333; letter-spacing: 0.5px; text-transform: capitalize;">
+    <%# Eval("Name") %>
+</h5>
+<p class="card-text" style="font-size: 1rem; color: #555; font-weight: 600; margin-bottom: 5px;">
+    <i class="fas fa-users" style="color: #7d0ed7ba; margin-right: 5px;"></i> Capacity: <%# Eval("Capacity") %>
+</p>
+<p class="card-text" style="font-size: 1rem; font-weight: 600; color: #666; font-style: italic; line-height: 1.5;">
+    <%# Eval("Description") %>
+</p>
 
-                                    <asp:Label ID="lblStatus" runat="server" CssClass="badge bg-info"></asp:Label>
+
+                                    <asp:Label ID="lblStatus" runat="server" CssClass="btn btn-primary btn-sm"></asp:Label>
 
                                     <asp:Button ID="btnReserve" runat="server" Text="Reserve" CssClass="btn btn-primary btn-sm"
                                         CommandArgument='<%# Eval("ID") %>'
