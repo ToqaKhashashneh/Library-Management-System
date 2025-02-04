@@ -121,8 +121,16 @@ namespace Library_Website.Toqa
         }
 
 
+        // even nmbers above 60 / 130
+        // function print even numbers above 60 and below 130
 
+         static void print( int num1 , int num2) {
+         
+            for (int i = num1; i <num2; i+=2)
 
+                    Console.WriteLine(i);
+
+        }
 
 
 
@@ -245,7 +253,7 @@ namespace Library_Website.Toqa
                 alertIcon = "error";
             }
 
-            // ---------------------------- Final SweetAlert (One Alert - Proper Execution) ----------------------------
+            // ---------------------------- Final SweetAlert  ----------------------------
 
             // Load SweetAlert script & execute in WebForms
             string script = $@"

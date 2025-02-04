@@ -13,7 +13,7 @@ namespace Library_Website.Bilal
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string filePath = Server.MapPath("AllUsers.txt");
+            string filePath = Server.MapPath("~/Farah/UserInfo.txt");
             if (File.Exists(filePath))
             {
                 string[] content = File.ReadAllLines(filePath);
@@ -26,16 +26,16 @@ namespace Library_Website.Bilal
 
                    
 
-                    if (user[0].Trim() == Email.Trim())
+                    if (user[2].Trim() == Email.Trim())
                     {
 
-                        e_Email.Text = user[0];
-                        F_Name.Text = user[1];
-                        L_Name.Text = user[2];
+                        F_Name.Text = user[0];
+                        L_Name.Text = user[1];
+                        e_Email.Text = user[2];
                         P_Pass.Text = user[3];
 
-                        FullNameLabel.Text = user[1] + " " + user[2];
-                        EmailLabel.Text = user[0];
+                        FullNameLabel.Text = user[0] + " " + user[1];
+                        EmailLabel.Text = user[2];
 
                         return;
                     }

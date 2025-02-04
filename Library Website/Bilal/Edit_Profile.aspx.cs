@@ -29,7 +29,7 @@ namespace Library_Website.Bilal
 
 
 
-                        if (user[0].Trim() == Email.Trim())
+                        if (user[2].Trim() == Email.Trim())
                         {
 
                            
@@ -62,7 +62,7 @@ namespace Library_Website.Bilal
                 for (int i = 0; i < content.Length; i++)
                 {
                     string[] user = content[i].Split(',');
-                    if (user[0].Trim() == Email.Trim())
+                    if (user[2].Trim() == Email.Trim())
                     {
                         
                         user[0] = name.Text;

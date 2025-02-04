@@ -361,7 +361,7 @@
         
 
     </form>
-    <script>
+<%--    <script>
         function handleButtonClick(button) {
          
             button.disabled = true;
@@ -370,6 +370,6 @@
             return true; 
         }
 
-    </script>
+    </script>--%>
 </body>
 </html>
