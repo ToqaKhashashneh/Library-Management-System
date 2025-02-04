@@ -80,6 +80,7 @@
             box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
         }
 
+
         
                
        
@@ -93,7 +94,7 @@
 <body>
     <div>
     <form id="form1" runat="server" style=" margin-top: 3vw;">
-        <div>
+        <div style="    margin-top: -1vw;">
 
 
 
@@ -139,11 +140,18 @@
                         <i class="fa fa-shopping-bag fa-2x"></i>
                         <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
                     </a>--%>
-                    <a href="/Bilal/Profile.aspx" class="my-auto">
+                  
+                <a href="/Bilal/Profile.aspx" class="my-auto">
                         <i class="fas fa-user fa-2x"></i>
                     </a>
+                  
+
+             <a href='<%= ResolveUrl("~/Rudaina/Home1.aspx") %>' class="btn btn-primary" style="background-color: #7d0ed7ba; border: none; margin-left: 40px;">Log Out</a>
+               
                 </div>
+
             </div>
+
         </nav>
     </div>
 </div>
@@ -220,7 +228,7 @@
             <div class="row g-4">
                 <div class="col-lg-3">
                     <a href="#">
-                        <h1 class="text-primary mb-0">Smart Academy</h1>
+                        <h1 class="text-primary mb-0">Lengo Loop</h1>
                         <p class="text-secondary mb-0">Educational Institue</p>
                     </a>
                 </div>
@@ -275,7 +283,7 @@
                 <div class="footer-item">
                     <h4 class="text-light mb-3">Contact</h4>
                     <p>Address: 1429 Netus Rd, NY 48247</p>
-                    <p>Email: Smart Academy@gmail.com</p>
+                    <p>Email: Lengo Loop@gmail.com</p>
                     <p>Phone: +0123 4567 8910</p>
                     <p>Payment Accepted</p>
                     <img src="img/payment.png" class="img-fluid" alt="">
