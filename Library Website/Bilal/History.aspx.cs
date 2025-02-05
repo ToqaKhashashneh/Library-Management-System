@@ -8,16 +8,20 @@ namespace Library_Website.Bilal
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
+
+            string pathAllBook = Server.MapPath("~/Rudaina/App_Data/books.txt");
+            string[] AllDataBooks = File.ReadAllLines(pathAllBook);
+
             string path = Server.MapPath("~/Toqa/BorrowingData.txt");
             string DataLogin = Server.MapPath("~/Farah/LoginData.txt");
             string Login = File.ReadAllText(DataLogin);
             string Email = Login;
 
-     
+
             string[] AllData = File.ReadAllLines(path);
 
-       
+
             string tableData = "<table border='1'>";
             tableData += "<tr><th>ID</th><th>Name</th><th>Author</th><th>Publication Date</th><th>Type</th><th>Language</th><th>Start Date</th><th>End Date</th><th>Email</th></tr>";
 
@@ -26,22 +30,34 @@ namespace Library_Website.Bilal
             {
                 string[] Data = f.Split(',');
 
-      
+
                 if (Email == Data[8])
                 {
-                    tableData += "<tr>"; 
 
-          
-                    foreach (var data in Data)
+                    foreach (var Book in AllDataBooks)
                     {
-                        tableData += $"<td>{data}</td>"; 
+                        string[] LineBook = Book.Split(',');
+
+                        if (LineBook[8] == "Reserved" && Data[0] == LineBook[0])
+                        {
+                            tableData += "<tr>";
+
+
+                            foreach (var data in Data)
+                            {
+                                tableData += $"<td>{data}</td>";
+                            }
+
+                            tableData += "</tr>";
+                        }
+
                     }
 
-                    tableData += "</tr>"; 
+
                 }
             }
 
-            tableData += "</table>"; 
+            tableData += "</table>";
 
             historyContainer.InnerHtml = tableData;
 

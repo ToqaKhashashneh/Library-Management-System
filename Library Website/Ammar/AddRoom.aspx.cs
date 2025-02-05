@@ -97,5 +97,16 @@ namespace Library_Website.Ammar
 
             return maxId + 1;
         }
+    
+    
+    
+     
+    
+    
+    
     }
-}
+
+    
+    }
+
+

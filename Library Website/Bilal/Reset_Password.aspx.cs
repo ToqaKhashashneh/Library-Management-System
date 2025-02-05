@@ -72,6 +72,7 @@ namespace Library_Website.Bilal
                     {
                     
                         user[3] = newPassword;
+                        user[4] = newPassword;
                         allUsers[i] = string.Join(",", user); 
 
                  

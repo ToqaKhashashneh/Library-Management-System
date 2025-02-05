@@ -39,37 +39,57 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="#">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
              <!-- Nav Item - Dashboard -->
-             <li class="nav-item active">
-                <a class="nav-link" href="BookManagment.aspx">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Book Managment</span></a>
-            </li>
-                     <!-- Nav Item - Dashboard -->
-         <li class="nav-item active">
-            <a class="nav-link" href="/Ammar/AdminRooms.aspx">
-                <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>RoomManagment</span></a>
-        </li>
+  <li class="nav-item active">
+      <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Dashboard</span></a>
+  </li>
+  <!-- Nav Item - Book Managment -->
+  <li class="nav-item active">
+      <a class="nav-link" href="BookManagment.aspx">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Book Managment</span></a>
+  </li>
+  <!-- Nav Item - Book Requests -->
+  <li class="nav-item active">
+      <a class="nav-link" href="Requests.aspx">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Book Requests </span></a>
+  </li>
+  <!-- Nav Item - Room Managment -->
+  <li class="nav-item active">
+      <a class="nav-link" href="/Ammar/AdminRooms.aspx">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Room Managment</span></a>
+  </li>
+  <!-- Nav Item - Add Room -->
+  <li class="nav-item active">
+      <a class="nav-link" href="/Ammar/AddRoom.aspx">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Add Room</span></a>
+  </li>
+  <!-- Nav Item - Edit Room -->
+  <li class="nav-item active">
+      <a class="nav-link" href="/Ammar/EditRoom.aspx">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Edit Room</span></a>
+  </li>
+  <!-- Nav Item - Room Requests -->
+  <li class="nav-item active">
+      <a class="nav-link" href="/Ammar/Requests.aspx">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Room Requests</span></a>
+  </li>
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="Requests.aspx">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Requests </span></a>
-            </li>
-             <!-- Nav Item - Dashboard -->
- <li class="nav-item active">
-    <a class="nav-link" href="/Bilal/Contact(Admin).aspx">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Feedback</span></a>
-</li>
+
+
+  <!-- Nav Item - Feedback -->
+  <li class="nav-item active">
+      <a class="nav-link" href="/Bilal/Contact(Admin).aspx">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Feedback</span></a>
+  </li>
 
 
 
@@ -303,8 +323,6 @@
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
                     </div>
 
                     <!-- Content Row -->
@@ -532,7 +550,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="#">Logout</a>
+                    <a class="btn btn-primary" href="/Farah/Login.aspx">Logout</a>
                 </div>
             </div>
         </div>

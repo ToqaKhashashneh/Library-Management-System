@@ -11,7 +11,32 @@
 
 
     <style>
+        .featurs-item {
+            height:300px !important;
+        }
+        .border.border-secondary.rounded-bottom{
+            height:552px !important;
+            padding:10px auto !important;
+            display:flex !important;
+            flex-direction:column !important;
+            gap:10px !important;
 
+        }
+        .p-4.rounded.bg-light{
+            height:320px !important;
+        }
+      
+        .footer a ,.footer p{
+            color:gray!important;
+        }
+          .footer a i{
+              color:#ffb524!important;
+
+          }
+          .footer  a{
+              text-decoration:none !important;
+          }
+        
                 .btn-link {
     color:#7d0ed7ba!important;
     text-decoration: none !important;
@@ -85,7 +110,6 @@
             <a href="/Farah/AboutUs.aspx" class="nav-item nav-link">About</a>
            <%-- <a href="/Toqa/All books.aspx" class="nav-item nav-link">Books</a>
               <a href="/Ammar/Rooms.aspx" class="nav-item nav-link">Rooms</a>--%>
-                <a href="/Ayman/contact_us(user).aspx" class="nav-item nav-link">Contact Us</a>
       
              </div>
 <a href="/Farah/Login.aspx" style="color:#7d0ed7ba" class="nav-item nav-link">Sign in</a>
@@ -174,7 +198,7 @@
                 <span class="text-muted" style="color: #A9A9A9 !important; font-size:22px;">Our Story</span>
                 <h2 class="display-5" style="color: #7d0ed7ba !important; font-size:32px; font-weight:900;">About Us</h2>
                 <p class="lead">Welcome to <strong>Lengoloop</strong>, your ultimate educational hub. We provide a seamless experience for students and professionals by offering a range of services, including book rentals, room reservations, and high-quality educational courses.</p>
-                <a class="btn btn-primary mt-2" href="#" style="background-color: #7d0ed7ba  !important; border: none; padding:10px 30px; color:#f8f9fa">Learn more</a>
+                <a class="btn btn-primary mt-2" href="/Farah/AboutUs.aspx" style="background-color: #7d0ed7ba  !important; border: none; padding:10px 30px; color:#f8f9fa">Learn more</a>
             </div>
             <div class="col-md-6 offset-md-1 mt-5">
                 <p class="lead">At <strong>Lengoloop</strong>, we believe in making education accessible and convenient. Need a book for your studies? Browse our vast collection and rent it with ease. Looking for a quiet space to focus? Reserve a study room in just a few clicks.</p>
@@ -289,16 +313,14 @@
                         <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
                             <img src="img/111.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
                         </div>
-                        <h4>The important of being interested</h4>
-                        <p><strong>Author:</strong> John Doe</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                        <div class="d-flex justify-content-start gap-3">
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                                <i class="fa fa-search me-2 text-primary"></i>Details
-                            </a>
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                            </a>
+                       <h4>The Importance of Being Interested</h4>
+<p><strong>Author:</strong> Sarah Smith</p>
+<p>Explores the power of curiosity in personal and professional growth.</p>
+<div class="d-flex justify-content-start gap-3">
+
+                           
+<asp:Button ID="Button6" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />                         
                         </div>
                     </div>
                 </div>
@@ -309,17 +331,14 @@
                         <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
                             <img src="img/112.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
                         </div>
-                        <h4>Michio kaku
-</h4>
-                        <p><strong>Author:</strong> John Doe</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                        <div class="d-flex justify-content-start gap-3">
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                                <i class="fa fa-search me-2 text-primary"></i>Details
-                            </a>
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                            </a>
+                       <h4>Michio Kaku</h4>
+<p><strong>Author:</strong> Michio Kaku</p>
+<p>Explores the future of science and technology through the lens of theoretical physics.</p>
+<div class="d-flex justify-content-start gap-3">
+
+                           
+                          <asp:Button ID="Button7" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
                         </div>
                     </div>
                 </div>
@@ -330,17 +349,14 @@
             <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
                 <img src="img/113.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
             </div>
-            <h4>Stephen Hawking
-</h4>
-            <p><strong>Author:</strong> John Doe</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-            <div class="d-flex justify-content-start gap-3">
-                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                    <i class="fa fa-search me-2 text-primary"></i>Details
-                </a>
-                <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                    <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                </a>
+            <h4>Stephen Hawking</h4>
+<p><strong>Author:</strong> Stephen Hawking</p>
+<p>Delves into the mysteries of the universe, exploring black holes, time, and the nature of space.</p>
+<div class="d-flex justify-content-start gap-3">
+
+               
+               <asp:Button ID="Button8" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
             </div>
         </div>
     </div>
@@ -351,16 +367,13 @@
                         <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
                             <img src="img/114.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
                         </div>
-                        <h4>Popular SCience</h4>
-                        <p><strong>Author:</strong> John Doe</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                        <div class="d-flex justify-content-start gap-3">
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                                <i class="fa fa-search me-2 text-primary"></i>Details
-                            </a>
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                            </a>
+                        <h4>Popular Science</h4>
+<p><strong>Author:</strong> John Doe</p>
+<p>Explores fascinating topics in science, breaking down complex concepts for general readers.</p>
+<div class="d-flex justify-content-start gap-3">
+
+                          <asp:Button ID="Button9" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
                         </div>
         </div>
     </div>
@@ -376,15 +389,12 @@
                             <img src="img/s1.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
                         </div>
                         <h4>Chemistry</h4>
-                        <p><strong>Author:</strong> John Doe</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                        <div class="d-flex justify-content-start gap-3">
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                                <i class="fa fa-search me-2 text-primary"></i>Details
-                            </a>
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                            </a>
+<p><strong>Author:</strong> John Doe</p>
+<p>Provides an accessible introduction to the principles and applications of chemistry in daily life.</p>
+<div class="d-flex justify-content-start gap-3">
+
+                          <asp:Button ID="Button10" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
                         </div>
                     </div>
                 </div>
@@ -395,16 +405,14 @@
                         <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
                             <img src="img/s2.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
                         </div>
-                        <h4>Infinite powers</h4>
-                        <p><strong>Author:</strong> John Doe</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                        <div class="d-flex justify-content-start gap-3">
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                                <i class="fa fa-search me-2 text-primary"></i>Details
-                            </a>
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                            </a>
+                       <h4>Infinite Powers</h4>
+<p><strong>Author:</strong> John Doe</p>
+<p>Explores the history and impact of calculus in shaping modern science and technology.</p>
+<div class="d-flex justify-content-start gap-3">
+
+                           
+                          <asp:Button ID="Button11" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
                         </div>
                     </div>
                 </div>
@@ -415,16 +423,14 @@
             <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
                 <img src="img/s3.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
             </div>
-            <h4>The biology desire</h4>
-            <p><strong>Author:</strong> John Doe</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-            <div class="d-flex justify-content-start gap-3">
-                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                    <i class="fa fa-search me-2 text-primary"></i>Details
-                </a>
-                <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                    <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                </a>
+            <h4>The Biology Desire</h4>
+<p><strong>Author:</strong> John Doe</p>
+<p>Explores the profound connections between biology and the drive for scientific discovery.</p>
+<div class="d-flex justify-content-start gap-3">
+
+                
+              <asp:Button ID="Button12" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
             </div>
         </div>
     </div>
@@ -435,16 +441,14 @@
                         <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
                             <img src="img/s4.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
                         </div>
-                        <h4>network effect</h4>
-                        <p><strong>Author:</strong> John Doe</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                        <div class="d-flex justify-content-start gap-3">
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                                <i class="fa fa-search me-2 text-primary"></i>Details
-                            </a>
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                            </a>
+                        <h4>Network Effect</h4>
+<p><strong>Author:</strong> John Doe</p>
+<p>Examines how networks grow and evolve, creating value through connections and interactions.</p>
+<div class="d-flex justify-content-start gap-3">
+
+                           <asp:Button ID="Button13" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
+                         
                         </div>
         </div>
     </div>
@@ -459,16 +463,13 @@
                         <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
                             <img src="img/h1.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
                         </div>
-                        <h4>A breife history of time </h4>
-                        <p><strong>Author:</strong> John Doe</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                        <div class="d-flex justify-content-start gap-3">
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                                <i class="fa fa-search me-2 text-primary"></i>Details
-                            </a>
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                            </a>
+                        <h4>A Brief History of Time</h4>
+<p><strong>Author:</strong> John Doe</p>
+<p>Explores the origins, structure, and future of the universe, making complex concepts accessible.</p>
+<div class="d-flex justify-content-start gap-3">
+
+                           <asp:Button ID="Button14" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
                         </div>
                     </div>
                 </div>
@@ -479,16 +480,13 @@
                         <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
                             <img src="img/h2.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
                         </div>
-                        <h4>A breife history of time </h4>
-                        <p><strong>Author:</strong> John Doe</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                        <div class="d-flex justify-content-start gap-3">
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                                <i class="fa fa-search me-2 text-primary"></i>Details
-                            </a>
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                            </a>
+                        <h4>A Brief History of Time</h4>
+<p><strong>Author:</strong> John Doe</p>
+<p>Explores the origins of the universe, black holes, and the nature of time itself in simple terms.</p>
+<div class="d-flex justify-content-start gap-3">
+
+                           <asp:Button ID="Button15" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
                         </div>
                     </div>
                 </div>
@@ -499,16 +497,13 @@
             <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
                 <img src="img/h3.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
             </div>
-            <h4>The secret history </h4>
-            <p><strong>Author:</strong> John Doe</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-            <div class="d-flex justify-content-start gap-3">
-                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                    <i class="fa fa-search me-2 text-primary"></i>Details
-                </a>
-                <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                    <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                </a>
+            <h4>The Secret History</h4>
+<p><strong>Author:</strong> John Doe</p>
+<p>A gripping tale of friendship, betrayal, and murder set in an elite college environment.</p>
+<div class="d-flex justify-content-start gap-3">
+
+             <asp:Button ID="Button16" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
             </div>
         </div>
     </div>
@@ -520,15 +515,12 @@
                             <img src="img/h4.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
                         </div>
                         <h4>Islamic Imperialism</h4>
-                        <p><strong>Author:</strong> John Doe</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                        <div class="d-flex justify-content-start gap-3">
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                                <i class="fa fa-search me-2 text-primary"></i>Details
-                            </a>
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                            </a>
+<p><strong>Author:</strong> John Doe</p>
+<p>Analyzes the rise and impact of Islamic empires on global history and politics.</p>
+<div class="d-flex justify-content-start gap-3">
+
+                           <asp:Button ID="Button17" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
                         </div>
         </div>
     </div>
@@ -543,16 +535,13 @@
                         <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
                             <img src="img/f1.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
                         </div>
-                        <h4>The hobbit</h4>
-                        <p><strong>Author:</strong> John Doe</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                        <div class="d-flex justify-content-start gap-3">
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                                <i class="fa fa-search me-2 text-primary"></i>Details
-                            </a>
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                            </a>
+                        <h4>The Hobbit</h4>
+<p><strong>Author:</strong> John Doe</p>
+<p>A timeless fantasy adventure of Bilbo Baggins' journey through Middle-earth.</p>
+<div class="d-flex justify-content-start gap-3">
+
+                         <asp:Button ID="Button18" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
                         </div>
                     </div>
                 </div>
@@ -564,15 +553,12 @@
                             <img src="img/f2.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
                         </div>
                         <h4>The Secret History</h4>
-                        <p><strong>Author:</strong> John Doe</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                        <div class="d-flex justify-content-start gap-3">
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                                <i class="fa fa-search me-2 text-primary"></i>Details
-                            </a>
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                            </a>
+<p><strong>Author:</strong> John Doe</p>
+<p>A captivating tale of elite college students entangled in mystery, crime, and betrayal.</p>
+<div class="d-flex justify-content-start gap-3">
+
+                           <asp:Button ID="Button19" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
                         </div>
                     </div>
                 </div>
@@ -584,15 +570,12 @@
                 <img src="img/f3.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
             </div>
             <h4>The Outsider</h4>
-            <p><strong>Author:</strong> John Doe</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-            <div class="d-flex justify-content-start gap-3">
-                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                    <i class="fa fa-search me-2 text-primary"></i>Details
-                </a>
-                <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                    <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                </a>
+<p><strong>Author:</strong> John Doe</p>
+<p>A thrilling mystery about a seemingly ordinary man accused of a gruesome crime.</p>
+<div class="d-flex justify-content-start gap-3">
+
+               <asp:Button ID="Button20" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
             </div>
         </div>
     </div>
@@ -603,16 +586,13 @@
                         <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
                             <img src="img/f4.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
                         </div>
-                        <h4>The poppy war</h4>
-                        <p><strong>Author:</strong> John Doe</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                        <div class="d-flex justify-content-start gap-3">
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                                <i class="fa fa-search me-2 text-primary"></i>Details
-                            </a>
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                            </a>
+                        <h4>The Outsider</h4>
+<p><strong>Author:</strong> John Doe</p>
+<p>A gripping psychological thriller exploring identity, mystery, and justice.</p>
+<div class="d-flex justify-content-start gap-3">
+
+                           <asp:Button ID="Button21" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
                         </div>
         </div>
     </div>
@@ -627,16 +607,13 @@
                         <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
                             <img src="img/p1.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
                         </div>
-                        <h4>Pooh and the philasopher</h4>
-                        <p><strong>Author:</strong> John Doe</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                        <div class="d-flex justify-content-start gap-3">
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                                <i class="fa fa-search me-2 text-primary"></i>Details
-                            </a>
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                            </a>
+                       <h4>Pooh and the Philosopher</h4>
+<p><strong>Author:</strong> John Doe</p>
+<p>A whimsical exploration of deep philosophical ideas through the adventures of Winnie the Pooh.</p>
+<div class="d-flex justify-content-start gap-3">
+
+                          <asp:Button ID="Button22" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
                         </div>
                     </div>
                 </div>
@@ -647,16 +624,13 @@
                         <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
                             <img src="img/p2.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
                         </div>
-                        <h4>Philosophy</h4>
-                        <p><strong>Author:</strong> John Doe</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                        <div class="d-flex justify-content-start gap-3">
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                                <i class="fa fa-search me-2 text-primary"></i>Details
-                            </a>
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                            </a>
+                       <h4>Philosophy</h4>
+<p><strong>Author:</strong> John Doe</p>
+<p>An insightful exploration of key philosophical concepts and thinkers throughout history.</p>
+<div class="d-flex justify-content-start gap-3">
+
+                           <asp:Button ID="Button23" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
                         </div>
                     </div>
                 </div>
@@ -667,16 +641,13 @@
             <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
                 <img src="img/p3.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
             </div>
-            <h4>American philosophy</h4>
-            <p><strong>Author:</strong> John Doe</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-            <div class="d-flex justify-content-start gap-3">
-                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                    <i class="fa fa-search me-2 text-primary"></i>Details
-                </a>
-                <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                    <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                </a>
+            <h4>American Philosophy</h4>
+<p><strong>Author:</strong> John Doe</p>
+<p>Explores the evolution of philosophical thought in America, from pragmatism to contemporary debates.</p>
+<div class="d-flex justify-content-start gap-3">
+
+              <asp:Button ID="Button24" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
             </div>
         </div>
     </div>
@@ -687,16 +658,13 @@
                         <div class="book-img" style="width: 100%; height: 200px; overflow: hidden;">
                             <img src="img/p4.jpg" class="img-fluid w-100" alt="Book Cover" style="object-fit: contain; height: 100%; width: 80%;">
                         </div>
-                        <h4>The Story of philosophy</h4>
-                        <p><strong>Author:</strong> John Doe</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-                        <div class="d-flex justify-content-start gap-3">
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">
-                                <i class="fa fa-search me-2 text-primary"></i>Details
-                            </a>
-                            <a href="#" class="btn border border-secondary rounded-pill px-3 text-success">
-                                <i class="fa fa-shopping-cart me-2 text-success"></i>Rent
-                            </a>
+                       <h4>The Story of Philosophy</h4>
+<p><strong>Author:</strong> John Doe</p>
+<p>Traces the development of philosophical ideas and thinkers from ancient Greece to the modern era.</p>
+<div class="d-flex justify-content-start gap-3">
+
+                           <asp:Button ID="Button25" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
                         </div>
         </div>
     </div>
@@ -714,159 +682,7 @@
 
 
 
-        <!-- Features Start -->
-<div class="container-fluid service py-5">
-    <div class="container py-5">
-        <div class="row g-4 justify-content-center">
-            <!-- Book Rental Service -->
-            <div class="col-md-6 col-lg-4">
-                <a href="book-rental-details.html" class="service-card text-decoration-none">
-                    <div class="service-item bg-light rounded border border-secondary shadow-sm">
-                        <img src="img/3.jpg" class="img-fluid rounded-top w-100" alt="Book Rental" style="object-fit: cover; height: 200px;">
-                        <div class="px-4 py-4 rounded-bottom">
-                            <div class="service-content bg-primary text-center p-4 rounded">
-                                <h5  class="text-white">Book Rental</h5>
-                                <h6 class="mb-0   text-light" >Special Discounts</h6>
-                                <p class="text-light mt-2">Rent books at discounted rates.</p>
-                                <!-- Links inside the card -->
-                                <div class="mt-3">
-                                    <a href="book-rental-details.html" class="btn btn-light">More Details</a>
-                                    <a href="#" class="btn btn-outline-light mt-2">Rent Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
 
-            <!-- Hall Rental Service -->
-            <div class="col-md-6 col-lg-4">
-                <a href="hall-rental-details.html" class="service-card text-decoration-none">
-                    <div class="service-item bg-light rounded border border-secondary shadow-sm">
-                        <img src="img/7.jpg" class="img-fluid rounded-top w-100" alt="Hall Rental" style="object-fit: cover; height: 200px;">
-                        <div class="px-4 py-4 rounded-bottom">
-                            <div class="service-content bg-primary text-center p-4 rounded">
-                                <h5 class="text-white">Hall Rental</h5>
-                                <h6 class="mb-0 text-white">For Meetings & Training</h6>
-                                <p class="text-white mt-2">Rent our halls for meetings and workshops.</p>
-                                <!-- Links inside the card -->
-                                <div class="mt-3">
-                                    <a href="hall-rental-details.html" class="btn btn-light">More Details</a>
-                                    <a href="#" class="btn btn-outline-light mt-2">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Courses Section -->
-            <div class="col-md-6 col-lg-4">
-                <a href="courses-details.html" class="service-card text-decoration-none">
-                    <div class="service-item bg-light rounded border border-secondary shadow-sm">
-                        <img src="img/8.jpg" class="img-fluid rounded-top w-100" alt="Courses" style="object-fit: cover; height: 200px;">
-                        <div class="px-4 py-4 rounded-bottom">
-                            <div class="service-content bg-primary text-center p-4 rounded">
-                                <h5 class="text-white">Courses</h5>
-                                <h6 class="mb-0 text-white">Get Expert Training</h6>
-                                <p class="text-white mt-2">Learn new skills with our professional courses.</p>
-                                <!-- Links inside the card -->
-                                <div class="mt-3">
-                                    <a href="courses-details.html" class="btn btn-light">Explore Courses</a>
-                                    <a href="#" class="btn btn-outline-light mt-2">Enroll Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Features End -->
-
-
-        <!-- Vesitable Shop Start-->
-        <div class="container-fluid vesitable py-5">
-            <div class="container py-5">
-                <h1 class="mb-0" style="color: #7d0ed7ba ;">Available Courses</h1>
-                <div class="owl-carousel vegetable-carousel justify-content-center">
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="img/16.jpg" class="img-fluid w-100 rounded-top" alt="" style="height: 200px;">
-                        </div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Web Development 101</h4>
-                            <p>Learn the fundamentals of web development including HTML, CSS, and JavaScript. This course is perfect for beginners looking to build their first website.</p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$199</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-book me-2 text-primary"></i> Enroll Now</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item" >
-                        <div class="vesitable-img">
-                            <img src="img/14.jpg" class="img-fluid w-100 rounded-top" alt="" style="height: 200px;">
-                        </div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Advanced Python Programming</h4>
-                            <p>Master the Python programming language with advanced topics including data structures, algorithms, and object-oriented programming.</p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$249</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-book me-2 text-primary"></i> Enroll Now</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="img/15.jpg" class="img-fluid w-100 rounded-top bg-light" alt="" style="height: 200px;">
-                        </div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Introduction to Data Science</h4>
-                            <p>Get started with Data Science! Learn the fundamentals of data analysis, machine learning, and data visualization techniques using Python and R.</p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$199</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-book me-2 text-primary"></i> Enroll Now</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="img/12.jpg" class="img-fluid w-100 rounded-top" alt=""style="height: 200px;">
-                        </div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Advanced Web Development</h4>
-                            <p>Master the art of web development with this advanced course! Learn advanced concepts like dynamic content, APIs, and backend technologies. </p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$249</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-book me-2 text-primary"></i> Enroll Now</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="img/11.jpg" class="img-fluid w-100 rounded-top" alt="" style="height: 200px;">
-                        </div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Drawing Basics</h4>
-                            <p>Learn the foundational techniques of drawing. This course will help you understand shading, perspective, and composition to bring your sketches to life.</p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$39.99</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Enroll Now</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                   
-                  
-                </div>
-            </div>
-        </div>
-        <!-- Vesitable Shop End -->
 
 
         <!-- Banner Section Start-->
@@ -901,10 +717,11 @@
 
         <div class="container-fluid py-5">
             <div class="container py-5">
-                <div class="text-center mx-auto mb-5" style="max-width: 700px;">
-                    <h1 class="display-4" style="color:#7d0ed7ba !important;">Most Borrowed Books</h1>
-                    <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
-                </div>
+                <<div class="text-center mx-auto mb-5" style="max-width: 700px;">
+    <h1 class="display-4" style="color:#7d0ed7ba !important;">Most Borrowed Books</h1>
+    <p>Explore the top books frequently borrowed by users, offering insight into popular choices.</p>
+</div>
+
                 <div class="row g-4">
                     <div class="col-lg-6 col-xl-4">
                         <div class="p-4 rounded bg-light">
@@ -921,8 +738,8 @@
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Rent Book</a>
-                                </div>
+<asp:Button ID="Button5" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />                                </div>
                             </div>
                         </div>
                     </div>
@@ -941,8 +758,8 @@
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Rent Book</a>
-                                </div>
+<asp:Button ID="Button4" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />                                </div>
                             </div>
                         </div>
                     </div>
@@ -961,7 +778,8 @@
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Rent Book</a>
+<asp:Button ID="btnRentBook" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary m-auto" style="margin:auto!important;"    OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />
                                 </div>
                             </div>
                         </div>
@@ -981,8 +799,8 @@
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Rent Book</a>
-                                </div>
+<asp:Button ID="Button3" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />                                </div>
                             </div>
                         </div>
                     </div>
@@ -1001,8 +819,8 @@
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Rent Book</a>
-                                </div>
+<asp:Button ID="Button1" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />                                </div>
                             </div>
                         </div>
                     </div>
@@ -1021,8 +839,8 @@
                                         <i class="fas fa-star text-primary"></i>
                                         <i class="fas fa-star"></i>
                                     </div>
-                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Rent Book</a>
-                                </div>
+<asp:Button ID="Button2" runat="server" CssClass="btn border border-secondary rounded-pill px-3 text-primary"     OnClientClick="showToast(); return false;" 
+  Text="📚 Rent Book" />                                </div>
                             </div>
                         </div>
                     </div>
@@ -1131,434 +949,10 @@
 </div>
 <!-- Testimonial End -->
 
-        
-     
-           
+
+  
 
 
-        <!-- Features Start -->
-
-        <!-- Features Start -->
-<div class="container-fluid service py-5">
-    <div class="container py-5">
-        <div class="row g-4 justify-content-center">
-            <!-- Book Rental Service -->
-            <div class="col-md-6 col-lg-4">
-                <a href="book-rental-details.html" class="service-card text-decoration-none">
-                    <div class="service-item bg-light rounded border border-secondary shadow-sm">
-                        <img src="img/3.jpg" class="img-fluid rounded-top w-100" alt="Book Rental" style="object-fit: cover; height: 200px;">
-                        <div class="px-4 py-4 rounded-bottom">
-                            <div class="service-content bg-primary text-center p-4 rounded">
-                                <h5  class="text-white">Book Rental</h5>
-                                <h6 class="mb-0   text-light" >Special Discounts</h6>
-                                <p class="text-light mt-2">Rent books at discounted rates.</p>
-                                <!-- Links inside the card -->
-                                <div class="mt-3">
-                                    <a href="book-rental-details.html" class="btn btn-light">More Details</a>
-                                    <a href="#" class="btn btn-outline-light mt-2">Rent Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Hall Rental Service -->
-            <div class="col-md-6 col-lg-4">
-                <a href="hall-rental-details.html" class="service-card text-decoration-none">
-                    <div class="service-item bg-light rounded border border-secondary shadow-sm">
-                        <img src="img/7.jpg" class="img-fluid rounded-top w-100" alt="Hall Rental" style="object-fit: cover; height: 200px;">
-                        <div class="px-4 py-4 rounded-bottom">
-                            <div class="service-content bg-primary text-center p-4 rounded">
-                                <h5 class="text-white">Hall Rental</h5>
-                                <h6 class="mb-0 text-white">For Meetings & Training</h6>
-                                <p class="text-white mt-2">Rent our halls for meetings and workshops.</p>
-                                <!-- Links inside the card -->
-                                <div class="mt-3">
-                                    <a href="hall-rental-details.html" class="btn btn-light">More Details</a>
-                                    <a href="#" class="btn btn-outline-light mt-2">Book Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <!-- Courses Section -->
-            <div class="col-md-6 col-lg-4">
-                <a href="courses-details.html" class="service-card text-decoration-none">
-                    <div class="service-item bg-light rounded border border-secondary shadow-sm">
-                        <img src="img/8.jpg" class="img-fluid rounded-top w-100" alt="Courses" style="object-fit: cover; height: 200px;">
-                        <div class="px-4 py-4 rounded-bottom">
-                            <div class="service-content bg-primary text-center p-4 rounded">
-                                <h5 class="text-white">Courses</h5>
-                                <h6 class="mb-0 text-white">Get Expert Training</h6>
-                                <p class="text-white mt-2">Learn new skills with our professional courses.</p>
-                                <!-- Links inside the card -->
-                                <div class="mt-3">
-                                    <a href="courses-details.html" class="btn btn-light">Explore Courses</a>
-                                    <a href="#" class="btn btn-outline-light mt-2">Enroll Now</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Features End -->
-
-
-        <!-- Vesitable Shop Start-->
-        <div class="container-fluid vesitable py-5">
-            <div class="container py-5">
-                <h1 class="mb-0" style="color: #7d0ed7ba ;">Available Courses</h1>
-                <div class="owl-carousel vegetable-carousel justify-content-center">
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="img/16.jpg" class="img-fluid w-100 rounded-top" alt="" style="height: 200px;">
-                        </div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Web Development 101</h4>
-                            <p>Learn the fundamentals of web development including HTML, CSS, and JavaScript. This course is perfect for beginners looking to build their first website.</p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$199</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-book me-2 text-primary"></i> Enroll Now</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item" >
-                        <div class="vesitable-img">
-                            <img src="img/14.jpg" class="img-fluid w-100 rounded-top" alt="" style="height: 200px;">
-                        </div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Advanced Python Programming</h4>
-                            <p>Master the Python programming language with advanced topics including data structures, algorithms, and object-oriented programming.</p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$249</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-book me-2 text-primary"></i> Enroll Now</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="img/15.jpg" class="img-fluid w-100 rounded-top bg-light" alt="" style="height: 200px;">
-                        </div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Introduction to Data Science</h4>
-                            <p>Get started with Data Science! Learn the fundamentals of data analysis, machine learning, and data visualization techniques using Python and R.</p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$199</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-book me-2 text-primary"></i> Enroll Now</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="img/12.jpg" class="img-fluid w-100 rounded-top" alt=""style="height: 200px;">
-                        </div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Advanced Web Development</h4>
-                            <p>Master the art of web development with this advanced course! Learn advanced concepts like dynamic content, APIs, and backend technologies. </p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$249</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-book me-2 text-primary"></i> Enroll Now</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div class="border border-primary rounded position-relative vesitable-item">
-                        <div class="vesitable-img">
-                            <img src="img/11.jpg" class="img-fluid w-100 rounded-top" alt="" style="height: 200px;">
-                        </div>
-                        <div class="p-4 rounded-bottom">
-                            <h4>Drawing Basics</h4>
-                            <p>Learn the foundational techniques of drawing. This course will help you understand shading, perspective, and composition to bring your sketches to life.</p>
-                            <div class="d-flex justify-content-between flex-lg-wrap">
-                                <p class="text-dark fs-5 fw-bold mb-0">$39.99</p>
-                                <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Enroll Now</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                   
-                  
-                </div>
-            </div>
-        </div>
-        <!-- Vesitable Shop End -->
-
-
-        <!-- Banner Section Start-->
-<div class="container-fluid banner bg-secondary my-5">
-    <div class="container py-5">
-        <div class="row g-4 align-items-center">
-            <div class="col-lg-6">
-                <div class="py-4">
-                    <h1 class="display-3 text-white">Learn New Skills</h1>
-                    <p class="fw-normal display-3 text-white mb-4">Enroll in Our Online Courses</p>
-                    <p class="mb-4 text-white">Our courses are designed to enhance your skills in various fields including programming, design, language, and more. Get started today!</p>
-                    <a href="#" class="banner-btn btn border-2 border-white rounded-pill text-white py-3 px-5">Browse Courses</a>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="position-relative">
-                    <img src="img/16.png" class="img-fluid w-100 rounded" alt="Courses Banner">
-                    <div class="d-flex align-items-center justify-content-center bg-white rounded-circle position-absolute" style="width: 140px; height: 140px; top: 0; left: 0; display:none !important;">
-                        <h1 style="font-size: 100px;">5</h1>
-                        <div class="d-flex flex-column">
-                            <span class="h2 mb-0">Programming</span>
-                            <span class="h4 text-muted mb-0">Courses</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Banner Section End-->
-
-
-        <!-- Bestsaler Product Start -->
-        <div class="container-fluid py-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto mb-5" style="max-width: 700px;">
-                    <h1 class="display-4" style="color:#7d0ed7ba !important;">Most Borrowed Books</h1>
-                    <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="p-4 rounded bg-light">
-                            <div class="row align-items-center">
-                                <div class="col-6">
-                                    <img src="img/Biologie.jpg" class="img-fluid  w-100" alt="">
-                                </div>
-                                <div class="col-6">
-                                    <a href="#" class="h5">Biologie</a>
-                                    <div class="d-flex my-3">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Rent Book</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="p-4 rounded bg-light">
-                            <div class="row align-items-center">
-                                <div class="col-6">
-                                    <img src="img/19.jpg" class="img-fluid w-100" alt="">
-                                </div>
-                                <div class="col-6">
-                                    <a href="#" class="h5">Chemistry</a>
-                                    <div class="d-flex my-3">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Rent Book</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="p-4 rounded bg-light">
-                            <div class="row align-items-center">
-                                <div class="col-6">
-                                    <img src="img/25.jpg" class="img-fluid w-100" alt="">
-                                </div>
-                                <div class="col-6">
-                                    <a href="#" class="h5">Alice Adventure in wonderful</a>
-                                    <div class="d-flex my-3">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Rent Book</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="p-4 rounded bg-light">
-                            <div class="row align-items-center">
-                                <div class="col-6">
-                                    <img src="img/24.jpg" class="img-fluid  w-100" alt="">
-                                </div>
-                                <div class="col-6">
-                                    <a href="#" class="h5">Over The Sirens</a>
-                                    <div class="d-flex my-3">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Rent Book</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="p-4 rounded bg-light">
-                            <div class="row align-items-center">
-                                <div class="col-6">
-                                    <img src="img/30.jpg" class="img-fluid  w-100" alt="">
-                                </div>
-                                <div class="col-6">
-                                    <a href="#" class="h5">Again but better</a>
-                                    <div class="d-flex my-3">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Rent Book</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-xl-4">
-                        <div class="p-4 rounded bg-light">
-                            <div class="row align-items-center">
-                                <div class="col-6">
-                                    <img src="img/23.jpg" class="img-fluid w-100" alt="">
-                                </div>
-                                <div class="col-6">
-                                    <a href="#" class="h5">Harry Potter</a>
-                                    <div class="d-flex my-3">
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star text-primary"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i>Rent Book</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                   
-                   
-                </div>
-            </div>
-        </div>
-        <!-- Bestsaler Product End -->
-
-
-        <!-- Fact Start -->
-        <div class="container-fluid py-5">
-            <div class="container">
-                <div class="bg-light p-5 rounded">
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
-                                <h4>satisfied customers</h4>
-                                <h1>1963</h1>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
-                                <h4>quality of service</h4>
-                                <h1>99%</h1>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-lg-6 col-xl-3">
-                            <div class="counter bg-white rounded p-5">
-                                <i class="fa fa-users text-secondary"></i>
-                                <h4>quality certificates</h4>
-                                <h1>33</h1>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Fact Start -->
-
-
-      <!-- Testimonial Start -->
-        <!-- Testimonial Start -->
-<!-- Testimonial Start -->
-<div class="container-fluid testimonial py-5">
-    <div class="container py-5">
-        <div class="testimonial-header text-center">
-            <h4 class="text-primary">What Our Students Say</h4>
-            <h1 class="display-5 mb-5 text-dark">Student Testimonials</h1>
-        </div>
-        <div class="owl-carousel testimonial-carousel">
-            <div class="testimonial-item img-border-radius bg-light rounded p-4">
-                <div class="position-relative">
-                    <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
-                    <div class="mb-4 pb-4 border-bottom border-secondary">
-                        <p class="mb-0">"The Python programming course at this institute was amazing! The lessons were clear and practical, and the instructor was very knowledgeable. I can now confidently apply my skills in real-world projects."</p>
-                    </div>
-                    <div class="d-flex align-items-center flex-nowrap">
-                        <div class="bg-secondary rounded">
-                            <img src="img/31.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="Student 1">
-                        </div>
-                        <div class="ms-4 d-block">
-                            <h4 class="text-dark">John Doe</h4>
-                            <p class="m-0 pb-3">Software Developer</p>
-                            <div class="d-flex pe-5">
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="testimonial-item img-border-radius bg-light rounded p-4">
-                <div class="position-relative">
-                    <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
-                    <div class="mb-4 pb-4 border-bottom border-secondary">
-                        <p class="mb-0">"I took the Web Development Bootcamp and I can now build my own websites! The instructors are supportive and the hands-on experience was invaluable. Highly recommend!"</p>
-                    </div>
-                    <div class="d-flex align-items-center flex-nowrap">
-                        <div class="bg-secondary rounded">
-                            <img src="img/32.jpg" class="img-fluid rounded" style="width: 100px; height: 100px;" alt="Student 2">
-                        </div>
-                        <div class="ms-4 d-block">
-                            <h4 class="text-dark">Jane Smith</h4>
-                            <p class="m-0 pb-3">Web Developer</p>
-                            <div class="d-flex pe-5">
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                                <i class="fas fa-star text-primary"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Testimonial End -->
-
-        
         <!-- Footer Start -->
         <div class="container-fluid  text-white-50 footer pt-5 mt-5" style="background-color: #000000;">
             <div class="container py-5">
@@ -1578,7 +972,7 @@
                         </div>
                         <div class="col-lg-3">
                             <div class="d-flex justify-content-end pt-3">
-                                <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle"  href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
                                 <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
@@ -1589,15 +983,15 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
-                            <h4 class="text-light mb-3">Why People Like us!</h4>
-                            <p class="mb-4">typesetting, remaining essentially unchanged. It was 
-                                popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.</p>
+                            <h4 class="text-light mb-3">Why People Like Us!</h4>
+<p class="mb-4">Our platform brings convenience and efficiency by offering easy access to local libraries, making book rentals and room bookings seamless for all users.</p>
+
                             <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Read More</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="d-flex flex-column text-start footer-item">
-                            <h4 class="text-light mb-3">Shop Info</h4>
+                            <h4 class="text-light mb-3">Booking Info</h4>
                             <a class="btn-link" href="">About Us</a>
                             <a class="btn-link" href="">Contact Us</a>
                             <a class="btn-link" href="">Privacy Policy</a>
@@ -1610,17 +1004,15 @@
                         <div class="d-flex flex-column text-start footer-item">
                             <h4 class="text-light mb-3">Account</h4>
                             <a class="btn-link" href="">My Account</a>
-                            <a class="btn-link" href="">Shop details</a>
-                            <a class="btn-link" href="">Shopping Cart</a>
+                            <a class="btn-link" href="">Booking details</a>
+                            <a class="btn-link" href="">Latest offer</a>
                             <a class="btn-link" href="">Wishlist</a>
-                            <a class="btn-link" href="">Order History</a>
-                            <a class="btn-link" href="">International Orders</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
                             <h4 class="text-light mb-3">Contact</h4>
-                            <p>Address: 1429 Netus Rd, NY 48247</p>
+                            <p>Address: Jordan-Amman-Khalda</p>
                             <p>Email: Lengo Loop@gmail.com</p>
                             <p>Phone: +0123 4567 8910</p>
                             <p>Payment Accepted</p>
@@ -1639,12 +1031,7 @@
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                         <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Lengo Loop</a>, All right reserved.</span>
                     </div>
-                    <div class="col-md-6 my-auto text-center text-md-end text-white">
-                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -1666,6 +1053,25 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+        <!-- Bootstrap Toast -->
+<div id="toastContainer" class="position-fixed bottom-0 end-0 p-3" style="z-index: 1050;">
+    <div id="rentToast" class="toast align-items-center text-white  border-0" role="alert" aria-live="assertive" aria-atomic="true" style="background:blue;">
+        <div class="d-flex">
+            <div class="toast-body">
+                You must sign in to rent a book.
+            </div>
+            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showToast() {
+        var toast = new bootstrap.Toast(document.getElementById('rentToast'));
+        toast.show();
+    }
+</script>
+
     </body>
 
 </html>

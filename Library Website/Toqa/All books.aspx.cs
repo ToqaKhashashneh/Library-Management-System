@@ -133,7 +133,7 @@ namespace Library_Website.Toqa
                     // Append book card **without opening new row**
                     bookCards.Append($@"
     <div class='col-md-4 mb-4'>
-        <div class='card p-2' style='height: 750px; display: flex; flex-direction: column;'>
+        <div class='card p-2' style='height: 900px; display: flex; flex-direction: column;'>
             <img src='{resolvedImageUrl}' class='card-img-top' alt='Book Image' height='200' />
             <div class='card-body'>
                 <h5 class='card-title'>{title}</h5>

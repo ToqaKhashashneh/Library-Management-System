@@ -32,7 +32,7 @@ namespace Library_Website.Bilal
                 string[] Data = f.Split('|');
 
 
-                if (Email == Data[3])
+                if (Email == Data[3] && Data[4] == "Reserved")
                 {
                     tableData += "<tr>";
 
@@ -50,5 +50,7 @@ namespace Library_Website.Bilal
 
             historyContainer.InnerHtml = tableData;
         }
+
+
     }
 }

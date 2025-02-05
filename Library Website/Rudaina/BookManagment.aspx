@@ -42,37 +42,59 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="Dashboard.aspx">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Book Management</span></a>
-            </li>
-             </li>
-             <!-- Nav Item - Dashboard -->
-             <li class="nav-item">
-                 <a class="nav-link" href="/Ammar/AdminRooms.aspx">
-                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                     <span>Room Management</span></a>
-             </li>
-                        <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="Requests.aspx">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Requests </span></a>
-            </li>
              <!-- Nav Item - Dashboard -->
  <li class="nav-item active">
-    <a class="nav-link" href="/Bilal/Contact(Admin).aspx">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Feedback</span></a>
-</li>
+     <a class="nav-link" href="/Rudaina/Dashboard.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Dashboard</span></a>
+ </li>
+ <!-- Nav Item - Book Managment -->
+ <li class="nav-item active">
+     <a class="nav-link" href="/Rudaina/BookManagment.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Book Managment</span></a>
+ </li>
+ <!-- Nav Item - Book Requests -->
+ <li class="nav-item active">
+     <a class="nav-link" href="/Rudaina/Requests.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Book Requests </span></a>
+ </li>
+ <!-- Nav Item - Room Managment -->
+ <li class="nav-item active">
+     <a class="nav-link" href="/Ammar/AdminRooms.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Room Managment</span></a>
+ </li>
+ <!-- Nav Item - Add Room -->
+ <li class="nav-item active">
+     <a class="nav-link" href="/Ammar/AddRoom.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Add Room</span></a>
+ </li>
+ <!-- Nav Item - Edit Room -->
+ <li class="nav-item active">
+     <a class="nav-link" href="/Ammar/EditRoom.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Edit Room</span></a>
+ </li>
+ <!-- Nav Item - Room Requests -->
+ <li class="nav-item active">
+     <a class="nav-link" href="Requests.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Room Requests</span></a>
+ </li>
+
+
+
+ <!-- Nav Item - Feedback -->
+ <li class="nav-item active">
+     <a class="nav-link" href="/Bilal/Contact(Admin).aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Feedback</span></a>
+ </li>
+
+
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
@@ -312,7 +334,7 @@
             style="min-width: 200px; width: 80%;">
     <asp:ListItem Value="All">All</asp:ListItem>
     <asp:ListItem Value="Available">Available</asp:ListItem>
-    <asp:ListItem Value="Rented">Rented</asp:ListItem>
+    <asp:ListItem Value="Reserved">Rented</asp:ListItem>
 </asp:DropDownList>
 
     </div>
@@ -454,10 +476,13 @@
         </asp:TemplateField>
         <asp:TemplateField HeaderText="Actions">
             <ItemTemplate>
-                <asp:Button ID="btnEdit" runat="server" CommandName="Edit" Text="Edit" CssClass="btn btn-primary mb-3" 
-                    CommandArgument='<%# Eval("BookID") %>'  />
-                <asp:Button ID="btnDelete" runat="server" CommandName="Delete" Text="Delete" CssClass="btn btn-danger"
-                    CommandArgument='<%# Eval("BookID") %>' />
+                <div style="display:flex; flex-direction:column; gap:10px;">
+                       <asp:Button ID="btnEdit" runat="server" CommandName="Edit" Text="Edit" CssClass="btn btn-primary mb-3" 
+       CommandArgument='<%# Eval("BookID") %>'  />
+   <asp:Button ID="btnDelete" runat="server" CommandName="Delete" Text="Delete" CssClass="btn btn-danger"
+       CommandArgument='<%# Eval("BookID") %>' />
+                </div>
+             
             </ItemTemplate>
         </asp:TemplateField>
     </Columns>
@@ -487,7 +512,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="editBookModalLabel">تعديل الكتاب</h5>
+                <h5 class="modal-title" id="editBookModalLabel">Edit book</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -592,7 +617,7 @@
                 <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="#">Logout</a>
+                    <a class="btn btn-primary" href="/Farah/Login.aspx">Logout</a>
                 </div>
             </div>
         </div>

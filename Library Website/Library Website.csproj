@@ -79,11 +79,11 @@
     <Content Include="Ammar\RoomsData.txt" />
     <Content Include="Ayman\contact.txt" />
     <Content Include="Ayman\contact_us%28user%29.aspx" />
-    <Content Include="Bilal\AllUsers.txt" />
     <Content Include="Bilal\Edit_Profile.aspx" />
     <Content Include="Bilal\Profile.aspx" />
     <Content Include="Bilal\Reset_Password.aspx" />
     <Content Include="Bilal\Room_History.aspx" />
+    <Content Include="Bilal\Uploads.txt" />
     <Content Include="Farah\AboutUs.aspx" />
     <Content Include="Farah\Login.aspx" />
     <Content Include="Farah\LoginData.txt" />
@@ -1882,6 +1882,7 @@
     <Content Include="Rudaina\vendor\jquery\jquery.slim.js" />
     <Content Include="Rudaina\vendor\jquery\jquery.slim.min.js" />
     <Content Include="Rudaina\WebForm1.aspx" />
+    <Content Include="Rudaina\WebForm2.aspx" />
     <Content Include="Toqa\All books.aspx" />
     <Content Include="Rudaina\img\book1.png" />
     <Content Include="Rudaina\img\book2.png" />
@@ -1893,6 +1894,7 @@
     <Content Include="Toqa\BorrowingData.txt" />
     <Content Include="Toqa\WebForm1.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ammar\AddRoom.aspx.cs">
@@ -2040,6 +2042,13 @@
       <DependentUpon>Requests.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Rudaina\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rudaina\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Toqa\All books.aspx.cs">
       <DependentUpon>All books.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -2059,6 +2068,13 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Toqa\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
