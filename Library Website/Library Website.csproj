@@ -1894,6 +1894,7 @@
     <Content Include="Toqa\BorrowingData.txt" />
     <Content Include="Toqa\WebForm1.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Ammar\AddRoom.aspx.cs">
@@ -2067,6 +2068,13 @@
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Toqa\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
