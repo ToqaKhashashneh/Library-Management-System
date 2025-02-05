@@ -39,6 +39,34 @@ namespace Library_Website.Farah
                               @"[a-z0-9](?:[a-z0-9-]*[a-z0-9])?)\Z";
             string strRegexforpass = @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,15}$";
 
+            string strRegexForName = @"^[A-Za-z]{2,}$";
+
+            if (!Regex.IsMatch(FirstName, strRegexForName))
+            {
+                string script = "Swal.fire({ " +
+                                "title: 'Invalid First Name!', " +
+                                "text: 'First name must contain only letters and be at least 2 characters long.', " +
+                                "icon: 'error', " +
+                                "confirmButtonText: 'OK' " +
+                                "});";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertFirstName", script, true);
+                return; // Stop further execution if the first name is invalid
+            }
+
+
+            if (!Regex.IsMatch(LastName, strRegexForName))
+            {
+                string script = "Swal.fire({ " +
+                                "title: 'Invalid Last Name!', " +
+                                "text: 'Last name must contain only letters and be at least 2 characters long.', " +
+                                "icon: 'error', " +
+                                "confirmButtonText: 'OK' " +
+                                "});";
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "alertLastName", script, true);
+                return; // Stop further execution if the last name is invalid
+            }
+
+
             // Validate email format
             if (!Regex.IsMatch(Email, strRegex, RegexOptions.IgnoreCase))
             {
