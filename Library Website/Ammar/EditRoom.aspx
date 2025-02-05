@@ -1,271 +1,513 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="EditRoom.aspx.cs" Inherits="Library_Website.Ammar.EditRoom" %>
 
 <!DOCTYPE html>
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Edit Room</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-   
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <title> Dashboard</title>
 
+    <!-- Custom fonts for this template-->
+    <link href="~/Rudaina/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
 
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
-
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
-<link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
-<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
-
-<link href="\Rudaina\css\bootstrap.min.css" rel="stylesheet">
-
-<link href="\Rudaina\css\style.css" rel="stylesheet">
-
+    <!-- Custom styles for this template-->
+    <link href="~/Rudaina/css/sb-admin-2.min.css" rel="stylesheet">
     <style>
-        .btn-link {
-        color: #747d88 !important;
-        text-decoration: none !important;
-    }
-
-    a {
-        text-decoration: none !important;
-    }
-        body {
-            background-color: #f8f9fa;
-            font-family: 'Poppins', sans-serif;
+        .upload-box {
+    border: 2px dashed #8146FF;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+}
+        form{
+            margin-top:20px!important;
+width:100%;
         }
         .edit-room-container {
-            max-width: 500px;
-            margin: 80px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            text-align: center;
-        }
-        .edit-room-container h2 {
-            color: #8146FF;
-            font-weight: 600;
-            margin-bottom: 20px;
-        }
-        .form-label {
-            font-weight: 500;
-            text-align: left;
-            display: block;
-            margin-bottom: 5px;
-            color: #333;
-        }
-        .form-control {
-            border-radius: 8px;
-            border: 1px solid #ddd;
-            padding: 10px;
-            font-size: 16px;
-        }
-        .form-control:focus {
-            border-color: #8146FF;
-            box-shadow: 0 0 5px rgba(129, 70, 255, 0.3);
-        }
-        .upload-box {
-            border: 2px dashed #8146FF;
-            padding: 12px;
-            border-radius: 8px;
-            text-align: center;
-        }
-        .upload-box input {
-            display: block;
-            margin: auto;
-        }
-        .btn-submit {
-            background-color: #8146FF;
-            color: white;
-            border: none;
-            padding: 12px;
-            border-radius: 8px;
-            font-size: 16px;
-            width: 100%;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        .btn-submit:hover {
-            background-color: #5A2BBE;
-        }
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: auto;
+    margin-top: 20px; !important
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.upload-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.text-success {
+    text-align: center;
+    font-size: 16px;
+}
+
+.edit-room-container {
+    background: #ffffff;
+    padding: 40px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px !important; /* Increased max-width */
+    margin: auto;
+    margin-top: 40px !important; /* Adjusted margin-top */
+}
+.edit-room-container h2{
+    color:#a04fe2;
+
+}
+.btn-submit {
+    background:#a04fe2!important;
+}
+footer{
+    position:absolute!important;
+    bottom:0 !important;
+    width:100% !important;
+}
+
     </style>
+
 </head>
-<body>
+<body id="page-top">
+        <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+<a class="sidebar-brand d-flex align-items-center justify-content-center" href="Dashboard.aspx">
+    
+    <div class="sidebar-brand-text mx-3">Lengoloop <sup></sup></div>
+</a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+             <!-- Nav Item - Dashboard -->
+ <li class="nav-item active">
+     <a class="nav-link" href="/Rudaina/Dashboard.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Dashboard</span></a>
+ </li>
+ <!-- Nav Item - Book Managment -->
+ <li class="nav-item active">
+     <a class="nav-link" href="/Rudaina/BookManagment.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Book Managment</span></a>
+ </li>
+ <!-- Nav Item - Book Requests -->
+ <li class="nav-item active">
+     <a class="nav-link" href="/Rudaina/Requests.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Book Requests </span></a>
+ </li>
+ <!-- Nav Item - Room Managment -->
+ <li class="nav-item active">
+     <a class="nav-link" href="AdminRooms.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Room Managment</span></a>
+ </li>
+ <!-- Nav Item - Add Room -->
+ <li class="nav-item active">
+     <a class="nav-link" href="AddRoom.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Add Room</span></a>
+ </li>
+ <!-- Nav Item - Edit Room -->
+ <li class="nav-item active">
+     <a class="nav-link" href="EditRoom.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Edit Room</span></a>
+ </li>
+ <!-- Nav Item - Room Requests -->
+ <li class="nav-item active">
+     <a class="nav-link" href="Requests.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Room Requests</span></a>
+ </li>
 
 
-            <!-- Navbar start -->
-<div class="container-fluid fixed-top">
-    <div class="container topbar bg-primary d-none d-lg-block"  style="visibility:hidden!important;">
-        <div class="d-flex justify-content-between">
-            <div class="top-info ps-2">
-                <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123 Street, New York</a></small>
-                <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">Email@Example.com</a></small>
+
+ <!-- Nav Item - Feedback -->
+ <li class="nav-item active">
+     <a class="nav-link" href="/Bilal/Contact(Admin).aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Feedback</span></a>
+ </li>
+
+
+
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
-            <div class="top-link pe-2">
-                <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
-                <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
-                <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
-            </div>
-        </div>
-    </div>
-    <div class="container px-0">
-        <nav class="navbar navbar-light bg-white navbar-expand-xl">
-            <a href="index.html" class="navbar-brand"><h1 class="text-primary display-6">Lengo Loop</h1></a>
-            <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="fa fa-bars text-primary"></span>
-            </button>
-            <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
-                <div class="navbar-nav mx-auto">
-                       <a href="/Rudaina/Dashboard.aspx" class="nav-item nav-link">Dashboard</a>
-                    <div class="nav-item dropdown">
-                        <a href="/Rudaina/BookManagment.aspx" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Book Management</a>
-                        <div class="dropdown-menu m-0 bg-secondary rounded-0">
-                            <a href="/Rudaina/Dashboard.aspx" class="dropdown-item">Modify Books</a>
-                            <a href="/Rudaina/Requests.aspx" class="dropdown-item">Request</a>
-                          
+
+            
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
                         </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        $290.29 has been deposited into your account!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        Spending Alert: We've noticed unusually high spending for your account.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">7</span>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Message Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="~/Rudaina/img/undraw_profile_1.svg" alt="...">
+
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a
+                                            problem I've been having.</div>
+                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
+                                            alt="...">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">I have the photos that you ordered last month, how
+                                            would you like them sent to you?</div>
+                                        <div class="small text-gray-500">Jae Chun · 1d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
+                                            alt="...">
+                                        <div class="status-indicator bg-warning"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Last month's report looks great, I am very happy with
+                                            the progress so far, keep up the good work!</div>
+                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
+                                            told me that people say this to all dogs, even if they aren't good...</div>
+                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+<img class="img-profile rounded-circle" src='<%= ResolveUrl("~/Rudaina/img/avatar.jpg") %>'>
+
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+        <form id="form1" runat="server" >
+     <div class="edit-room-container" style="margin-top: 228px;">
+         <h2>Edit Room</h2>
+
+         <!-- Room Name -->
+         <div class="mb-3">
+             <asp:Label ID="lblRoomName" runat="server" AssociatedControlID="txtRoomName" CssClass="form-label" Text="Room Name"></asp:Label>
+             <asp:TextBox ID="txtRoomName" runat="server" CssClass="form-control" placeholder="Enter room name"></asp:TextBox>
+         </div>
+
+         <!-- Capacity -->
+         <div class="mb-3">
+             <asp:Label ID="lblCapacity" runat="server" AssociatedControlID="txtCapacity" CssClass="form-label" Text="Capacity"></asp:Label>
+             <asp:TextBox ID="txtCapacity" runat="server" CssClass="form-control" TextMode="Number" placeholder="Enter capacity"></asp:TextBox>
+         </div>
+
+         <!-- Description -->
+         <div class="mb-3">
+             <asp:Label ID="lblDescription" runat="server" AssociatedControlID="txtDescription" CssClass="form-label" Text="Description"></asp:Label>
+             <asp:TextBox ID="txtDescription" runat="server" CssClass="form-control" TextMode="MultiLine" placeholder="Enter room description"></asp:TextBox>
+         </div>
+
+         <!-- File Upload -->
+         <div class="mb-3 upload-box">
+             <asp:Label ID="lblImage" runat="server" AssociatedControlID="fuImage" CssClass="form-label" Text="Upload Image (Optional)"></asp:Label>
+             <asp:FileUpload ID="fuImage" runat="server" CssClass="form-control" />
+         </div>
+
+         <!-- Update Button -->
+         <div class="mb-3">
+             <asp:Button ID="btnUpdateRoom" runat="server" Text="Update Room" CssClass="btn-submit" OnClick="btnUpdateRoom_Click" />
+         </div>
+
+         <!-- Success/Error Message -->
+         <div class="mb-3">
+             <asp:Label ID="lblmsg" runat="server" CssClass="text-success fw-bold" ForeColor="Green" Visible="false"></asp:Label>
+         </div>
+     </div>
+ </form>
+
+             
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white" style="margin-top:144px;">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2021</span>
                     </div>
-                    <div class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Rooms mangment</a>
-    <div class="dropdown-menu m-0 bg-secondary rounded-0">
-        <a href="AdminRooms.aspx" class="dropdown-item">Admin rooms</a>
-        <a href="EditRoom.aspx" class="dropdown-item">Edit room</a>
-        <a href="AddRoom.aspx" class="dropdown-item">Add room</a>
-        <a href="Requests.aspx" class="dropdown-item">Request</a>
-    </div>
-</div>            <a href='<%= ResolveUrl("~/Rudaina/Home1.aspx") %>' class="btn btn-primary" style="background-color: #7d0ed7ba; border: none; margin-left: 40px;">Log Out</a>
-
-                  
                 </div>
-            </div>
-        </nav>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
     </div>
-</div>
-<!-- Navbar End -->
-      
+    <!-- End of Page Wrapper -->
 
-    <form id="form1" runat="server" >
-        <div class="edit-room-container" style="margin-top: 228px;">
-            <h2>Edit Room</h2>
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
 
-            <!-- Room Name -->
-            <div class="mb-3">
-                <asp:Label ID="lblRoomName" runat="server" AssociatedControlID="txtRoomName" CssClass="form-label" Text="Room Name"></asp:Label>
-                <asp:TextBox ID="txtRoomName" runat="server" CssClass="form-control" placeholder="Enter room name"></asp:TextBox>
-            </div>
-
-            <!-- Capacity -->
-            <div class="mb-3">
-                <asp:Label ID="lblCapacity" runat="server" AssociatedControlID="txtCapacity" CssClass="form-label" Text="Capacity"></asp:Label>
-                <asp:TextBox ID="txtCapacity" runat="server" CssClass="form-control" TextMode="Number" placeholder="Enter capacity"></asp:TextBox>
-            </div>
-
-            <!-- Description -->
-            <div class="mb-3">
-                <asp:Label ID="lblDescription" runat="server" AssociatedControlID="txtDescription" CssClass="form-label" Text="Description"></asp:Label>
-                <asp:TextBox ID="txtDescription" runat="server" CssClass="form-control" TextMode="MultiLine" placeholder="Enter room description"></asp:TextBox>
-            </div>
-
-            <!-- File Upload -->
-            <div class="mb-3 upload-box">
-                <asp:Label ID="lblImage" runat="server" AssociatedControlID="fuImage" CssClass="form-label" Text="Upload Image (Optional)"></asp:Label>
-                <asp:FileUpload ID="fuImage" runat="server" CssClass="form-control" />
-            </div>
-
-            <!-- Update Button -->
-            <div class="mb-3">
-                <asp:Button ID="btnUpdateRoom" runat="server" Text="Update Room" CssClass="btn-submit" OnClick="btnUpdateRoom_Click" />
-            </div>
-
-            <!-- Success/Error Message -->
-            <div class="mb-3">
-                <asp:Label ID="lblmsg" runat="server" CssClass="text-success fw-bold" ForeColor="Green" Visible="false"></asp:Label>
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="#">Logout</a>
+                </div>
             </div>
         </div>
-    </form>
-
-
-
-
-         <!-- Footer Start -->
-<div class="container-fluid  text-white-50 footer pt-5 mt-5" style="background-color: #000000;">
-    <div class="container py-5">
-        <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
-            <div class="row g-4">
-                <div class="col-lg-3">
-                    <a href="#">
-                        <h1 class="text-primary mb-0">Lengo Loop</h1>
-                        <p class="text-secondary mb-0">Educational Institue</p>
-                    </a>
-                </div>
-                <div class="col-lg-6">
-                    <div class="position-relative mx-auto">
-                        <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number" placeholder="Your Email">
-                        <button type="submit" class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white" style="top: 0; right: 0;">Subscribe Now</button>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="d-flex justify-content-end pt-3">
-                        <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i class="fab fa-youtube"></i></a>
-                        <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row g-5">
-            <div class="col-lg-3 col-md-6">
-                <div class="footer-item">
-                    <h4 class="text-light mb-3">Why People Like us!</h4>
-                    <p class="mb-4">typesetting, remaining essentially unchanged. It was 
-                        popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.</p>
-                    <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Read More</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="d-flex flex-column text-start footer-item">
-                    <h4 class="text-light mb-3">Shop Info</h4>
-                    <a class="btn-link" href="">About Us</a>
-                    <a class="btn-link" href="">Contact Us</a>
-                    <a class="btn-link" href="">Privacy Policy</a>
-                    <a class="btn-link" href="">Terms & Condition</a>
-                    <a class="btn-link" href="">Return Policy</a>
-                    <a class="btn-link" href="">FAQs & Help</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="d-flex flex-column text-start footer-item">
-                    <h4 class="text-light mb-3">Account</h4>
-                    <a class="btn-link" href="">My Account</a>
-                    <a class="btn-link" href="">Shop details</a>
-                    <a class="btn-link" href="">Shopping Cart</a>
-                    <a class="btn-link" href="">Wishlist</a>
-                    <a class="btn-link" href="">Order History</a>
-                    <a class="btn-link" href="">International Orders</a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="footer-item">
-                    <h4 class="text-light mb-3">Contact</h4>
-                    <p>Address: 1429 Netus Rd, NY 48247</p>
-                    <p>Email: LengoLoop@gmail.com</p>
-                    <p>Phone: +0123 4567 8910</p>
-                    <p>Payment Accepted</p>
-                    <img src="img/payment.png" class="img-fluid" alt="">
-                </div>
-            </div>
-        </div>
     </div>
-</div>
-<!-- Footer End -->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="~/Rudaina/js/demo/chart-pie-demo.js"></script>
+            <script src="~/Rudaina/js/demo/chart-area-demo.js"></script>
 
 
+   
 </body>
 </html>
