@@ -12,6 +12,11 @@
     <meta name="author" content="">
 
     <title>Requests</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+
+
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -25,10 +30,16 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
+
 </head>
 
 <body id="page-top">
+
     <form id="form1" runat="server">
+            <asp:ScriptManager runat="server"></asp:ScriptManager>
+
+    <asp:Label ID="rudaina" runat="server" ForeColor="Green" Visible="false"></asp:Label>
+
        <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -44,38 +55,58 @@
             <!-- Divider -->
             <hr class="sidebar-divider my-0">
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="Dashboard.aspx">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="BookManagment.aspx">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Book Management</span></a>
-            </li>
-             </li>
-             <!-- Nav Item - Dashboard -->
-             <li class="nav-item">
-                 <a class="nav-link" href="/Ammar/AdminRooms.aspx">
-                     <i class="fas fa-fw fa-tachometer-alt"></i>
-                     <span>Room Management</span></a>
-             </li>
-          
-                        <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="Requests.aspx">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Requests </span></a>
-            </li>
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
-                <a class="nav-link" href="/Bilal/Contact(Admin).aspx">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Feedback</span></a>
-            </li>
+              <!-- Nav Item - Dashboard -->
+ <li class="nav-item active">
+     <a class="nav-link" href="/Rudaina/Dashboard.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Dashboard</span></a>
+ </li>
+ <!-- Nav Item - Book Managment -->
+ <li class="nav-item active">
+     <a class="nav-link" href="/Rudaina/BookManagment.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Book Managment</span></a>
+ </li>
+ <!-- Nav Item - Book Requests -->
+ <li class="nav-item active">
+     <a class="nav-link" href="Rudaina/Requests.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Book Requests </span></a>
+ </li>
+ <!-- Nav Item - Room Managment -->
+ <li class="nav-item active">
+     <a class="nav-link" href="AdminRooms.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Room Managment</span></a>
+ </li>
+ <!-- Nav Item - Add Room -->
+ <li class="nav-item active">
+     <a class="nav-link" href="AddRoom.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Add Room</span></a>
+ </li>
+ <!-- Nav Item - Edit Room -->
+ <li class="nav-item active">
+     <a class="nav-link" href="EditRoom.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Edit Room</span></a>
+ </li>
+ <!-- Nav Item - Room Requests -->
+ <li class="nav-item active">
+     <a class="nav-link" href="Requests.aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Room Requests</span></a>
+ </li>
+
+
+
+ <!-- Nav Item - Feedback -->
+ <li class="nav-item active">
+     <a class="nav-link" href="/Bilal/Contact(Admin).aspx">
+         <i class="fas fa-fw fa-tachometer-alt"></i>
+         <span>Feedback</span></a>
+ </li>
+
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -311,20 +342,23 @@
         <asp:TemplateField HeaderText="Actions">
             <ItemTemplate>
                 <div style="display:flex; flex-direction:column; gap:10px;">
-                    <asp:Button runat="server" CssClass="btn btn-success btn-sm" Text="Accept"
-                                CommandName="Accept" CommandArgument='<%# Eval("ID") %>'
-                                OnClientClick="return handleButtonClick(this);" />
-                    <asp:Button runat="server" CssClass="btn btn-danger btn-sm" Text="Reject"
-                                CommandName="Reject" CommandArgument='<%# Eval("ID") %>' />
+                  <asp:Button runat="server" CssClass="btn btn-success btn-sm" Text="Accept"
+            CommandName="Accept" CommandArgument='<%# Eval("ID") %>' />
+
+<asp:Button runat="server" CssClass="btn btn-danger btn-sm" Text="Reject"
+            CommandName="Reject" CommandArgument='<%# Eval("ID") %>' />
+
                 </div>
             </ItemTemplate>
         </asp:TemplateField>
+
     </Columns>
+
 </asp:GridView>
 
     </div>
 
-                   
+
 
                
 

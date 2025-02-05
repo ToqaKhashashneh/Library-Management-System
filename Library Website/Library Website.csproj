@@ -1881,6 +1881,7 @@
     <Content Include="Rudaina\vendor\jquery\jquery.slim.js" />
     <Content Include="Rudaina\vendor\jquery\jquery.slim.min.js" />
     <Content Include="Rudaina\WebForm1.aspx" />
+    <Content Include="Rudaina\WebForm2.aspx" />
     <Content Include="Toqa\All books.aspx" />
     <Content Include="Rudaina\img\book1.png" />
     <Content Include="Rudaina\img\book2.png" />
@@ -2031,6 +2032,13 @@
     <Compile Include="Rudaina\Requests.aspx.cs">
       <DependentUpon>Requests.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rudaina\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Rudaina\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Toqa\All books.aspx.cs">
       <DependentUpon>All books.aspx</DependentUpon>

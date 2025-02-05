@@ -1,37 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data;
 using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
+using System;
 using System.IO;
-using Library_Website.Toqa;
-namespace Library_Website.Rudaina
+using System.Web.UI;
 
+namespace Library_Website.Rudaina
 {
     public partial class Requests : System.Web.UI.Page
     {
-
-        private string filePath = "~/Rudaina/App_Data/books.txt";
+        // Consolidating file paths
+        private string booksFilePath = "~/Rudaina/App_Data/books.txt"; // Books file
+        private string borrowingDataFilePath = "~/Toqa/BorrowingData.txt"; // Borrowing requests file
 
         protected global::System.Web.UI.WebControls.GridView GridViewRequests;
 
-
         protected void Page_Load(object sender, EventArgs e)
         {
+          
+
             if (!IsPostBack)
             {
                 LoadRequestsFromFile();
             }
         }
 
-
         private void LoadRequestsFromFile()
         {
-            string filePath = Server.MapPath("~/Toqa/BorrowingData.txt");
+            string fullPath = Server.MapPath(borrowingDataFilePath);
             DataTable dt = new DataTable();
-
 
             dt.Columns.Add("ID");
             dt.Columns.Add("Title");
@@ -43,9 +41,9 @@ namespace Library_Website.Rudaina
             dt.Columns.Add("ReturnDate");
             dt.Columns.Add("Email");
 
-            if (File.Exists(filePath))
+            if (File.Exists(fullPath))
             {
-                string[] lines = File.ReadAllLines(filePath);
+                string[] lines = File.ReadAllLines(fullPath);
                 foreach (string line in lines)
                 {
                     string[] data = line.Split(',');
@@ -64,132 +62,57 @@ namespace Library_Website.Rudaina
             if (e.CommandName == "Accept" || e.CommandName == "Reject")
             {
                 string selectedID = e.CommandArgument.ToString();
-                string fullPath = Server.MapPath("~/Rudaina/App_Data/books.txt");
+                string status = e.CommandName == "Accept" ? "Reserved" : "Available";
 
-                if (File.Exists(fullPath))
+                // تحديث حالة الكتاب
+                if (UpdateBookAvailability(selectedID, status))
                 {
-                    var lines = File.ReadAllLines(fullPath).ToList();
+                    // ✅ تأخير تحميل البيانات لضمان عدم فقدان التنبيه
+                    System.Threading.Thread.Sleep(500);
 
-                    for (int i = 0; i < lines.Count; i++)
-                    {
-                        var parts = lines[i].Split(',');
+                    // ✅ إعادة تحميل البيانات بعد الموافقة أو الرفض
+                    LoadRequestsFromFile();
 
+                    // ✅ إضافة SweetAlert بعد نجاح العملية
+                    string message = status == "Reserved" ? "The request has been accepted!" : "The request has been rejected!";
+                    string script = $"Swal.fire({{ title: 'Success', text: '{message}', icon: 'success' }});";
 
-                        if (parts.Length > 8 && parts[0].Trim() == selectedID)
-                        {
-                            parts[8] = e.CommandName == "Accept" ? "Reserved" : "Available";
-                            lines[i] = string.Join(",", parts.Select(p => p.Trim()));
-                            break;
-                        }
-                    }
-
-                    File.WriteAllLines(fullPath, lines);
+                    ScriptManager.RegisterStartupScript(this, GetType(), "alert", script, true);
                 }
             }
         }
 
 
-        //protected global::System.Web.UI.WebControls.GridView GridViewRequests;
 
+        private bool UpdateBookAvailability(string bookId, string status)
+        {
+            string fullPath = Server.MapPath(booksFilePath);
 
-        //private string booksFilePath = "~/Rudaina/App_Data/books.txt"; // Books file
-        //private string borrowingDataPath = "~/Toqa/BorrowingData.txt"; // Borrowing requests file
+            if (!File.Exists(fullPath)) return false;
 
-        //protected void Page_Load(object sender, EventArgs e)
-        //{
-        //    if (!IsPostBack)
-        //    {
-        //        LoadRequestsFromFile();
-        //    }
-        //}
+            List<string> lines = File.ReadAllLines(fullPath).ToList();
+            bool updated = false;
 
-        //private void LoadRequestsFromFile()
-        //{
-        //    string fullPath = Server.MapPath(borrowingDataPath);
-        //    DataTable dt = new DataTable();
+            for (int i = 0; i < lines.Count; i++)
+            {
+                string[] parts = lines[i].Split(',');
 
-        //    // Define table structure
-        //    dt.Columns.Add("ID");
-        //    dt.Columns.Add("Title");
-        //    dt.Columns.Add("Author");
-        //    dt.Columns.Add("PublishedDate");
-        //    dt.Columns.Add("Category");
-        //    dt.Columns.Add("Language");
-        //    dt.Columns.Add("RentalDate");
-        //    dt.Columns.Add("ReturnDate");
-        //    dt.Columns.Add("Email");
+                if (parts.Length > 8 && parts[0].Trim() == bookId)
+                {
+                    parts[8] = status; // Update the status (Reserved / Available)
+                    lines[i] = string.Join(",", parts.Select(p => p.Trim()));
+                    updated = true;
+                    break;
+                }
+            }
 
-        //    if (File.Exists(fullPath))
-        //    {
-        //        string[] lines = File.ReadAllLines(fullPath);
-        //        foreach (string line in lines)
-        //        {
-        //            string[] data = line.Split(',');
-        //            if (data.Length == 9)
-        //            {
-        //                dt.Rows.Add(data[0], data[1], data[2], data[3], data[4], data[5], data[6], data[7], data[8]);
-        //            }
-        //        }
-        //    }
+            if (updated)
+            {
+                File.WriteAllLines(fullPath, lines);
+                return true;
+            }
 
-        //    GridViewRequests.DataSource = dt;
-        //    GridViewRequests.DataBind();
-        //}
-
-        //protected void GridViewRequests_RowCommand(object sender, GridViewCommandEventArgs e)
-        //{
-        //    if (e.CommandName == "Accept" || e.CommandName == "Reject")
-        //    {
-        //        string selectedID = e.CommandArgument.ToString();
-        //        string newStatus = e.CommandName == "Accept" ? "Reserved" : "Available";
-
-        //        // ✅ Ensure book status updates in books.txt
-        //        if (UpdateBookAvailability(selectedID, newStatus))
-        //        {
-        //            // ✅ Refresh the table after updating the file
-        //            LoadRequestsFromFile();
-        //        }
-        //    }
-        //}
-
-        //private bool UpdateBookAvailability(string bookId, string status)
-        //{
-        //    string fullPath = Server.MapPath(booksFilePath);
-
-        //    if (!File.Exists(fullPath)) return false; // ✅ Avoids crash if file is missing
-
-        //    List<string> lines = File.ReadAllLines(fullPath).ToList();
-        //    bool updated = false;
-
-        //    for (int i = 0; i < lines.Count; i++)
-        //    {
-        //        string[] parts = lines[i].Split(',');
-
-        //        // ✅ Ensure we update the correct book ID
-        //        if (parts.Length > 8 && parts[0].Trim() == bookId)
-        //        {
-        //            parts[8] = status;
-        //            lines[i] = string.Join(",", parts.Select(p => p.Trim()));
-        //            updated = true;
-        //            break; // ✅ Stops after finding the correct book
-        //        }
-        //    }
-
-        //    if (updated)
-        //    {
-        //        File.WriteAllLines(fullPath, lines);
-        //        return true;
-        //    }
-
-        //    return false; // If no update was made
-        //}
+            return false;
+        }
     }
 }
-
-
-
-
-
-
-
-
