@@ -47,13 +47,13 @@
   </li>
   <!-- Nav Item - Book Managment -->
   <li class="nav-item active">
-      <a class="nav-link" href="BookManagment.aspx">
+      <a class="nav-link" href="/Rudaina/BookManagment.aspx">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Book Managment</span></a>
   </li>
   <!-- Nav Item - Book Requests -->
   <li class="nav-item active">
-      <a class="nav-link" href="Requests.aspx">
+      <a class="nav-link" href="/Rudaina/Requests.aspx">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Book Requests </span></a>
   </li>

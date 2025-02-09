@@ -244,7 +244,7 @@ namespace Library_Website.Toqa
                 }
                 else
                 {
-                    alertMessage = "Book borrowing confirmed! Status updated to Pending.";
+                    alertMessage = "Book requested successfully Status updated to Pending.";
                 }
             }
             else

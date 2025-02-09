@@ -1,5 +1,4 @@
 
-10|Room Name : Meeting|10|Description : designated space within an office or business environment|~/Uploads/fc16d925-a041-4c7e-8fed-71fc6ba9f7fc.jpg|Available
 11|Room Name : Study|10|Description : designated space within an office or business environment|~/Uploads/b41808cb-fccc-43f0-9001-0fce425ba84b.jpg|Available
 12|Room Name : Meeting|15|Description : designated space within an office or business environment|~/Uploads/cca8b471-d12c-442c-bea7-81a61236b8c1.jpg|Available
 13|Room Name : Meeting|20|Description : designated space within an office or business environment|~/Uploads/db06c3fe-8432-49bd-a683-ccfa92e4d43e.jpg|Available

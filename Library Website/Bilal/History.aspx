@@ -102,7 +102,7 @@
 
         </nav>
        <!-- Navbar End -->
-        <div class="Main-Data" style="width: 80%; margin-left: 10%;">
+        <div class="Main-Data" style="width: 80%; margin-left: 15%;">
             <h2 style="margin-left: 1%;">History Data</h2>
             <div id="historyContainer" runat="server"></div>
         </div>
