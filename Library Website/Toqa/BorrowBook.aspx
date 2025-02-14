@@ -141,8 +141,8 @@ input[type="submit"]:hover, button:hover {
             </button>
         <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
         <div class="navbar-nav mx-auto">
-            <%--<a href="/Rudaina/Home1.aspx" class="nav-item nav-link active">Home</a>--%>
-            <%--<a href="/Farah/AboutUs.aspx" class="nav-item nav-link">About</a>--%>
+            <a href="/Rudaina/Home1.aspx" class="nav-item nav-link active">Home</a>
+            <a href="/Farah/AboutUs.aspx" class="nav-item nav-link">About</a>
             <a href="/Toqa/All books.aspx" class="nav-item nav-link">Books</a>
               <a href="/Ammar/Rooms.aspx" class="nav-item nav-link">Rooms</a>
                 <a href="/Ayman/contact_us(user).aspx" class="nav-item nav-link">Contact Us</a>

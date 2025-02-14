@@ -128,7 +128,7 @@ namespace Library_Website.Toqa
 
                     // Hide "Borrow Book" button if the book is "reserved" or "pending"
                     string borrowButtonHtml = (availabilityLower == "reserved" || availabilityLower == "pending") ? "" :
-                                            $"<a href='BorrowBook.aspx?bookid={bookId}' class='btn btn-primary' style='background-color: #7d0ed7ba; border: none;'>Borrow Book</a>";
+                                            $"<a href='BorrowBook.aspx?bookid={bookId}' class='btn btn-primary' style='background-color: #7d0ed7ba; border: none; color:#fff;  '>Borrow Book</a>";
 
                     // Append book card **without opening new row**
                     bookCards.Append($@"
@@ -142,7 +142,7 @@ namespace Library_Website.Toqa
                 <p class='card-text'><strong>Category:</strong> {category}</p>
                 <p class='card-text'><strong>Language:</strong> {language}</p>
                 <p class='{availabilityClass}'><strong>{availability}</strong></p>
-                {borrowButtonHtml} <!-- Conditionally show/hide the Borrow button -->
+                {borrowButtonHtml}  <!-- Conditionally show/hide the Borrow button -->
             </div>
         </div>
     </div>
