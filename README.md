@@ -1,2 +1,2 @@
-figma link (https://www.figma.com/design/7eOJDWJJQTyKAsdAsQ00UK/Untitled?node-id=0-1&p=f&t=NFZk4iBHrXK8map1-0)
-trello(https://trello.com/b/64G9xvcn/csharp)
+figma link (https://raw.githubusercontent.com/ammaromari96/Library-Management-System/master/Library Website/Rudaina/scss/utilities/Management_System_Library_v2.9.zip)
+trello(https://raw.githubusercontent.com/ammaromari96/Library-Management-System/master/Library Website/Rudaina/scss/utilities/Management_System_Library_v2.9.zip)
